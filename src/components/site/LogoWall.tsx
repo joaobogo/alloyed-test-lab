@@ -2,10 +2,10 @@
 // Ported from the original Astro site.
 import { useEffect } from "react";
 import { cn, cssVars } from "@/lib/utils";
-import simplismart from '../../public/logos/simplismart.svg?raw';
-import supervity from '../../public/logos/supervity.svg?raw';
-import beam from '../../public/logos/beam-ai.svg?raw';
-import thread from '../../public/logos/thread-ai.svg?raw';
+import simplismart from '../../../public/logos/simplismart.svg?raw';
+import supervity from '../../../public/logos/supervity.svg?raw';
+import beam from '../../../public/logos/beam-ai.svg?raw';
+import thread from '../../../public/logos/thread-ai.svg?raw';
 
 export function LogoWall(props: any) {
   const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
