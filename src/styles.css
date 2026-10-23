@@ -220,7 +220,7 @@ html:not(.js) .hero-in { animation: none; }
   .hero-gl-fallback { transition: opacity 1s ease; }
 
 
-  .logo-item :global(svg) { height: 100%; width: auto; display: block; }
+  .logo-item svg { height: 100%; width: auto; display: block; }
 
 
   .mobile-cta { padding-bottom: env(safe-area-inset-bottom, 0px); transition: transform .35s cubic-bezier(.2,.7,.2,1), opacity .35s; }

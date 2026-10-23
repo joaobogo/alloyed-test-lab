@@ -2,7 +2,6 @@
 // Ported from the original Astro site.
 import { useEffect } from "react";
 import { cn, cssVars } from "@/lib/utils";
-import { Base as Base } from "@/components/site/Base";
 import { CTA as CTA } from "@/components/site/CTA";
 import { ArticleCard as ArticleCard } from "@/components/site/ArticleCard";
 import { renderMarkdown, formatDate, readingTime, authorFor, type Article } from '@/data/content';
