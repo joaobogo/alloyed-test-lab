@@ -5,11 +5,13 @@ import { cn, cssVars } from "@/lib/utils";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { pageHead } from "@/lib/seo";
 
+const withHreflang = (h: ReturnType<typeof pageHead>) => ({ ...h, links: [...h.links, { rel: "alternate", hrefLang: "en", href: "https://alloyed.io/about-us/careers/el-salvador/" }, { rel: "alternate", hrefLang: "es", href: "https://alloyed.io/es/carreras/el-salvador/" }] });
+
 
 const roles = ['Especialistas en operaciones publicitarias (ad ops)', 'Analistas de facturación y cuentas por pagar', 'Agentes bilingües de atención y engagement', 'Analistas de calidad de datos y reportes', 'Líderes de equipo y líderes de QA'];
 
 export const Route = createFileRoute("/es/carreras/el-salvador")({
-  head: () => pageHead({ path: "/es/carreras/el-salvador/", title: "Empleos en El Salvador: Operaciones bilingües | Alloyed", description: "Únete al centro de entrega nearshore de Alloyed en San Salvador. Puestos bilingües en operaciones publicitarias, finanzas, atención al cliente y datos con clientes de Estados Unidos.", breadcrumbs: [{ name: 'Carreras', href: '/es/carreras/el-salvador/' }] }),
+  head: () => withHreflang(pageHead({ path: "/es/carreras/el-salvador/", title: "Empleos en El Salvador: Operaciones bilingües | Alloyed", description: "Únete al centro de entrega nearshore de Alloyed en San Salvador. Puestos bilingües en operaciones publicitarias, finanzas, atención al cliente y datos con clientes de Estados Unidos.", breadcrumbs: [{ name: 'Carreras', href: '/es/carreras/el-salvador/' }] })),
   component: Page,
 });
 
@@ -18,7 +20,6 @@ function Page() {
   return (
 
 <>
-  <Fragment slot="head"><link rel="alternate" hreflang="en" href="https://alloyed.io/about-us/careers/el-salvador/" /><link rel="alternate" hreflang="es" href="https://alloyed.io/es/carreras/el-salvador/" /><link rel="alternate" hreflang="x-default" href="https://alloyed.io/about-us/careers/el-salvador/" /></Fragment>
   <section className="bg-ink-900 py-20 text-white sm:py-24">
     <div className="container-x">
       <div className="flex items-center gap-3 text-[13px] text-white/60"><a href="/about-us/careers/el-salvador/" lang="en" className="underline underline-offset-2 hover:text-white">Read in English</a></div>

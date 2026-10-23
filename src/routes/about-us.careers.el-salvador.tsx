@@ -5,12 +5,14 @@ import { cn, cssVars } from "@/lib/utils";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { pageHead } from "@/lib/seo";
 
+const withHreflang = (h: ReturnType<typeof pageHead>) => ({ ...h, links: [...h.links, { rel: "alternate", hrefLang: "en", href: "https://alloyed.io/about-us/careers/el-salvador/" }, { rel: "alternate", hrefLang: "es", href: "https://alloyed.io/es/carreras/el-salvador/" }] });
+
 
 const roles = ['Advertising operations specialists', 'Billing and accounts payable analysts', 'Bilingual customer engagement agents', 'Data quality and reporting analysts', 'Team leaders and QA leads'];
 const schema = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Careers in El Salvador | Alloyed', inLanguage: 'en' }];
 
 export const Route = createFileRoute("/about-us/careers/el-salvador")({
-  head: () => pageHead({ path: "/about-us/careers/el-salvador/", title: "Careers in El Salvador: Bilingual Ops Jobs | Alloyed", description: "Join Alloyed’s nearshore delivery center in San Salvador. Bilingual ad operations, finance, customer engagement and data roles with US clients, structured training and clear growth paths.", breadcrumbs: [{ name: 'About', href: '/about-us/' }, { name: 'Careers', href: '/about-us/careers/' }, { name: 'El Salvador', href: '/about-us/careers/el-salvador/' }], schema: schema }),
+  head: () => withHreflang(pageHead({ path: "/about-us/careers/el-salvador/", title: "Careers in El Salvador: Bilingual Ops Jobs | Alloyed", description: "Join Alloyed’s nearshore delivery center in San Salvador. Bilingual ad operations, finance, customer engagement and data roles with US clients, structured training and clear growth paths.", breadcrumbs: [{ name: 'About', href: '/about-us/' }, { name: 'Careers', href: '/about-us/careers/' }, { name: 'El Salvador', href: '/about-us/careers/el-salvador/' }], schema: schema })),
   component: Page,
 });
 
@@ -19,7 +21,6 @@ function Page() {
   return (
 
 <>
-  <Fragment slot="head"><link rel="alternate" hreflang="es" href="https://alloyed.io/es/carreras/el-salvador/" /><link rel="alternate" hreflang="en" href="https://alloyed.io/about-us/careers/el-salvador/" /><link rel="alternate" hreflang="x-default" href="https://alloyed.io/about-us/careers/el-salvador/" /></Fragment>
   <section className="bg-ink-900 py-20 text-white sm:py-24">
     <div className="container-x">
       <div className="flex items-center gap-3 text-[13px] text-white/60"><a href="/es/carreras/el-salvador/" lang="es" className="underline underline-offset-2 hover:text-white">Leer en español</a></div>
