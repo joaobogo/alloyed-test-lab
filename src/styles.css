@@ -146,7 +146,7 @@
 .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
-.no-js .reveal { opacity: 1; transform: none; }
+html:not(.js) .reveal { opacity: 1; transform: none; }
 
 /* Stat counters render their final value; the count-up is decoration only. */
 [data-count] { font-variant-numeric: tabular-nums; }
@@ -158,7 +158,7 @@ details > summary::-webkit-details-marker { display: none; }
 /* Hero entrance: staggered via --d, content is in the HTML immediately. */
 .hero-in { animation: hero-in .9s cubic-bezier(.2,.7,.2,1) both; animation-delay: var(--d, 0ms); }
 @keyframes hero-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
-.no-js .hero-in { animation: none; }
+html:not(.js) .hero-in { animation: none; }
 
 /* Cards lift on hover, with a soft brand shadow. */
 .lift { transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s, border-color .35s; }
@@ -205,3 +205,50 @@ details > summary::-webkit-details-marker { display: none; }
   a { color: inherit; text-decoration: none; }
   .card, .rounded-2xl { box-shadow: none !important; border-color: #ddd !important; }
 }
+
+  .burger { display: grid; gap: 5px; width: 22px; }
+  .burger span { display: block; height: 2px; border-radius: 2px; background: currentColor; transition: transform .3s cubic-bezier(.2,.7,.2,1), opacity .2s; transform-origin: center; }
+  [aria-expanded="true"] .burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  [aria-expanded="true"] .burger span:nth-child(2) { opacity: 0; }
+  [aria-expanded="true"] .burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mobile-item { animation: mobile-in .5s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i, 0) * 45ms); }
+  @keyframes mobile-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  details[open] summary svg { transform: rotate(180deg); }
+  @media (prefers-reduced-motion: reduce) { .mobile-item { animation: none; } .burger span { transition: none; } }
+
+
+  .hero-gl-fallback { transition: opacity 1s ease; }
+
+
+  .logo-item :global(svg) { height: 100%; width: auto; display: block; }
+
+
+  .mobile-cta { padding-bottom: env(safe-area-inset-bottom, 0px); transition: transform .35s cubic-bezier(.2,.7,.2,1), opacity .35s; }
+  .mobile-cta[data-off] { transform: translateY(120%); opacity: 0; pointer-events: none; }
+  :root.menu-open .mobile-cta { transform: translateY(120%); opacity: 0; }
+
+
+  /* Inner viewport is exactly 390 x 740 (phone) or 820 x 600 (tablet). */
+  .device { position: relative; width: 418px; border-radius: 52px; background: #0a0d18; padding: 14px; box-shadow: 0 0 0 2px #2a3046, 0 40px 90px -30px rgba(0,0,0,.8), inset 0 0 0 1px rgba(255,255,255,.08); transition: width .4s cubic-bezier(.2,.7,.2,1), border-radius .4s; max-width: 100%; }
+  .device[data-size="tablet"] { width: 848px; border-radius: 30px; }
+  .device-bar { display: flex; align-items: center; justify-content: space-between; height: 34px; padding: 0 22px; font: 600 12px/1 Inter, system-ui, sans-serif; color: #fff; background: #0b1020; border-radius: 38px 38px 0 0; }
+  .device-island { width: 96px; height: 22px; border-radius: 999px; background: #0a0d18; }
+  .device[data-size="tablet"] .device-bar { border-radius: 16px 16px 0 0; }
+  .device[data-size="tablet"] .device-island { visibility: hidden; }
+  .device iframe { display: block; width: 100%; height: 740px; border: 0; border-radius: 0 0 38px 38px; background: #0b1020; }
+  .device[data-size="tablet"] iframe { height: 600px; border-radius: 0 0 16px 16px; }
+  @media (max-width: 440px) { .device { padding: 8px; border-radius: 36px; } .device-bar { border-radius: 28px 28px 0 0; } .device iframe { border-radius: 0 0 28px 28px; height: 640px; } }
+
+
+  .rail { animation: dash 2.4s linear infinite; }
+  .rail.out { animation-duration: 2s; }
+  .spine { animation: dash 1.2s linear infinite; }
+  @keyframes dash { to { stroke-dashoffset: -40; } }
+  .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.8s ease-out infinite; animation-delay: calc(var(--i, 0) * .5s); }
+  @keyframes pulse { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.5); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .rail, .spine, .pulse { animation: none; } }
+
+
+  .ticker-track { animation: ticker 48s linear infinite; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; row-gap: .5rem; } }
