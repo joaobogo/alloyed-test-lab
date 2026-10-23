@@ -130,13 +130,13 @@ function Page() {
       </div>
       <div className="mt-8 grid gap-3 sm:mt-12 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
         {services.map((s, i) => (
-          <a href={`/services/${s.slug}/`} className="card lift group reveal flex flex-col p-5 sm:p-7" style={cssVars(`transition-delay:${i * 60}ms`)}>
+          <TiltCard className="reveal" key={s.slug}><a href={`/services/${s.slug}/`} className="card group flex h-full flex-col p-5 sm:p-7">
             <div className="flex items-center gap-3 sm:block"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-50 font-display text-[16px] font-bold text-brand-600 transition group-hover:bg-brand-600 group-hover:text-white sm:h-11 sm:w-11 sm:text-[18px]">0{i + 1}</span>
             <h3 className="text-[19px] font-bold sm:mt-5 sm:text-[22px]">{s.name}</h3></div>
             <p className="mt-2 hidden text-[14.5px] leading-relaxed text-ink-600 sm:block">{s.short}</p>
             <p className="mt-3 flex items-baseline gap-2 sm:mt-5"><span className="h-display whitespace-nowrap text-[24px] text-ember-600 sm:text-[28px]">{s.outcomes[0].value}</span><span className="text-[13px] text-ink-500">{s.outcomes[0].label}</span></p>
             <span className="mt-auto hidden items-center gap-1.5 pt-6 text-[14px] font-semibold text-brand-600 sm:inline-flex">Explore <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="transition group-hover:translate-x-1"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-          </a>
+          </a></TiltCard>
         ))}
       </div>
     </div>
@@ -212,7 +212,7 @@ function Page() {
       <div className="mt-10 grid gap-5 md:grid-cols-3">
         {featured.map((cs, i) => <div className="reveal" style={cssVars(`transition-delay:${i * 70}ms`)}><CaseCard cs={cs} /></div>)}
       </div>
-      <div className="mt-12 reveal"><Testimonials /></div>
+      <div className="mt-12 reveal"><TestimonialCarousel items={testimonials.map((t) => ({ quote: t.quote, name: t.name, role: t.company }))} /></div>
 
     </div>
   </section>
