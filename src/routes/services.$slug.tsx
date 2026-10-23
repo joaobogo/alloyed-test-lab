@@ -12,7 +12,8 @@ import { asset, slots } from '@/data/visuals';
 
 function load(params: { slug: string }) {
 
-const { s } = props;
+const s = services.find((x) => x.slug === params.slug);
+if (!s) return null;
 const cs = caseBySlug(s.caseStudy)!;
 const related = services.filter((x) => x.slug !== s.slug).slice(0, 3);
 const heroImg = asset(slots.hero.service(s.slug));
@@ -31,18 +32,18 @@ const schema = [
     hasOfferCatalog: { '@type': 'OfferCatalog', name: `${s.name} capabilities`, itemListElement: s.capabilities.map((c) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: c.title } })) },
   },
 ];
-  return { cs, heroImg, related, schema };
+  return { s, cs, heroImg, related, schema };
 }
 
 export const Route = createFileRoute("/services/$slug")({
-  loader: ({ params }) => { const d = load(params); if (!d || Object.values(d).some((v) => v === undefined)) throw notFound(); return null; },
-  head: ({ params }) => { const { cs, heroImg, related, schema } = load(params); return pageHead({ path: "/services/[slug]/".replace("[slug]", params.slug), title: s.metaTitle, description: s.metaDescription, ogImage: `/og/services-${s.slug}.png`, breadcrumbs: [{ name: 'Services', href: '/services/' }, { name: s.name, href: `/services/${s.slug}/` }], schema: schema }); },
+  loader: ({ params }) => { const d = load(params); if (!d) throw notFound(); return null; },
+  head: ({ params }) => { if (!load(params)) return {}; const { s, cs, heroImg, related, schema } = load(params)!; return pageHead({ path: "/services/[slug]/".replace("[slug]", params.slug), title: s.metaTitle, description: s.metaDescription, ogImage: `/og/services-${s.slug}.png`, breadcrumbs: [{ name: 'Services', href: '/services/' }, { name: s.name, href: `/services/${s.slug}/` }], schema: schema }); },
   component: Page,
 });
 
 function Page() {
   const params = Route.useParams();
-  const { cs, heroImg, related, schema } = load(params);
+  const { s, cs, heroImg, related, schema } = load(params)!;
 
   return (
 

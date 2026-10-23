@@ -12,7 +12,8 @@ import { asset, slots } from '@/data/visuals';
 
 function load(params: { slug: string }) {
 
-const { cs } = props;
+const cs = caseStudies.find((x) => x.slug === params.slug);
+if (!cs) return null;
 // Prefer the full scraped write-up; fall back to the curated summary data.
 const full = caseContentBySlug(cs.slug);
 const challenge = full?.challenge?.length ? full.challenge : cs.challenge;
@@ -35,18 +36,18 @@ const heroImg = asset(slots.caseStudy(cs.slug));
 const isBullet = (s: string) => s.length < 220 && !/[.!?]\s+[A-Z]/.test(s);
 const lead = (s: string) => s.replace(/^\*\*(.+?):?\*\*:?\s*/, '<strong class="text-ink-900">$1:</strong> ').replace(/^([A-Z][A-Za-z&,/ ]{2,40}):\s/, '<strong class="text-ink-900">$1:</strong> ');
 const bold = (s: string) => s.replace(/\*\*(.+?)\*\*/g, '<strong class="text-ink-900">$1</strong>');
-  return { bold, challenge, description, full, heroImg, impact, intro, isBullet, lead, metrics, related, results, schema, sections, solution, title };
+  return { cs, bold, challenge, description, full, heroImg, impact, intro, isBullet, lead, metrics, related, results, schema, sections, solution, title };
 }
 
 export const Route = createFileRoute("/insights/case-studies/$slug")({
-  loader: ({ params }) => { const d = load(params); if (!d || Object.values(d).some((v) => v === undefined)) throw notFound(); return null; },
-  head: ({ params }) => { const { bold, challenge, description, full, heroImg, impact, intro, isBullet, lead, metrics, related, results, schema, sections, solution, title } = load(params); return pageHead({ path: "/insights/case-studies/[slug]/".replace("[slug]", params.slug), title: title, description: description, ogImage: `/og/case-${cs.slug.slice(0, 60)}.png`, ogType: "article", breadcrumbs: [{ name: 'Insights', href: '/insights/' }, { name: 'Case Studies', href: '/insights/case-studies/' }, { name: cs.title, href: `/insights/case-studies/${cs.slug}/` }], schema: schema }); },
+  loader: ({ params }) => { const d = load(params); if (!d) throw notFound(); return null; },
+  head: ({ params }) => { if (!load(params)) return {}; const { cs, bold, challenge, description, full, heroImg, impact, intro, isBullet, lead, metrics, related, results, schema, sections, solution, title } = load(params)!; return pageHead({ path: "/insights/case-studies/[slug]/".replace("[slug]", params.slug), title: title, description: description, ogImage: `/og/case-${cs.slug.slice(0, 60)}.png`, ogType: "article", breadcrumbs: [{ name: 'Insights', href: '/insights/' }, { name: 'Case Studies', href: '/insights/case-studies/' }, { name: cs.title, href: `/insights/case-studies/${cs.slug}/` }], schema: schema }); },
   component: Page,
 });
 
 function Page() {
   const params = Route.useParams();
-  const { bold, challenge, description, full, heroImg, impact, intro, isBullet, lead, metrics, related, results, schema, sections, solution, title } = load(params);
+  const { cs, bold, challenge, description, full, heroImg, impact, intro, isBullet, lead, metrics, related, results, schema, sections, solution, title } = load(params)!;
 
   return (
 

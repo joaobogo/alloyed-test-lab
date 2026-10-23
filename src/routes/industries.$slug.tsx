@@ -12,23 +12,24 @@ import { asset, slots } from '@/data/visuals';
 
 function load(params: { slug: string }) {
 
-const { ind } = props;
+const ind = industries.find((x) => x.slug === params.slug);
+if (!ind) return null;
 const svcs = ind.services.map(serviceBySlug);
 const cases = ind.caseStudies.map(caseBySlug).filter(Boolean);
 const heroImg = asset(slots.hero.industry(ind.slug));
 const schema = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqFor(ind).map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }, { '@context': 'https://schema.org', '@type': 'Service', name: `Operations outsourcing for ${ind.name}`, description: ind.metaDescription, provider: { '@id': `${site.url}/#organization` }, audience: { '@type': 'BusinessAudience', name: ind.name }, url: `${site.url}/industries/${ind.slug}/` }];
-  return { cases, heroImg, schema, svcs };
+  return { ind, cases, heroImg, schema, svcs };
 }
 
 export const Route = createFileRoute("/industries/$slug")({
-  loader: ({ params }) => { const d = load(params); if (!d || Object.values(d).some((v) => v === undefined)) throw notFound(); return null; },
-  head: ({ params }) => { const { cases, heroImg, schema, svcs } = load(params); return pageHead({ path: "/industries/[slug]/".replace("[slug]", params.slug), title: ind.metaTitle, description: ind.metaDescription, ogImage: `/og/industries-${ind.slug}.png`, breadcrumbs: [{ name: 'Industries', href: '/industries/' }, { name: ind.name, href: `/industries/${ind.slug}/` }], schema: schema }); },
+  loader: ({ params }) => { const d = load(params); if (!d) throw notFound(); return null; },
+  head: ({ params }) => { if (!load(params)) return {}; const { ind, cases, heroImg, schema, svcs } = load(params)!; return pageHead({ path: "/industries/[slug]/".replace("[slug]", params.slug), title: ind.metaTitle, description: ind.metaDescription, ogImage: `/og/industries-${ind.slug}.png`, breadcrumbs: [{ name: 'Industries', href: '/industries/' }, { name: ind.name, href: `/industries/${ind.slug}/` }], schema: schema }); },
   component: Page,
 });
 
 function Page() {
   const params = Route.useParams();
-  const { cases, heroImg, schema, svcs } = load(params);
+  const { ind, cases, heroImg, schema, svcs } = load(params)!;
 
   return (
 
