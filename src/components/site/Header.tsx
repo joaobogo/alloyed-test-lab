@@ -1,13 +1,14 @@
 // @ts-nocheck
 // Ported from the original Astro site.
 import { useEffect } from "react";
+import { useRouterState } from "@tanstack/react-router";
 import { cn, cssVars } from "@/lib/utils";
 import { nav } from '@/data/site';
 
 export function Header(props: any) {
 interface Props { dark?: boolean }
 const { dark = true } = props;
-const path = pathname;
+const path = useRouterState({ select: (s) => s.location.pathname });
 const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
   useEffect(() => {
 
