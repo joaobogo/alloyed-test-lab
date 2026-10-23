@@ -16,3 +16,5 @@
 - Every route's head() uses `pageHead()` from `src/lib/seo.ts` so title, description, canonical, OG and JSON-LD stay consistent.
 - Brand palette (ink/brand/ember/mint) and utilities (btn-*, card, eyebrow, container-x) are defined once in `src/styles.css`; reuse them instead of ad hoc colors.
 - Ported page/component files carry // @ts-nocheck and run the original vanilla DOM scripts inside useEffect; tighten types file by file when editing them.
+- Site imagery lives in `public/img/<folder>/` under the exact names in `src/data/visuals.ts`; `src/data/visual-files.ts` lists what exists (regenerate it when files change) so missing slots fall back to typography.
+- Animated components live in `src/components/motion/`, take an optional `reducedMotion` prop (defaults to the system setting), use only transform/opacity and pause off-screen; `/studio` (noindex) previews them and the image gallery.
