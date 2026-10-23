@@ -1,0 +1,9 @@
+[
+  {"capability":"code","source":"Astro 5 static site (github joaobogo/Test-alloyed)","outcome":"rebuild as TanStack Start routes + React components","status":"in_progress","next_action":"port all pages"},
+  {"capability":"schema/records","source":"none (static JSON content)","outcome":"bundled JSON copied to src/data","status":"done","next_action":""},
+  {"capability":"auth","source":"none","outcome":"n/a","status":"not_applicable","next_action":""},
+  {"capability":"contact form","source":"Netlify Forms (data-netlify)","outcome":"client form redirecting to /thank-you; submissions not stored","status":"pending","next_action":"user decides: store submissions in Lovable Cloud / email"},
+  {"capability":"analytics","source":"GTM via PUBLIC_GTM_ID + Consent Mode v2","outcome":"consent banner preserved; GTM ID placeholder","status":"pending","next_action":"user supplies GTM container ID"},
+  {"capability":"redirects/headers","source":"public/_redirects, _headers (Netlify)","outcome":"not applied on Lovable hosting","status":"pending","next_action":"recreate redirects as routes if needed at cutover"},
+  {"capability":"llms.txt + sitemap","source":"Astro endpoints/integration","outcome":"server routes","status":"in_progress","next_action":""}
+]
