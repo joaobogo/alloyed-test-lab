@@ -4,7 +4,7 @@
 // exact paths. See docs/lovable-visual-brief.md for specs and prompts.
 import { visualFiles } from './visual-files';
 
-const available = new Set<string>(visualFiles);
+const available = new Set<string>(visualFiles.map((f) => f.path));
 
 /** Phone-sized variant of a hero image ("-sm"), if it exists. */
 export const smallVariant = (path: string | null): string | null =>
