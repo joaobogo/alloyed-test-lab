@@ -21,9 +21,9 @@ const init = () => {
             if (!e.isIntersecting) continue;
             const el = e.target as HTMLElement;
             cio.unobserve(el);
-            const end = parseFloat(el.dataset.count || '0');
-            const dec = parseInt(el.dataset.decimals || '0', 10);
-            const suffix = el.dataset.suffix || '';
+            const end = parseFloat(el.dataset['count'] || '0');
+            const dec = parseInt(el.dataset['decimals'] || '0', 10);
+            const suffix = el.dataset['suffix'] || '';
             const t0 = performance.now();
             const dur = 1100;
             const tick = (t: number) => {
