@@ -9,7 +9,7 @@ import { news, formatDate } from '@/data/content';
 
 
 
-export const Route = createFileRoute("/insights/news")({
+export const Route = createFileRoute("/insights/news/")({
   head: () => pageHead({ path: "/insights/news/", title: "Alloyed News: Partnerships, Leadership and Announcements", description: "Press releases and announcements from Alloyed (formerly SEBPO): the management buyout, new CEO Lauren Kochan, and AI partnerships with Beam AI, SimpliSmart and Supervity.", breadcrumbs: [{ name: 'Insights', href: '/insights/' }, { name: 'News', href: '/insights/news/' }] }),
   component: Page,
 });

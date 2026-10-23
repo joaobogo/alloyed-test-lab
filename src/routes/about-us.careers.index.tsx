@@ -13,7 +13,7 @@ const places = [
   ['Bangladesh', 'https://www.linkedin.com/company/alloyed-io/jobs/', 'Data, ad operations and 24/7 delivery'],
 ];
 
-export const Route = createFileRoute("/about-us/careers")({
+export const Route = createFileRoute("/about-us/careers/")({
   head: () => pageHead({ path: "/about-us/careers/", title: "Careers at Alloyed: Build Your Career in Operations", description: "Join Alloyed, formerly SEBPO: structured training, clear growth paths and a collaborative culture across the US, El Salvador, the Philippines and Bangladesh.", breadcrumbs: [{ name: 'About', href: '/about-us/' }, { name: 'Careers', href: '/about-us/careers/' }] }),
   component: Page,
 });

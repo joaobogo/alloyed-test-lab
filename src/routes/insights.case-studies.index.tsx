@@ -10,7 +10,7 @@ import { caseStudies } from '@/data/site';
 
 const industries = [...new Set(caseStudies.map((c) => c.industry))];
 
-export const Route = createFileRoute("/insights/case-studies")({
+export const Route = createFileRoute("/insights/case-studies/")({
   head: () => pageHead({ path: "/insights/case-studies/", title: "Case Studies: Measurable Outsourcing Results | Alloyed", description: "Alloyed case studies with measurable outcomes: $2M annual savings, 99.99% QA accuracy, 2x creative output, 53% faster turnaround, 20-year partnerships.", breadcrumbs: [{ name: 'Case Studies', href: '/insights/case-studies/' }] }),
   component: Page,
 });

@@ -11,7 +11,7 @@ import { services, engagementModels } from '@/data/site';
 
 
 
-export const Route = createFileRoute("/services")({
+export const Route = createFileRoute("/services/")({
   head: () => pageHead({ path: "/services/", title: "Services: Ad Ops, Finance, Compliance & Data | Alloyed", description: "Six managed operations practices from Alloyed: ad operations, finance and accounting, AML/KYC compliance, data and analytics, customer engagement and QA.", breadcrumbs: [{ name: 'Services', href: '/services/' }] }),
   component: Page,
 });

@@ -13,7 +13,7 @@ const upcoming = events.filter((e) => e.date.slice(0, 7) >= today.slice(0, 7));
 const past = events.filter((e) => e.date.slice(0, 7) < today.slice(0, 7));
 const schema = upcoming.map((e) => ({ '@context': 'https://schema.org', '@type': e.type === 'Webinar' ? 'EducationEvent' : 'BusinessEvent', name: e.title.replace(/^\[Webinar\]\s*/, '').replace(/^Meet Us:\s*/, ''), startDate: e.date, description: e.excerpt, eventAttendanceMode: e.type === 'Webinar' ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode', organizer: { '@id': `${site.url}/#organization` }, url: `${site.url}/insights/events/` }));
 
-export const Route = createFileRoute("/insights/events")({
+export const Route = createFileRoute("/insights/events/")({
   head: () => pageHead({ path: "/insights/events/", title: "Events & Webinars: Meet Alloyed | Alloyed", description: "Where to meet Alloyed: ANA, IAB, MFM, IOFM, SSON, IAOP and Blue Prism conferences, plus CPE-credited webinars on AI and automation in operations.", breadcrumbs: [{ name: 'Insights', href: '/insights/' }, { name: 'Events', href: '/insights/events/' }], schema: schema }),
   component: Page,
 });

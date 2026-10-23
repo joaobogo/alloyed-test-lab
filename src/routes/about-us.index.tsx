@@ -28,7 +28,7 @@ const timeline = [
 ];
 const schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About Alloyed', url: `${site.url}/about-us/`, mainEntity: { '@id': `${site.url}/#organization` } }, ...leadership.filter((l) => l.linkedin).map((l) => ({ '@context': 'https://schema.org', '@type': 'Person', name: l.name, jobTitle: l.role, worksFor: { '@id': `${site.url}/#organization` }, sameAs: l.linkedin }))];
 
-export const Route = createFileRoute("/about-us")({
+export const Route = createFileRoute("/about-us/")({
   head: () => pageHead({ path: "/about-us/", title: "About Alloyed (Formerly SEBPO): Leadership & History", description: "Alloyed is a US-headquartered, woman-owned managed operations company, formerly SEBPO: 20 years of delivery, four delivery centers, IAOP 100 and Inc. 5000.", breadcrumbs: [{ name: 'About', href: '/about-us/' }], schema: schema }),
   component: Page,
 });

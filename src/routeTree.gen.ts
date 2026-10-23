@@ -10,33 +10,379 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AutomationRouteImport } from './routes/automation'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DemoRouteImport } from './routes/demo'
+import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
+import { Route as ThankYouRouteImport } from './routes/thank-you'
+import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
+import { Route as AboutUsEngagementModelsRouteImport } from './routes/about-us.engagement-models'
+import { Route as AboutUsLocationsRouteImport } from './routes/about-us.locations'
+import { Route as AboutUsOurPartnersRouteImport } from './routes/about-us.our-partners'
+import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
+import { Route as IndustriesSlugRouteImport } from './routes/industries.$slug'
+import { Route as InsightsIndexRouteImport } from './routes/insights.index'
+import { Route as ServicesIndexRouteImport } from './routes/services.index'
+import { Route as ServicesSlugRouteImport } from './routes/services.$slug'
+import { Route as AboutUsCareersIndexRouteImport } from './routes/about-us.careers.index'
+import { Route as AboutUsCareersElSalvadorRouteImport } from './routes/about-us.careers.el-salvador'
+import { Route as EsCarrerasElSalvadorRouteImport } from './routes/es.carreras.el-salvador'
+import { Route as InsightsCaseStudiesIndexRouteImport } from './routes/insights.case-studies.index'
+import { Route as InsightsCaseStudiesSlugRouteImport } from './routes/insights.case-studies.$slug'
+import { Route as InsightsEventsIndexRouteImport } from './routes/insights.events.index'
+import { Route as InsightsNewsIndexRouteImport } from './routes/insights.news.index'
+import { Route as InsightsNewsSlugRouteImport } from './routes/insights.news.$slug'
+import { Route as InsightsPerspectivesIndexRouteImport } from './routes/insights.perspectives.index'
+import { Route as InsightsPerspectivesSlugRouteImport } from './routes/insights.perspectives.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AutomationRoute = AutomationRouteImport.update({
+  id: '/automation',
+  path: '/automation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DemoRoute = DemoRouteImport.update({
+  id: '/demo',
+  path: '/demo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
+  id: '/terms-and-conditions',
+  path: '/terms-and-conditions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ThankYouRoute = ThankYouRouteImport.update({
+  id: '/thank-you',
+  path: '/thank-you',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsIndexRoute = AboutUsIndexRouteImport.update({
+  id: '/about-us/',
+  path: '/about-us/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsEngagementModelsRoute = AboutUsEngagementModelsRouteImport.update({
+  id: '/about-us/engagement-models',
+  path: '/about-us/engagement-models',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsLocationsRoute = AboutUsLocationsRouteImport.update({
+  id: '/about-us/locations',
+  path: '/about-us/locations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsOurPartnersRoute = AboutUsOurPartnersRouteImport.update({
+  id: '/about-us/our-partners',
+  path: '/about-us/our-partners',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndustriesIndexRoute = IndustriesIndexRouteImport.update({
+  id: '/industries/',
+  path: '/industries/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndustriesSlugRoute = IndustriesSlugRouteImport.update({
+  id: '/industries/$slug',
+  path: '/industries/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsIndexRoute = InsightsIndexRouteImport.update({
+  id: '/insights/',
+  path: '/insights/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesIndexRoute = ServicesIndexRouteImport.update({
+  id: '/services/',
+  path: '/services/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesSlugRoute = ServicesSlugRouteImport.update({
+  id: '/services/$slug',
+  path: '/services/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsCareersIndexRoute = AboutUsCareersIndexRouteImport.update({
+  id: '/about-us/careers/',
+  path: '/about-us/careers/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsCareersElSalvadorRoute =
+  AboutUsCareersElSalvadorRouteImport.update({
+    id: '/about-us/careers/el-salvador',
+    path: '/about-us/careers/el-salvador',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EsCarrerasElSalvadorRoute = EsCarrerasElSalvadorRouteImport.update({
+  id: '/es/carreras/el-salvador',
+  path: '/es/carreras/el-salvador',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsCaseStudiesIndexRoute =
+  InsightsCaseStudiesIndexRouteImport.update({
+    id: '/insights/case-studies/',
+    path: '/insights/case-studies/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const InsightsCaseStudiesSlugRoute = InsightsCaseStudiesSlugRouteImport.update({
+  id: '/insights/case-studies/$slug',
+  path: '/insights/case-studies/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsEventsIndexRoute = InsightsEventsIndexRouteImport.update({
+  id: '/insights/events/',
+  path: '/insights/events/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsNewsIndexRoute = InsightsNewsIndexRouteImport.update({
+  id: '/insights/news/',
+  path: '/insights/news/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsNewsSlugRoute = InsightsNewsSlugRouteImport.update({
+  id: '/insights/news/$slug',
+  path: '/insights/news/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsPerspectivesIndexRoute =
+  InsightsPerspectivesIndexRouteImport.update({
+    id: '/insights/perspectives/',
+    path: '/insights/perspectives/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const InsightsPerspectivesSlugRoute =
+  InsightsPerspectivesSlugRouteImport.update({
+    id: '/insights/perspectives/$slug',
+    path: '/insights/perspectives/$slug',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/automation': typeof AutomationRoute
+  '/contact': typeof ContactRoute
+  '/demo': typeof DemoRoute
+  '/pricing': typeof PricingRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/thank-you': typeof ThankYouRoute
+  '/about-us/engagement-models': typeof AboutUsEngagementModelsRoute
+  '/about-us/locations': typeof AboutUsLocationsRoute
+  '/about-us/our-partners': typeof AboutUsOurPartnersRoute
+  '/industries/$slug': typeof IndustriesSlugRoute
+  '/services/$slug': typeof ServicesSlugRoute
+  '/about-us/': typeof AboutUsIndexRoute
+  '/industries/': typeof IndustriesIndexRoute
+  '/insights/': typeof InsightsIndexRoute
+  '/services/': typeof ServicesIndexRoute
+  '/about-us/careers/el-salvador': typeof AboutUsCareersElSalvadorRoute
+  '/es/carreras/el-salvador': typeof EsCarrerasElSalvadorRoute
+  '/insights/case-studies/$slug': typeof InsightsCaseStudiesSlugRoute
+  '/insights/news/$slug': typeof InsightsNewsSlugRoute
+  '/insights/perspectives/$slug': typeof InsightsPerspectivesSlugRoute
+  '/about-us/careers/': typeof AboutUsCareersIndexRoute
+  '/insights/case-studies/': typeof InsightsCaseStudiesIndexRoute
+  '/insights/events/': typeof InsightsEventsIndexRoute
+  '/insights/news/': typeof InsightsNewsIndexRoute
+  '/insights/perspectives/': typeof InsightsPerspectivesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/automation': typeof AutomationRoute
+  '/contact': typeof ContactRoute
+  '/demo': typeof DemoRoute
+  '/pricing': typeof PricingRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/thank-you': typeof ThankYouRoute
+  '/about-us/engagement-models': typeof AboutUsEngagementModelsRoute
+  '/about-us/locations': typeof AboutUsLocationsRoute
+  '/about-us/our-partners': typeof AboutUsOurPartnersRoute
+  '/industries/$slug': typeof IndustriesSlugRoute
+  '/services/$slug': typeof ServicesSlugRoute
+  '/about-us': typeof AboutUsIndexRoute
+  '/industries': typeof IndustriesIndexRoute
+  '/insights': typeof InsightsIndexRoute
+  '/services': typeof ServicesIndexRoute
+  '/about-us/careers/el-salvador': typeof AboutUsCareersElSalvadorRoute
+  '/es/carreras/el-salvador': typeof EsCarrerasElSalvadorRoute
+  '/insights/case-studies/$slug': typeof InsightsCaseStudiesSlugRoute
+  '/insights/news/$slug': typeof InsightsNewsSlugRoute
+  '/insights/perspectives/$slug': typeof InsightsPerspectivesSlugRoute
+  '/about-us/careers': typeof AboutUsCareersIndexRoute
+  '/insights/case-studies': typeof InsightsCaseStudiesIndexRoute
+  '/insights/events': typeof InsightsEventsIndexRoute
+  '/insights/news': typeof InsightsNewsIndexRoute
+  '/insights/perspectives': typeof InsightsPerspectivesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/automation': typeof AutomationRoute
+  '/contact': typeof ContactRoute
+  '/demo': typeof DemoRoute
+  '/pricing': typeof PricingRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/thank-you': typeof ThankYouRoute
+  '/about-us/engagement-models': typeof AboutUsEngagementModelsRoute
+  '/about-us/locations': typeof AboutUsLocationsRoute
+  '/about-us/our-partners': typeof AboutUsOurPartnersRoute
+  '/industries/$slug': typeof IndustriesSlugRoute
+  '/services/$slug': typeof ServicesSlugRoute
+  '/about-us/': typeof AboutUsIndexRoute
+  '/industries/': typeof IndustriesIndexRoute
+  '/insights/': typeof InsightsIndexRoute
+  '/services/': typeof ServicesIndexRoute
+  '/about-us/careers/el-salvador': typeof AboutUsCareersElSalvadorRoute
+  '/es/carreras/el-salvador': typeof EsCarrerasElSalvadorRoute
+  '/insights/case-studies/$slug': typeof InsightsCaseStudiesSlugRoute
+  '/insights/news/$slug': typeof InsightsNewsSlugRoute
+  '/insights/perspectives/$slug': typeof InsightsPerspectivesSlugRoute
+  '/about-us/careers/': typeof AboutUsCareersIndexRoute
+  '/insights/case-studies/': typeof InsightsCaseStudiesIndexRoute
+  '/insights/events/': typeof InsightsEventsIndexRoute
+  '/insights/news/': typeof InsightsNewsIndexRoute
+  '/insights/perspectives/': typeof InsightsPerspectivesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/automation'
+    | '/contact'
+    | '/demo'
+    | '/pricing'
+    | '/privacy-policy'
+    | '/terms-and-conditions'
+    | '/thank-you'
+    | '/about-us/engagement-models'
+    | '/about-us/locations'
+    | '/about-us/our-partners'
+    | '/industries/$slug'
+    | '/services/$slug'
+    | '/about-us/'
+    | '/industries/'
+    | '/insights/'
+    | '/services/'
+    | '/about-us/careers/el-salvador'
+    | '/es/carreras/el-salvador'
+    | '/insights/case-studies/$slug'
+    | '/insights/news/$slug'
+    | '/insights/perspectives/$slug'
+    | '/about-us/careers/'
+    | '/insights/case-studies/'
+    | '/insights/events/'
+    | '/insights/news/'
+    | '/insights/perspectives/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/automation'
+    | '/contact'
+    | '/demo'
+    | '/pricing'
+    | '/privacy-policy'
+    | '/terms-and-conditions'
+    | '/thank-you'
+    | '/about-us/engagement-models'
+    | '/about-us/locations'
+    | '/about-us/our-partners'
+    | '/industries/$slug'
+    | '/services/$slug'
+    | '/about-us'
+    | '/industries'
+    | '/insights'
+    | '/services'
+    | '/about-us/careers/el-salvador'
+    | '/es/carreras/el-salvador'
+    | '/insights/case-studies/$slug'
+    | '/insights/news/$slug'
+    | '/insights/perspectives/$slug'
+    | '/about-us/careers'
+    | '/insights/case-studies'
+    | '/insights/events'
+    | '/insights/news'
+    | '/insights/perspectives'
+  id:
+    | '__root__'
+    | '/'
+    | '/automation'
+    | '/contact'
+    | '/demo'
+    | '/pricing'
+    | '/privacy-policy'
+    | '/terms-and-conditions'
+    | '/thank-you'
+    | '/about-us/engagement-models'
+    | '/about-us/locations'
+    | '/about-us/our-partners'
+    | '/industries/$slug'
+    | '/services/$slug'
+    | '/about-us/'
+    | '/industries/'
+    | '/insights/'
+    | '/services/'
+    | '/about-us/careers/el-salvador'
+    | '/es/carreras/el-salvador'
+    | '/insights/case-studies/$slug'
+    | '/insights/news/$slug'
+    | '/insights/perspectives/$slug'
+    | '/about-us/careers/'
+    | '/insights/case-studies/'
+    | '/insights/events/'
+    | '/insights/news/'
+    | '/insights/perspectives/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AutomationRoute: typeof AutomationRoute
+  ContactRoute: typeof ContactRoute
+  DemoRoute: typeof DemoRoute
+  PricingRoute: typeof PricingRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  TermsAndConditionsRoute: typeof TermsAndConditionsRoute
+  ThankYouRoute: typeof ThankYouRoute
+  AboutUsEngagementModelsRoute: typeof AboutUsEngagementModelsRoute
+  AboutUsLocationsRoute: typeof AboutUsLocationsRoute
+  AboutUsOurPartnersRoute: typeof AboutUsOurPartnersRoute
+  IndustriesSlugRoute: typeof IndustriesSlugRoute
+  ServicesSlugRoute: typeof ServicesSlugRoute
+  AboutUsIndexRoute: typeof AboutUsIndexRoute
+  IndustriesIndexRoute: typeof IndustriesIndexRoute
+  InsightsIndexRoute: typeof InsightsIndexRoute
+  ServicesIndexRoute: typeof ServicesIndexRoute
+  AboutUsCareersElSalvadorRoute: typeof AboutUsCareersElSalvadorRoute
+  EsCarrerasElSalvadorRoute: typeof EsCarrerasElSalvadorRoute
+  InsightsCaseStudiesSlugRoute: typeof InsightsCaseStudiesSlugRoute
+  InsightsNewsSlugRoute: typeof InsightsNewsSlugRoute
+  InsightsPerspectivesSlugRoute: typeof InsightsPerspectivesSlugRoute
+  AboutUsCareersIndexRoute: typeof AboutUsCareersIndexRoute
+  InsightsCaseStudiesIndexRoute: typeof InsightsCaseStudiesIndexRoute
+  InsightsEventsIndexRoute: typeof InsightsEventsIndexRoute
+  InsightsNewsIndexRoute: typeof InsightsNewsIndexRoute
+  InsightsPerspectivesIndexRoute: typeof InsightsPerspectivesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +394,219 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/automation': {
+      id: '/automation'
+      path: '/automation'
+      fullPath: '/automation'
+      preLoaderRoute: typeof AutomationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/demo': {
+      id: '/demo'
+      path: '/demo'
+      fullPath: '/demo'
+      preLoaderRoute: typeof DemoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms-and-conditions': {
+      id: '/terms-and-conditions'
+      path: '/terms-and-conditions'
+      fullPath: '/terms-and-conditions'
+      preLoaderRoute: typeof TermsAndConditionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/thank-you': {
+      id: '/thank-you'
+      path: '/thank-you'
+      fullPath: '/thank-you'
+      preLoaderRoute: typeof ThankYouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/': {
+      id: '/about-us/'
+      path: '/about-us'
+      fullPath: '/about-us/'
+      preLoaderRoute: typeof AboutUsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/engagement-models': {
+      id: '/about-us/engagement-models'
+      path: '/about-us/engagement-models'
+      fullPath: '/about-us/engagement-models'
+      preLoaderRoute: typeof AboutUsEngagementModelsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/locations': {
+      id: '/about-us/locations'
+      path: '/about-us/locations'
+      fullPath: '/about-us/locations'
+      preLoaderRoute: typeof AboutUsLocationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/our-partners': {
+      id: '/about-us/our-partners'
+      path: '/about-us/our-partners'
+      fullPath: '/about-us/our-partners'
+      preLoaderRoute: typeof AboutUsOurPartnersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/industries/': {
+      id: '/industries/'
+      path: '/industries'
+      fullPath: '/industries/'
+      preLoaderRoute: typeof IndustriesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/industries/$slug': {
+      id: '/industries/$slug'
+      path: '/industries/$slug'
+      fullPath: '/industries/$slug'
+      preLoaderRoute: typeof IndustriesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights/': {
+      id: '/insights/'
+      path: '/insights'
+      fullPath: '/insights/'
+      preLoaderRoute: typeof InsightsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/': {
+      id: '/services/'
+      path: '/services'
+      fullPath: '/services/'
+      preLoaderRoute: typeof ServicesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/$slug': {
+      id: '/services/$slug'
+      path: '/services/$slug'
+      fullPath: '/services/$slug'
+      preLoaderRoute: typeof ServicesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/careers/': {
+      id: '/about-us/careers/'
+      path: '/about-us/careers'
+      fullPath: '/about-us/careers/'
+      preLoaderRoute: typeof AboutUsCareersIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/careers/el-salvador': {
+      id: '/about-us/careers/el-salvador'
+      path: '/about-us/careers/el-salvador'
+      fullPath: '/about-us/careers/el-salvador'
+      preLoaderRoute: typeof AboutUsCareersElSalvadorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/es/carreras/el-salvador': {
+      id: '/es/carreras/el-salvador'
+      path: '/es/carreras/el-salvador'
+      fullPath: '/es/carreras/el-salvador'
+      preLoaderRoute: typeof EsCarrerasElSalvadorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights/case-studies/': {
+      id: '/insights/case-studies/'
+      path: '/insights/case-studies'
+      fullPath: '/insights/case-studies/'
+      preLoaderRoute: typeof InsightsCaseStudiesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights/case-studies/$slug': {
+      id: '/insights/case-studies/$slug'
+      path: '/insights/case-studies/$slug'
+      fullPath: '/insights/case-studies/$slug'
+      preLoaderRoute: typeof InsightsCaseStudiesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights/events/': {
+      id: '/insights/events/'
+      path: '/insights/events'
+      fullPath: '/insights/events/'
+      preLoaderRoute: typeof InsightsEventsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights/news/': {
+      id: '/insights/news/'
+      path: '/insights/news'
+      fullPath: '/insights/news/'
+      preLoaderRoute: typeof InsightsNewsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights/news/$slug': {
+      id: '/insights/news/$slug'
+      path: '/insights/news/$slug'
+      fullPath: '/insights/news/$slug'
+      preLoaderRoute: typeof InsightsNewsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights/perspectives/': {
+      id: '/insights/perspectives/'
+      path: '/insights/perspectives'
+      fullPath: '/insights/perspectives/'
+      preLoaderRoute: typeof InsightsPerspectivesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights/perspectives/$slug': {
+      id: '/insights/perspectives/$slug'
+      path: '/insights/perspectives/$slug'
+      fullPath: '/insights/perspectives/$slug'
+      preLoaderRoute: typeof InsightsPerspectivesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AutomationRoute: AutomationRoute,
+  ContactRoute: ContactRoute,
+  DemoRoute: DemoRoute,
+  PricingRoute: PricingRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
+  TermsAndConditionsRoute: TermsAndConditionsRoute,
+  ThankYouRoute: ThankYouRoute,
+  AboutUsEngagementModelsRoute: AboutUsEngagementModelsRoute,
+  AboutUsLocationsRoute: AboutUsLocationsRoute,
+  AboutUsOurPartnersRoute: AboutUsOurPartnersRoute,
+  IndustriesSlugRoute: IndustriesSlugRoute,
+  ServicesSlugRoute: ServicesSlugRoute,
+  AboutUsIndexRoute: AboutUsIndexRoute,
+  IndustriesIndexRoute: IndustriesIndexRoute,
+  InsightsIndexRoute: InsightsIndexRoute,
+  ServicesIndexRoute: ServicesIndexRoute,
+  AboutUsCareersElSalvadorRoute: AboutUsCareersElSalvadorRoute,
+  EsCarrerasElSalvadorRoute: EsCarrerasElSalvadorRoute,
+  InsightsCaseStudiesSlugRoute: InsightsCaseStudiesSlugRoute,
+  InsightsNewsSlugRoute: InsightsNewsSlugRoute,
+  InsightsPerspectivesSlugRoute: InsightsPerspectivesSlugRoute,
+  AboutUsCareersIndexRoute: AboutUsCareersIndexRoute,
+  InsightsCaseStudiesIndexRoute: InsightsCaseStudiesIndexRoute,
+  InsightsEventsIndexRoute: InsightsEventsIndexRoute,
+  InsightsNewsIndexRoute: InsightsNewsIndexRoute,
+  InsightsPerspectivesIndexRoute: InsightsPerspectivesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

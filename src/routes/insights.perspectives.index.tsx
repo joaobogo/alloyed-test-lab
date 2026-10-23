@@ -10,7 +10,7 @@ import { perspectives, formatDate, readingTime } from '@/data/content';
 
 const [lead, ...rest] = perspectives;
 
-export const Route = createFileRoute("/insights/perspectives")({
+export const Route = createFileRoute("/insights/perspectives/")({
   head: () => pageHead({ path: "/insights/perspectives/", title: "Perspectives on Outsourcing & Automation | Alloyed", description: "Thinking from Alloyed on human-in-the-loop automation, AI in media operations, shared services trends and how to automate operations from the ground up.", breadcrumbs: [{ name: 'Insights', href: '/insights/' }, { name: 'Perspectives', href: '/insights/perspectives/' }] }),
   component: Page,
 });

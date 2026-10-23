@@ -14,7 +14,7 @@ const featured = caseStudies.filter((c) => c.featured).slice(0, 3);
 const today = new Date().toISOString().slice(0, 7);
 const upcoming = events.filter((e) => e.date.slice(0, 7) >= today).slice(0, 3);
 
-export const Route = createFileRoute("/insights")({
+export const Route = createFileRoute("/insights/")({
   head: () => pageHead({ path: "/insights/", title: "Insights: Case Studies, Perspectives & News | Alloyed", description: "Everything Alloyed publishes: case studies with measurable outcomes, perspectives on automation and outsourcing, company news and upcoming events.", breadcrumbs: [{ name: 'Insights', href: '/insights/' }] }),
   component: Page,
 });

@@ -9,7 +9,7 @@ import { industries } from '@/data/site';
 
 
 
-export const Route = createFileRoute("/industries")({
+export const Route = createFileRoute("/industries/")({
   head: () => pageHead({ path: "/industries/", title: "Industries: Media, Advertising, Retail & Finance | Alloyed", description: "Alloyed runs operations for media companies, publishers, agencies, ad tech, retail media networks, financial services, travel brands and sports organizations.", breadcrumbs: [{ name: 'Industries', href: '/industries/' }] }),
   component: Page,
 });
