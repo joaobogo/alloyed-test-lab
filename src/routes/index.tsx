@@ -239,11 +239,11 @@ function Page() {
       </div>
       <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-4 lg:grid-cols-3">
         {industries.map((ind, i) => (
-          <a href={`/industries/${ind.slug}/`} className="card lift group reveal p-5 sm:p-6" style={cssVars(`transition-delay:${i * 50}ms`)}>
+          <TiltCard className="reveal" key={ind.slug}><a href={`/industries/${ind.slug}/`} className="card group block h-full p-5 sm:p-6">
             <h3 className="text-[18px] font-bold group-hover:text-brand-700 sm:text-[20px]">{ind.name}</h3>
             <p className="mt-2 hidden text-[14px] leading-relaxed text-ink-600 sm:block">{ind.headline}</p>
             <p className="mt-2 flex flex-col gap-0.5 sm:mt-4 sm:flex-row sm:items-baseline sm:gap-2"><span className="h-display whitespace-nowrap text-[24px] text-brand-600">{ind.outcomes[0].value}</span><span className="text-[12.5px] leading-snug text-ink-500 sm:text-[13px]">{ind.outcomes[0].label}</span></p>
-          </a>
+          </a></TiltCard>
         ))}
       </div>
     </div>

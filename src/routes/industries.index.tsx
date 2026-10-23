@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { cn, cssVars } from "@/lib/utils";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { pageHead } from "@/lib/seo";
+import { TiltCard } from "@/components/motion/TiltCard";
 import { CTA as CTA } from "@/components/site/CTA";
 import { industries } from '@/data/site';
 
@@ -29,11 +30,11 @@ function Page() {
   <section className="py-16">
     <div className="container-x grid gap-5 md:grid-cols-2 lg:grid-cols-3">
       {industries.map((ind) => (
-        <a href={`/industries/${ind.slug}/`} className="card group reveal flex flex-col p-7 hover:border-brand-200">
+        <TiltCard className="reveal" key={ind.slug}><a href={`/industries/${ind.slug}/`} className="card group flex h-full flex-col p-7 hover:border-brand-200">
           <h2 className="text-[24px] font-bold group-hover:text-brand-700">{ind.name}</h2>
           <p className="mt-3 text-[14.5px] leading-relaxed text-ink-600">{ind.intro}</p>
           <ul className="mt-6 grid grid-cols-3 gap-3 border-t border-ink-100 pt-5">{ind.outcomes.map((o) => <li><p className="h-display text-[22px] text-brand-600">{o.value}</p><p className="text-[11.5px] text-ink-500">{o.label}</p></li>)}</ul>
-        </a>
+        </a></TiltCard>
       ))}
     </div>
   </section>

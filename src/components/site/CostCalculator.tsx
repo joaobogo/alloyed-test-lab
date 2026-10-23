@@ -1,6 +1,7 @@
 // @ts-nocheck
 // Ported from the original Astro site.
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { SavingsMeter } from "@/components/motion/SavingsMeter";
 import { cn, cssVars } from "@/lib/utils";
 
 
@@ -8,6 +9,7 @@ export function CostCalculator(props: any) {
 // Interactive estimate. Defaults use the published sports-brand engagement:
 // 9 FTE in-house at ~$95K fully loaded vs ~$28K with Alloyed. Works without JS
 // (shows the default scenario).
+  const [meter, setMeter] = useState({ inhouse: 9 * 95000, alloyed: 9 * 95000 * 0.29 });
   useEffect(() => {
 
   const init = () => {
@@ -25,7 +27,7 @@ export function CostCalculator(props: any) {
     $('c-alloyed').textContent = money(alloyed);
     $('c-savings').textContent = money(savings);
     $('c-equiv').textContent = `${(savings / cost).toFixed(1)} additional in-house hires`;
-    $('c-bar').style.width = `${Math.round(ratio * 100)}%`;
+    setMeter({ inhouse, alloyed });
   };
   ['c-size', 'c-cost'].forEach((id) => $(id).addEventListener('input', update));
   document.querySelectorAll('input[name="c-fn"]').forEach((r) => r.addEventListener('change', update));
@@ -90,7 +92,7 @@ export function CostCalculator(props: any) {
             <p className="mt-2 text-[16px] font-semibold text-ink-900" id="c-equiv">6.4 additional in-house hires</p>
           </div>
         </div>
-        <div className="mt-5 h-3 w-full overflow-hidden rounded-full bg-ink-100"><div id="c-bar" className="h-3 rounded-full bg-gradient-to-r from-brand-600 to-ember-500" style={{width: "29%"}}></div></div>
+        <div className="mt-6"><SavingsMeter inHouse={meter.inhouse} alloyed={meter.alloyed} /></div>
         <a href="#contact" className="btn-ember mt-6 w-full sm:w-auto">Get a sized proposal</a>
       </div>
     </div>

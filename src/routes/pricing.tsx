@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { cn, cssVars } from "@/lib/utils";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { pageHead } from "@/lib/seo";
+import { asset, slots, smallVariant } from "@/data/visuals";
 import { CTA as CTA } from "@/components/site/CTA";
 import { CostCalculator as CostCalculator } from "@/components/site/CostCalculator";
 import { Comparison as Comparison } from "@/components/site/Comparison";
@@ -24,6 +25,8 @@ const schema = [
 ];
 const included = ['US implementation lead and account manager', 'Client success manager on every governance call', 'Team leader in the delivery center', 'Recruiting, training and backfill', 'Documented SOPs and QA framework', 'Weekly KPI reporting, quarterly business reviews', 'Least-privilege access inside your platforms', 'Automation readiness scoring'];
 
+const pricingBg = asset(slots.hero.pricing);
+
 export const Route = createFileRoute("/pricing")({
   head: () => pageHead({ path: "/pricing/", title: "Pricing: How Alloyed Engagements Are Priced", description: "How Alloyed prices dedicated teams, managed services and projects. A published nine-person ad ops team costs ~$250K a year vs $850K–$900K in-house. Estimate your savings.", ogImage: "/og/pricing.png", breadcrumbs: [{ name: 'Pricing', href: '/pricing/' }], schema: schema }),
   component: Page,
@@ -35,7 +38,7 @@ function Page() {
 
 <>
   <section className="relative isolate overflow-hidden bg-ink-900 text-white">
-    <div className="absolute inset-0 -z-10 grid-bg opacity-40" aria-hidden="true"></div>
+    {pricingBg ? <><picture><source media="(max-width: 767px)" srcSet={smallVariant(pricingBg) ?? pricingBg} /><img src={pricingBg} alt="" width="2400" height="1400" fetchPriority="high" className="absolute inset-0 -z-20 h-full w-full object-cover" /></picture><div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-900 via-ink-900/70 to-transparent" aria-hidden="true"></div></> : <div className="absolute inset-0 -z-10 grid-bg opacity-40" aria-hidden="true"></div>}
     <div className="container-x grid items-center gap-12 py-20 sm:py-24 lg:grid-cols-12">
       <div className="lg:col-span-7">
         <p className="eyebrow-light hero-in" style={{"--d": "0ms"}}>Pricing</p>

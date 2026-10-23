@@ -5,6 +5,7 @@ import { cn, cssVars } from "@/lib/utils";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { pageHead } from "@/lib/seo";
 import { CTA as CTA } from "@/components/site/CTA";
+import { CoverageClock } from "@/components/motion/CoverageClock";
 import { CoverageChart as CoverageChart } from "@/components/site/CoverageChart";
 import { locations, site } from '@/data/site';
 import { asset, slots } from '@/data/visuals';
@@ -31,7 +32,7 @@ function Page() {
       </ul>
     </div>
   </section>
-  <section className="bg-ink-900 py-16 text-white"><div className="container-x"><p className="eyebrow-light">Coverage</p><h2 className="h-display mt-2 text-[30px] text-white sm:text-[38px]">Someone is always on your account.</h2><div className="mt-8"><CoverageChart /></div></div></section>
+  <section className="bg-ink-900 py-16 text-white"><div className="container-x"><p className="eyebrow-light">Coverage</p><h2 className="h-display mt-2 text-[30px] text-white sm:text-[38px]">Someone is always on your account.</h2><div className="mt-8 grid items-center gap-10 lg:grid-cols-12"><div className="lg:col-span-4"><CoverageClock /></div><div className="lg:col-span-8"><CoverageChart /></div></div></div></section>
   <section className="py-20">
     <div className="container-x">
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{locations.map((l) => <li className="card reveal overflow-hidden p-6">{asset(slots.location(l.city)) && <img src={asset(slots.location(l.city))!} alt={`${l.city}, ${l.country}`} width="1200" height="800" className="-mx-6 -mt-6 mb-5 aspect-[3/2] w-[calc(100%+3rem)] max-w-none object-cover" loading="lazy" />}<p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-ink-400">{l.type}</p><h2 className="mt-2 text-[24px] font-bold">{l.city}</h2><p className="text-[14px] text-ink-600">{l.country} · {l.tz}</p><p className="mt-3 text-[14px] text-ink-600">{l.note}</p></li>)}</ul>
