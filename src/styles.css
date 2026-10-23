@@ -252,3 +252,8 @@ html:not(.js) .hero-in { animation: none; }
   .ticker-track { animation: ticker 48s linear infinite; }
   @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; row-gap: .5rem; } }
+
+/* Motion components (src/components/motion) */
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }

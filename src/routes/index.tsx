@@ -20,7 +20,14 @@ import { Testimonials as Testimonials } from "@/components/site/Testimonials";
 import { Timeline as Timeline } from "@/components/site/Timeline";
 
 import { services, industries, caseStudies, proof, partners, site } from '@/data/site';
-import { asset, slots } from '@/data/visuals';
+import { asset, slots, smallVariant } from '@/data/visuals';
+import { AlloyForgeHero } from "@/components/motion/AlloyForgeHero";
+import { CounterGrid } from "@/components/motion/CounterGrid";
+import { ProofRibbon } from "@/components/motion/ProofRibbon";
+import { FlowPipeline } from "@/components/motion/FlowPipeline";
+import { TestimonialCarousel } from "@/components/motion/TestimonialCarousel";
+import { TiltCard } from "@/components/motion/TiltCard";
+import { testimonials, stats } from '@/data/site';
 
 const heroStill = asset(slots.hero.homeBackground);
 const heroLoop = asset(slots.video.heroLoop);
@@ -66,10 +73,7 @@ function Page() {
 <>
   {/* HERO */}
   <section className="relative isolate overflow-hidden bg-ink-900 text-white">
-    {heroStill && <img src={heroStill} alt="" width="2400" height="1400" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-70" fetchPriority="high" />}
-    {heroLoop && <video className="absolute inset-0 -z-20 hidden h-full w-full object-cover opacity-70 lg:block" autoplay muted loop playsinline poster={heroStill ?? undefined} src={heroLoop}></video>}
-    {!heroStill && !heroLoop && <HeroGL className="absolute inset-0 -z-10" />}
-    <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-900 via-ink-900/70 to-transparent lg:via-ink-900/40" aria-hidden="true"></div>
+    {heroStill ? <AlloyForgeHero poster={heroStill} posterSm={smallVariant(heroStill)} video={heroLoop} /> : <HeroGL className="absolute inset-0 -z-10" />}
     <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-ink-900 to-transparent" aria-hidden="true"></div>
 
     <div className="container-x relative grid items-center gap-10 py-14 sm:py-16 lg:grid-cols-12 lg:py-12 xl:py-16">
@@ -111,8 +115,8 @@ function Page() {
         </div>
         <p className="max-w-md text-[14.5px] text-ink-500">Measured across every engagement, reported to clients weekly, reviewed quarterly.</p>
       </div>
-      <div className="reveal"><StatBand /></div>
-      <div className="mt-5 reveal"><Awards /></div>
+      <div className="reveal"><CounterGrid items={stats.map((x) => ({ value: x.value, suffix: x.suffix, decimals: x.decimals, label: x.label }))} /></div>
+      <div className="mt-5 reveal"><ProofRibbon items={proof} /></div>
     </div>
   </section>
 
@@ -190,6 +194,7 @@ function Page() {
         <h2 className="h-display mt-2 text-[34px] sm:text-[46px]">Work goes in. Measured outcomes come out.</h2>
         <p className="mt-4 text-[16px] leading-relaxed text-ink-600">We call it cognitive process orchestration: an operations control center that routes work, enforces quality and aligns people and automation for the best result.</p>
       </div>
+      <div className="mt-10 rounded-3xl bg-ink-900 p-4 text-white/80 sm:p-8 reveal"><FlowPipeline /></div>
       <div className="mt-12 reveal"><ProcessFlow /></div>
     </div>
   </section>
