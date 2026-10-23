@@ -2,8 +2,13 @@
 // public/img/ it renders; if not, the template falls back to its current
 // typographic/graphic treatment. Lovable (or anyone) produces files to these
 // exact paths. See docs/lovable-visual-brief.md for specs and prompts.
-// No generated visuals exist yet; every slot uses its typographic fallback.
-const available = new Set<string>();
+import { visualFiles } from './visual-files';
+
+const available = new Set<string>(visualFiles.map((f) => f.path));
+
+/** Phone-sized variant of a hero image ("-sm"), if it exists. */
+export const smallVariant = (path: string | null): string | null =>
+  path ? asset(path.replace(/\.webp$/, '-sm.webp')) : null;
 
 /** Returns the public path if the asset exists, otherwise null. */
 export const asset = (path: string): string | null => (available.has(path) ? path : null);

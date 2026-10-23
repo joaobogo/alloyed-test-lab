@@ -20,7 +20,22 @@ import { Testimonials as Testimonials } from "@/components/site/Testimonials";
 import { Timeline as Timeline } from "@/components/site/Timeline";
 
 import { services, industries, caseStudies, proof, partners, site } from '@/data/site';
-import { asset, slots } from '@/data/visuals';
+import { asset, slots, smallVariant } from '@/data/visuals';
+import { AlloyForgeHero } from "@/components/motion/AlloyForgeHero";
+import { CounterGrid } from "@/components/motion/CounterGrid";
+import { ProofRibbon } from "@/components/motion/ProofRibbon";
+import { FlowPipeline } from "@/components/motion/FlowPipeline";
+import { TestimonialCarousel } from "@/components/motion/TestimonialCarousel";
+import { TiltCard } from "@/components/motion/TiltCard";
+import { LogoMarquee } from "@/components/motion/LogoMarquee";
+
+const partnerLogos = [
+  { src: "/logos/simplismart.svg", alt: "SimpliSmart", href: "https://www.simplismart.ai/" },
+  { src: "/logos/supervity.svg", alt: "Supervity", href: "https://www.supervity.ai/" },
+  { src: "/logos/beam-ai.svg", alt: "Beam AI", href: "https://beam.ai/" },
+  { src: "/logos/thread-ai.svg", alt: "Thread AI", href: "https://www.threadai.com/" },
+];
+import { testimonials, stats } from '@/data/site';
 
 const heroStill = asset(slots.hero.homeBackground);
 const heroLoop = asset(slots.video.heroLoop);
@@ -66,10 +81,7 @@ function Page() {
 <>
   {/* HERO */}
   <section className="relative isolate overflow-hidden bg-ink-900 text-white">
-    {heroStill && <img src={heroStill} alt="" width="2400" height="1400" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-70" fetchPriority="high" />}
-    {heroLoop && <video className="absolute inset-0 -z-20 hidden h-full w-full object-cover opacity-70 lg:block" autoplay muted loop playsinline poster={heroStill ?? undefined} src={heroLoop}></video>}
-    {!heroStill && !heroLoop && <HeroGL className="absolute inset-0 -z-10" />}
-    <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-900 via-ink-900/70 to-transparent lg:via-ink-900/40" aria-hidden="true"></div>
+    {heroStill ? <AlloyForgeHero poster={heroStill} posterSm={smallVariant(heroStill)} video={heroLoop} /> : <HeroGL className="absolute inset-0 -z-10" />}
     <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-ink-900 to-transparent" aria-hidden="true"></div>
 
     <div className="container-x relative grid items-center gap-10 py-14 sm:py-16 lg:grid-cols-12 lg:py-12 xl:py-16">
@@ -111,8 +123,8 @@ function Page() {
         </div>
         <p className="max-w-md text-[14.5px] text-ink-500">Measured across every engagement, reported to clients weekly, reviewed quarterly.</p>
       </div>
-      <div className="reveal"><StatBand /></div>
-      <div className="mt-5 reveal"><Awards /></div>
+      <div className="reveal"><CounterGrid items={stats.map((x) => ({ value: x.value, suffix: x.suffix, decimals: x.decimals, label: x.label }))} /></div>
+      <div className="mt-5 reveal"><ProofRibbon items={proof} /></div>
     </div>
   </section>
 
@@ -126,13 +138,13 @@ function Page() {
       </div>
       <div className="mt-8 grid gap-3 sm:mt-12 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
         {services.map((s, i) => (
-          <a href={`/services/${s.slug}/`} className="card lift group reveal flex flex-col p-5 sm:p-7" style={cssVars(`transition-delay:${i * 60}ms`)}>
+          <TiltCard className="reveal" key={s.slug}><a href={`/services/${s.slug}/`} className="card group flex h-full flex-col p-5 sm:p-7">
             <div className="flex items-center gap-3 sm:block"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-50 font-display text-[16px] font-bold text-brand-600 transition group-hover:bg-brand-600 group-hover:text-white sm:h-11 sm:w-11 sm:text-[18px]">0{i + 1}</span>
             <h3 className="text-[19px] font-bold sm:mt-5 sm:text-[22px]">{s.name}</h3></div>
             <p className="mt-2 hidden text-[14.5px] leading-relaxed text-ink-600 sm:block">{s.short}</p>
             <p className="mt-3 flex items-baseline gap-2 sm:mt-5"><span className="h-display whitespace-nowrap text-[24px] text-ember-600 sm:text-[28px]">{s.outcomes[0].value}</span><span className="text-[13px] text-ink-500">{s.outcomes[0].label}</span></p>
             <span className="mt-auto hidden items-center gap-1.5 pt-6 text-[14px] font-semibold text-brand-600 sm:inline-flex">Explore <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="transition group-hover:translate-x-1"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-          </a>
+          </a></TiltCard>
         ))}
       </div>
     </div>
@@ -190,6 +202,7 @@ function Page() {
         <h2 className="h-display mt-2 text-[34px] sm:text-[46px]">Work goes in. Measured outcomes come out.</h2>
         <p className="mt-4 text-[16px] leading-relaxed text-ink-600">We call it cognitive process orchestration: an operations control center that routes work, enforces quality and aligns people and automation for the best result.</p>
       </div>
+      <div className="mt-10 rounded-3xl bg-ink-900 p-4 text-white/80 sm:p-8 reveal"><FlowPipeline /></div>
       <div className="mt-12 reveal"><ProcessFlow /></div>
     </div>
   </section>
@@ -207,7 +220,7 @@ function Page() {
       <div className="mt-10 grid gap-5 md:grid-cols-3">
         {featured.map((cs, i) => <div className="reveal" style={cssVars(`transition-delay:${i * 70}ms`)}><CaseCard cs={cs} /></div>)}
       </div>
-      <div className="mt-12 reveal"><Testimonials /></div>
+      <div className="mt-12 reveal"><TestimonialCarousel items={testimonials.map((t) => ({ quote: t.quote, name: t.name, role: t.company }))} /></div>
 
     </div>
   </section>
@@ -234,18 +247,18 @@ function Page() {
       </div>
       <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-4 lg:grid-cols-3">
         {industries.map((ind, i) => (
-          <a href={`/industries/${ind.slug}/`} className="card lift group reveal p-5 sm:p-6" style={cssVars(`transition-delay:${i * 50}ms`)}>
+          <TiltCard className="reveal" key={ind.slug}><a href={`/industries/${ind.slug}/`} className="card group block h-full p-5 sm:p-6">
             <h3 className="text-[18px] font-bold group-hover:text-brand-700 sm:text-[20px]">{ind.name}</h3>
             <p className="mt-2 hidden text-[14px] leading-relaxed text-ink-600 sm:block">{ind.headline}</p>
             <p className="mt-2 flex flex-col gap-0.5 sm:mt-4 sm:flex-row sm:items-baseline sm:gap-2"><span className="h-display whitespace-nowrap text-[24px] text-brand-600">{ind.outcomes[0].value}</span><span className="text-[12.5px] leading-snug text-ink-500 sm:text-[13px]">{ind.outcomes[0].label}</span></p>
-          </a>
+          </a></TiltCard>
         ))}
       </div>
     </div>
   </section>
 
   {/* PARTNERS */}
-  <section className="border-y border-ink-100 bg-white py-10"><div className="container-x"><LogoWall /></div></section>
+  <section className="border-y border-ink-100 bg-white py-10"><div className="container-x"><p className="mb-6 text-center text-[14px] text-ink-500">AI and automation partners, vetted on real client workloads</p><LogoMarquee logos={partnerLogos} /></div></section>
 
   {/* FAQ */}
   <section className="py-20 sm:py-28">
