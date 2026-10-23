@@ -41,7 +41,7 @@ function Studio() {
   const groups = useMemo(() => {
     const m = new Map<string, VisualFile[]>();
     visualFiles.forEach((f) => {
-      const k = f.path.split("/")[2];
+      const k = f.path.split("/")[2] ?? "";
       m.set(k, [...(m.get(k) ?? []), f]);
     });
     return [...m.entries()];
@@ -156,7 +156,7 @@ function HeroCheck() {
       x.drawImage(img, 0, 0, 240, 140);
       const d = x.getImageData(0, 0, Math.round(240 * 0.55), 140).data;
       let s = 0;
-      for (let i = 0; i < d.length; i += 4) s += 0.2126 * d[i] + 0.7152 * d[i + 1] + 0.0722 * d[i + 2];
+      for (let i = 0; i < d.length; i += 4) s += 0.2126 * d[i]! + 0.7152 * d[i + 1]! + 0.0722 * d[i + 2]!;
       setLuma(s / (d.length / 4) / 255);
     };
   }, []);

@@ -28,7 +28,7 @@ export function useInView(ref: RefObject<Element | null>, opts: { once?: boolean
     if (!el) return;
     const io = new IntersectionObserver(
       ([e]) => {
-        if (e.isIntersecting) {
+        if (e?.isIntersecting) {
           setInView(true);
           if (once) io.disconnect();
         } else if (!once) setInView(false);

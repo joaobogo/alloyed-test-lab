@@ -45,9 +45,9 @@ export function AlloyForgeHero({ layers = [], poster, posterSm, video, reducedMo
       planes.current.forEach((p, i) => {
         if (!p) return;
         const idx = useLayers ? i : 2;
-        const travel = POINTER_TRAVEL[idx];
+        const travel = POINTER_TRAVEL[idx]!;
         const x = -cx * travel + drift * (6 + idx * 2);
-        const y = -cy * travel * 0.6 + sy * SCROLL_FACTOR[idx];
+        const y = -cy * travel * 0.6 + sy * SCROLL_FACTOR[idx]!;
         p.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) scale(1.06)`;
       });
       raf = requestAnimationFrame(tick);

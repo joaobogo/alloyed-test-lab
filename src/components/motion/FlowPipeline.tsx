@@ -30,9 +30,9 @@ export function FlowPipeline({ stages = ["Ingest", "Analyze", "Optimize"], reduc
       const q = p.getPointAtLength((len * i) / 399);
       return { x: q.x, y: q.y };
     });
-    nodePos.current = NODE_T.map((t) => pts.current[Math.round(t * 399)]);
+    nodePos.current = NODE_T.map((t) => pts.current[Math.round(t * 399)]!);
   };
-  const at = (t: number) => pts.current[Math.max(0, Math.min(399, Math.round(t * 399)))];
+  const at = (t: number) => pts.current[Math.max(0, Math.min(399, Math.round(t * 399)))] ?? { x: 0, y: 0 };
 
   const seeds = useMemo<P[]>(() => Array.from({ length: MAX }, (_, i) => ({ t: i / MAX, speed: 0.045 + ((i * 37) % 10) / 400, kind: (i % 3) as 0 | 1 | 2 })), []);
 
@@ -44,13 +44,13 @@ export function FlowPipeline({ stages = ["Ingest", "Analyze", "Optimize"], reduc
         if (!g) return;
         const q = at(p.t);
         g.setAttribute("transform", `translate(${q.x.toFixed(1)} ${q.y.toFixed(1)})`);
-        const done = p.t > NODE_T[2] + 0.06;
+        const done = p.t > NODE_T[2]! + 0.06;
         (g.children[0] as SVGElement).style.display = done ? "none" : "";
         (g.children[1] as SVGElement).style.display = done ? "" : "none";
       });
     };
     if (reduced) {
-      const frozen = seeds.map((p, i) => ({ ...p, t: i < 3 ? [0.14, 0.4, 0.88][i] : -1 }));
+      const frozen = seeds.map((p, i) => ({ ...p, t: i < 3 ? [0.14, 0.4, 0.88][i]! : -1 }));
       place(frozen.filter((p) => p.t >= 0));
       parts.current.forEach((g, i) => g && (g.style.opacity = i < 3 ? "1" : "0"));
       return;
@@ -71,7 +71,7 @@ export function FlowPipeline({ stages = ["Ingest", "Analyze", "Optimize"], reduc
       place(state);
       nodes.current.forEach((g, k) => {
         if (!g) return;
-        const c = nodePos.current[k];
+        const c = nodePos.current[k]!;
         g.setAttribute("transform", `translate(${c.x} ${c.y}) scale(${pulse[k] ? 1.04 : 1})`);
       });
       raf = requestAnimationFrame(tick);
@@ -95,7 +95,7 @@ export function FlowPipeline({ stages = ["Ingest", "Analyze", "Optimize"], reduc
           </g>
         ))}
         {stages.slice(0, 3).map((s, k) => (
-          <g key={s} ref={(n) => { nodes.current[k] = n; }} transform={`translate(${nodePos.current[k].x} ${nodePos.current[k].y})`} style={{ transition: "transform 160ms ease-out" }}>
+          <g key={s} ref={(n) => { nodes.current[k] = n; }} transform={`translate(${nodePos.current[k]!.x} ${nodePos.current[k]!.y})`} style={{ transition: "transform 160ms ease-out" }}>
             <circle r="46" fill="var(--color-ink-800)" stroke={k === 1 ? "var(--color-ember-500)" : "var(--color-brand-600)"} strokeWidth={k === 1 ? 4 : 2} />
             <text y="98" textAnchor="middle" fill="currentColor" fontSize="30" fontWeight="600">{s}</text>
           </g>

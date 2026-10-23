@@ -77,7 +77,7 @@ export function CoverageClock({ centers = DEFAULTS, reducedMotion }: Props) {
   };
 
   const h = Math.floor(hour);
-  const active = useMemo(() => centers.map((c, i) => onShift(c, h, offsets[i])), [centers, h, offsets]);
+  const active = useMemo(() => centers.map((c, i) => onShift(c, h, offsets[i] ?? 0)), [centers, h, offsets]);
   const count = active.filter(Boolean).length;
   const seg = (Math.PI * 2) / 24;
   const handA = (hour / 24) * Math.PI * 2;
@@ -106,7 +106,7 @@ export function CoverageClock({ centers = DEFAULTS, reducedMotion }: Props) {
           {centers.map((c, ci) => {
             const r = 148 - ci * 18;
             return Array.from({ length: 24 }, (_, k) => {
-              const on = onShift(c, k, offsets[ci]);
+              const on = onShift(c, k, offsets[ci] ?? 0);
               const lit = on && k === h;
               return <path key={`${ci}-${k}`} d={arc(r, k * seg + 0.02, (k + 1) * seg - 0.02)} fill="none" strokeWidth="12" strokeLinecap="butt" stroke={on ? "var(--color-brand-600)" : "var(--color-ink-800)"} strokeOpacity={on ? (lit ? 1 : 0.45) : 1} />;
             });
