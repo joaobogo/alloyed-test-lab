@@ -13,8 +13,10 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AutomationRouteImport } from './routes/automation'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as DemoRouteImport } from './routes/demo'
+import { Route as LlmsDottxtRouteImport } from './routes/llms[.]txt'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
 import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
@@ -57,6 +59,11 @@ const DemoRoute = DemoRouteImport.update({
   path: '/demo',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LlmsDottxtRoute = LlmsDottxtRouteImport.update({
+  id: '/llms.txt',
+  path: '/llms.txt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PricingRoute = PricingRouteImport.update({
   id: '/pricing',
   path: '/pricing',
@@ -65,6 +72,11 @@ const PricingRoute = PricingRouteImport.update({
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
@@ -182,8 +194,10 @@ export interface FileRoutesByFullPath {
   '/automation': typeof AutomationRoute
   '/contact': typeof ContactRoute
   '/demo': typeof DemoRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/thank-you': typeof ThankYouRoute
   '/about-us/engagement-models': typeof AboutUsEngagementModelsRoute
@@ -211,8 +225,10 @@ export interface FileRoutesByTo {
   '/automation': typeof AutomationRoute
   '/contact': typeof ContactRoute
   '/demo': typeof DemoRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/thank-you': typeof ThankYouRoute
   '/about-us/engagement-models': typeof AboutUsEngagementModelsRoute
@@ -241,8 +257,10 @@ export interface FileRoutesById {
   '/automation': typeof AutomationRoute
   '/contact': typeof ContactRoute
   '/demo': typeof DemoRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/thank-you': typeof ThankYouRoute
   '/about-us/engagement-models': typeof AboutUsEngagementModelsRoute
@@ -272,8 +290,10 @@ export interface FileRouteTypes {
     | '/automation'
     | '/contact'
     | '/demo'
+    | '/llms.txt'
     | '/pricing'
     | '/privacy-policy'
+    | '/sitemap.xml'
     | '/terms-and-conditions'
     | '/thank-you'
     | '/about-us/engagement-models'
@@ -301,8 +321,10 @@ export interface FileRouteTypes {
     | '/automation'
     | '/contact'
     | '/demo'
+    | '/llms.txt'
     | '/pricing'
     | '/privacy-policy'
+    | '/sitemap.xml'
     | '/terms-and-conditions'
     | '/thank-you'
     | '/about-us/engagement-models'
@@ -330,8 +352,10 @@ export interface FileRouteTypes {
     | '/automation'
     | '/contact'
     | '/demo'
+    | '/llms.txt'
     | '/pricing'
     | '/privacy-policy'
+    | '/sitemap.xml'
     | '/terms-and-conditions'
     | '/thank-you'
     | '/about-us/engagement-models'
@@ -360,8 +384,10 @@ export interface RootRouteChildren {
   AutomationRoute: typeof AutomationRoute
   ContactRoute: typeof ContactRoute
   DemoRoute: typeof DemoRoute
+  LlmsDottxtRoute: typeof LlmsDottxtRoute
   PricingRoute: typeof PricingRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
   ThankYouRoute: typeof ThankYouRoute
   AboutUsEngagementModelsRoute: typeof AboutUsEngagementModelsRoute
@@ -415,6 +441,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DemoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/llms.txt': {
+      id: '/llms.txt'
+      path: '/llms.txt'
+      fullPath: '/llms.txt'
+      preLoaderRoute: typeof LlmsDottxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/pricing': {
       id: '/pricing'
       path: '/pricing'
@@ -427,6 +460,13 @@ declare module '@tanstack/react-router' {
       path: '/privacy-policy'
       fullPath: '/privacy-policy'
       preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms-and-conditions': {
@@ -584,8 +624,10 @@ const rootRouteChildren: RootRouteChildren = {
   AutomationRoute: AutomationRoute,
   ContactRoute: ContactRoute,
   DemoRoute: DemoRoute,
+  LlmsDottxtRoute: LlmsDottxtRoute,
   PricingRoute: PricingRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
   ThankYouRoute: ThankYouRoute,
   AboutUsEngagementModelsRoute: AboutUsEngagementModelsRoute,
