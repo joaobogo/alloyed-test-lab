@@ -15,3 +15,4 @@
 - Shared page building blocks live in `src/components/site/` as named exports; routes stay thin and compose them.
 - Every route's head() uses `pageHead()` from `src/lib/seo.ts` so title, description, canonical, OG and JSON-LD stay consistent.
 - Brand palette (ink/brand/ember/mint) and utilities (btn-*, card, eyebrow, container-x) are defined once in `src/styles.css`; reuse them instead of ad hoc colors.
+- Ported page/component files carry // @ts-nocheck and run the original vanilla DOM scripts inside useEffect; tighten types file by file when editing them.
