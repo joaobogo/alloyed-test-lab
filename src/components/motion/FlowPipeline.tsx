@@ -44,7 +44,9 @@ export function FlowPipeline({ stages = ["Ingest", "Analyze", "Optimize"], reduc
         if (!g) return;
         const q = at(p.t);
         g.setAttribute("transform", `translate(${q.x.toFixed(1)} ${q.y.toFixed(1)})`);
-        g.dataset.done = p.t > NODE_T[2] + 0.06 ? "1" : "0";
+        const done = p.t > NODE_T[2] + 0.06;
+        (g.children[0] as SVGElement).style.display = done ? "none" : "";
+        (g.children[1] as SVGElement).style.display = done ? "" : "none";
       });
     };
     if (reduced) {
@@ -83,13 +85,13 @@ export function FlowPipeline({ stages = ["Ingest", "Analyze", "Optimize"], reduc
       <svg ref={root} viewBox={`0 0 ${W} ${H}`} className="absolute inset-0 h-full w-full" role="img" aria-label={`Work flows through ${stages.join(", ")} and comes out as verified results`}>
         <path ref={pathRef} d={PATH} fill="none" stroke="var(--color-brand-600)" strokeOpacity="0.4" strokeWidth="3" />
         {seeds.map((p, i) => (
-          <g key={i} ref={(n) => { parts.current[i] = n; }} className="group" style={{ opacity: 0 }}>
-            <g className="[g[data-done='1']>&]:hidden">
+          <g key={i} ref={(n) => { parts.current[i] = n; }} style={{ opacity: 0 }}>
+            <g>
               {p.kind === 0 && <rect x="-6" y="-6" width="12" height="12" rx="2" fill="var(--color-brand-300)" />}
               {p.kind === 1 && <rect x="-8" y="-5" width="16" height="10" rx="2" fill="var(--color-ember-400)" />}
               {p.kind === 2 && <circle r="6" fill="#ffffff" fillOpacity="0.85" />}
             </g>
-            <path className="hidden [g[data-done='1']>&]:block" d="M -7 0 L -2 5 L 8 -6" fill="none" stroke="var(--color-mint-500)" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path style={{ display: "none" }} d="M -7 0 L -2 5 L 8 -6" fill="none" stroke="var(--color-mint-500)" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
           </g>
         ))}
         {stages.slice(0, 3).map((s, k) => (
