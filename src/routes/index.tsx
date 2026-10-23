@@ -69,7 +69,7 @@ function Page() {
     <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-900 via-ink-900/70 to-transparent lg:via-ink-900/40" aria-hidden="true"></div>
     <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-ink-900 to-transparent" aria-hidden="true"></div>
 
-    <div className="container-x relative grid items-center gap-14 py-20 sm:py-24 lg:grid-cols-12 lg:py-20 xl:py-28">
+    <div className="container-x relative grid items-center gap-10 py-14 sm:py-16 lg:grid-cols-12 lg:py-12 xl:py-16">
       <div className="lg:col-span-7">
         <p className="eyebrow-light hero-in" style={{"--d": "0ms"}}>Formerly SEBPO · Since 2006</p>
         <h1 className="h-display hero-in mt-5 max-w-[22ch] text-[40px] text-white sm:text-[54px] lg:text-[60px]" style={{"--d": "80ms"}}>
