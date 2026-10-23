@@ -84,7 +84,7 @@ function Page() {
           </a>
           <a href="#estimate" className="btn-ghost-light !px-6 !py-3.5 text-[16px]">Estimate your savings</a>
         </div>
-        <ul className="hero-in mt-12 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-6 text-[13px]" style={{"--d": "320ms"}} aria-label="Recognition">
+        <ul className="hero-in mt-8 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-5 text-[13px]" style={{"--d": "320ms"}} aria-label="Recognition">
           {proof.map((p) => (
             <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-ember-500" aria-hidden="true"></span><span className="font-medium text-white/85">{p.label}</span></li>
           ))}
