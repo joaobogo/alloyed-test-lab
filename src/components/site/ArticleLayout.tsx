@@ -7,6 +7,23 @@ import { ArticleCard as ArticleCard } from "@/components/site/ArticleCard";
 import { renderMarkdown, formatDate, readingTime, authorFor, type Article } from '@/data/content';
 import { site } from '@/data/site';
 import { asset, slots } from '@/data/visuals';
+import { pageHead } from '@/lib/seo';
+
+/** head() for a perspective or news article. */
+export function articleHead(a: Article, kind: 'Perspective' | 'News', basePath: string) {
+  const url = `${site.url}${basePath}${a.slug}/`;
+  const title = a.title.length <= 50 ? `${a.title} | Alloyed` : a.title.length <= 60 ? a.title : `${a.title.slice(0, 57).trim()}…`;
+  const author = authorFor(a);
+  const schema = [{
+    '@context': 'https://schema.org',
+    '@type': kind === 'News' ? 'NewsArticle' : 'Article',
+    headline: a.title, description: a.excerpt, datePublished: a.date, dateModified: a.date,
+    author: kind === 'News' ? { '@id': `${site.url}/#organization` } : { '@type': author.name === 'Lauren Kochan' ? 'Person' : 'Organization', name: author.name },
+    publisher: { '@id': `${site.url}/#organization` }, mainEntityOfPage: url, keywords: a.tags.join(', '),
+  }];
+  const crumbs = [{ name: 'Insights', href: '/insights/' }, { name: kind === 'News' ? 'News' : 'Perspectives', href: basePath }, { name: a.title, href: `${basePath}${a.slug}/` }];
+  return pageHead({ title, description: a.excerpt.slice(0, 158), path: `${basePath}${a.slug}/`, ogType: 'article', schema, breadcrumbs: crumbs });
+}
 
 export function ArticleLayout(props: any) {
   const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
@@ -42,7 +59,7 @@ const crumbs = [{ name: 'Insights', href: '/insights/' }, { name: kind === 'News
   return (
     <>
 
-<Base title={title} description={a.excerpt.slice(0, 158)} ogType="article" schema={schema} breadcrumbs={crumbs}>
+<>
   <article>
     <header className="relative overflow-hidden bg-ink-900 py-16 text-white sm:py-20">
       <div className="absolute inset-0 grid-bg opacity-30" aria-hidden="true"></div>
@@ -98,7 +115,7 @@ const crumbs = [{ name: 'Insights', href: '/insights/' }, { name: kind === 'News
   </article>
   <CTA interest={`${kind}: ${a.title}`} />
   
-</Base>
+</>
 
     </>
   );
