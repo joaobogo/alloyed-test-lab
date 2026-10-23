@@ -1,0 +1,1286 @@
+[
+  {
+    "slug": "closing-a-7-day-data-gap-how-outsourcing-unlocked-real-time-decision-making-at-scale",
+    "title": "Closing a 7-Day Data Gap: How Outsourcing Unlocked Real-Time Decision-Making at Scale",
+    "industry": "Advertising, Technology & Marketing",
+    "services": [
+      "Automation Enablement",
+      "Tech & Platform Support"
+    ],
+    "intro": "As this global ad management and analytics technology company scaled, their existing workflows introduced operational complexity that eroded efficiency, visibility, and leadership capacity at an important moment of growth.",
+    "challenge": [
+      "Complex Multi-Shift Workflows: There was no effective way to manage multi-user types within each assigned role to account for cross-time-zone shift workflows and handoffs",
+      "Task Ingestion Complexity: Tasks were being pulled in from three separate sources, including manual inputs, API pulls, and email aliases",
+      "Communication Gaps: User handoff notes and internal conversations were being generated outside of the client's workflow, leading to a loss of context",
+      "Platform Disunity: There was a lack of a unified platform to link and centralize all Alloyed platforms",
+      "Adaptability: A solution was needed that allowed for individual team customization of tasks for use in any Alloyed vertical"
+    ],
+    "solution": [
+      "The client needed a tool that could deliver the flexibility and strategic control required to keep up with their growth and the speed of their decision-making. Alloyed designed and deployed a proprietary, custom-built workflow and reporting application called Hourly. Building internally instead of buying a new tool allowed us to:",
+      "Design around real operational complexity",
+      "Protect margin by eliminating layered tooling costs",
+      "Scale seamlessly across teams and time zones",
+      "Create a differentiated capability that provides more transparency and operational clarity"
+    ],
+    "results": [
+      "This robust, cloud-based platform was engineered to serve as the single source of truth for resource management, project tracking, and performance reporting across any Alloyed vertical.",
+      "The platform now offers the client immediate and transparent visibility into the Alloyed Team's production and value, providing a direct view of the workflow and real-time delivery. This level of information and open communication elevates the client's experience and empowers us to achieve a higher standard of transparency and collaboration.",
+      "The introduction of Alloyed Hourly:",
+      "Reduced Alloyed Team and Shift Leads' administrative time by 25%, allowing them to reclaim at least 30 hours per week for more strategic work and team mentorship",
+      "Automated data aggregation to close the critical 7-day data gap to provide more real-time, actionable insights",
+      "Optimized workflow management for more granular workflow tracking and display"
+    ],
+    "metrics": [
+      {
+        "value": "7-Day",
+        "label": "data gap closed through automated data aggregation"
+      },
+      {
+        "value": "25%",
+        "label": "reduction in Alloyed Team administrative time to reclaim 30 hours per week"
+      }
+    ],
+    "impact": [
+      "Instead of relying on their former system, the client now utilizes the Alloyed \"Hourly\" platform as the single source of truth for all project progress and status updates during all scheduled stand-up calls. The reason for this complete adoption is straightforward:",
+      "More consistent, comprehensive, and clearer information and insights into all aspects of task performance and project velocity",
+      "Seamless integration",
+      "Streamlined communication",
+      "Improved data transparency",
+      "Unified understanding of project status across all stakeholders"
+    ],
+    "pdf": "https://alloyed.io/wp-media/2026/04/Closing-a-7-Day-Data-Gap-How-Outsourcing-Unlocked-Real-Time-Decision-Making-at-Scale.pdf",
+    "metaDescription": "How data outsourcing closed a 7-day reporting gap for a global adtech company, enabling real-time insights, streamlined workflows, and faster decision-making.",
+    "image": "https://alloyed.io/wp-media/2026/02/7-day-data-gap.png"
+  },
+  {
+    "slug": "how-an-adtech-leader-doubled-creative-output-without-increasing-cost-during-peak-spend-periods",
+    "title": "How an Adtech Leader Doubled Creative Output Without Increasing Cost During Peak Spend Periods",
+    "industry": "Advertising, Technology & Marketing",
+    "services": [
+      "Advertising Operations",
+      "Audit, QA & Verification",
+      "Creative Production & Digital Design"
+    ],
+    "size": "300 Employees",
+    "intro": "",
+    "challenge": [
+      "During peak spend periods, our growing adtech client faced mounting operational friction that put campaign launch timelines at risk. High creative volumes strained existing QA processes, creating bottlenecks that delayed launches and increased pressure on margins, especially during critical quarters when speed-to-market directly impacted business performance.",
+      "To address these bottlenecks, Alloyed built a custom AI tool that serves as an automated, quality-assurance (QA) first pass for HTML ad units.",
+      "Before the tool, our senior QA developers were tied up in manual QA work rather than pursuing higher-value innovation and optimization of client workflows. These Alloyed team members had to manually audit every line of code and variables in dynamic creative (DCO) units.",
+      "This tedious process inevitably led to delayed QA cycles and pushed error detection to the final stage of production. These late-identified errors, such as broken click tags or unminified files, increased the risk of missed launch dates and extended turnaround times."
+    ],
+    "solution": [
+      "The Alloyed-designed AI tool automatically flags and resolves technical non-compliance, including spelling errors, missing alt text, and bloated JS libraries. For this client, the tool enabled the team to move from manual, reactive troubleshooting to an automated, proactive validation model, resulting in:",
+      "Faster approval cycles for every asset sent to the ad server",
+      "Fewer resubmissions",
+      "Significantly lower rejection rates",
+      "Furthermore, the tool provides the client with more rapid, scalable quality assurance across high volumes of ad units while ensuring the code is fully commented and optimized. It generates a detailed QA report, extracts variables from manifest files, and provides updated versions of any modified assets (commented and minified). The goal of building this tool was to:",
+      "Catch issues early",
+      "Ensure delivery-ready, high-performance creative files",
+      "Streamline ad unit validation"
+    ],
+    "results": [
+      "With this innovative solution on their side, the Alloyed Team maintains 100% SLA compliance during peak volume periods, such as Q4, without the need for additional, temporary staffing.",
+      "The time required to generate a comprehensive 40+ point QA report and verify copy and variables from manifest files was reduced by approximately 60% to 75%, compared to previous manual processing. As a result, campaigns launched faster, throughput capacity increased, and per-creative costs decreased.",
+      "By identifying spec-level errors—issues that may not break the ad but still cause rejections at the ad server level—earlier in the production cycle, the client experienced a drastic reduction in revisions and \"dead-on-arrival\" creative submissions.",
+      "Most notably, our custom-built tool empowers the Alloyed Team to scale creative output by over two times without a corresponding increase in cost, creating operating leverage that protects margins and enables profitable growth during peak demand periods."
+    ],
+    "metrics": [
+      {
+        "value": "2x",
+        "label": "creative output scaled without a corresponding increase in cost"
+      },
+      {
+        "value": "100%",
+        "label": "SLA compliance maintained during peak volume periods"
+      },
+      {
+        "value": "60-75%",
+        "label": "reduction in time to generate a 40+ point QA report"
+      }
+    ],
+    "impact": [],
+    "pdf": null,
+    "metaDescription": "Adtech leader doubles creative output during peak spend using outsourcing creative services and AI-powered QA automation—cutting costs, accelerating launches, and improving campaign efficiency.",
+    "image": "https://alloyed.io/wp-media/2026/02/51.png"
+  },
+  {
+    "slug": "scaling-aml-kyc-operations-to-strengthen-risk-detection-and-regulatory-confidence",
+    "title": "Scaling AML and KYC Operations to Strengthen Risk Detection and Regulatory Confidence",
+    "industry": "Banking, Financial Services & Insurance (BFSI)",
+    "services": [
+      "AML & Fraud Monitoring",
+      "Content & Platform Integrity",
+      "KYC, KYB & Onboarding",
+      "Regulatory Support"
+    ],
+    "intro": "A global financial services organization faced growing pressure to strengthen its anti-money laundering (AML) and Know Your Customer (KYC) operations as transaction volumes, customer onboarding, and regulatory scrutiny continued to rise. The client partnered with Alloyed to build a structured operational framework spanning AML screening, KYC data operations, and risk-profiling workflows.",
+    "challenge": [
+      "As transaction volumes, onboarding activity, and regulatory scrutiny increased, the client faced mounting pressure to scale AML and KYC operations without compromising accuracy.",
+      "Rising false positives and screening inefficiencies",
+      "Fragmented customer and entity data across systems",
+      "Increasingly complex PEP and risk classification requirements",
+      "Limited scalability of internal compliance operations",
+      "The result: operational strain, slower onboarding, and heightened compliance risk exposure."
+    ],
+    "solution": [
+      "Alloyed implemented a structured, end-to-end compliance operations model to improve accuracy, streamline workflows, and scale AML and KYC processes. This included:",
+      "Optimized AML screening: to reduce false positives and improve detection precision",
+      "Strengthened PEP governance: with enhanced validation and audit-ready processes",
+      "Standardized KYC data collection and validation: to improve data reliability",
+      "Consolidated entity data: across systems for consistency and accuracy",
+      "Applied structured risk scoring models: for more precise customer segmentation"
+    ],
+    "results": [
+      "The transformation delivered measurable improvements across accuracy, efficiency, and compliance readiness."
+    ],
+    "metrics": [
+      {
+        "value": "99.27%",
+        "label": "false positive screening accuracy",
+        "category": "Screening & Detection"
+      },
+      {
+        "value": "98.6%",
+        "label": "KYC review accuracy",
+        "category": "KYC Data Quality"
+      },
+      {
+        "value": "99.40%",
+        "label": "entity data quality accuracy",
+        "category": "Entity Data Integrity"
+      },
+      {
+        "value": "99.66%",
+        "label": "risk profiling accuracy in RiskID reviews",
+        "category": "Risk Profiling"
+      }
+    ],
+    "impact": [
+      "By integrating AML screening, KYC operations, and risk profiling into a unified framework, the client achieved:",
+      "Stronger financial crime detection with near-perfect screening precision",
+      "Higher-quality customer data that drives faster, more reliable onboarding",
+      "Cleaner compliance datasets enabling consistent decision-making",
+      "More accurate risk segmentation for better monitoring and due diligence",
+      "Improved regulatory confidence and audit readiness",
+      "Scalable compliance operations supporting growth without added risk"
+    ],
+    "testimonial": {
+      "quote": "I had a call with my Global Project Director to discuss the ongoing data remediation work, and he was absolutely singing your praises. Each time he and I connect, he reiterates how impressed he is with the Alloyed Team. He mentioned how thoughtful and well-prepared the team is for every call, and he really values the quality and dedication you bring to the work. Your contributions have not gone unnoticed, and it's clear you've made a strong impression.",
+      "attribution": "Account Director"
+    },
+    "pdf": "https://alloyed.io/wp-media/2026/03/Scaling-AML-KYC-Operations-to-Strengthen-Risk-Detection-Regulatory-Confidence.pdf",
+    "metaDescription": "Strengthen AML and KYC operations with improved accuracy, reduced false positives, and scalable compliance workflows for global growth.",
+    "image": "https://alloyed.io/wp-media/2026/03/Hero-Image-2-scaled-1.jpg"
+  },
+  {
+    "slug": "unlocking-30-greater-efficiency-for-a-global-advertising-brand-through-operational-excellence",
+    "title": "Unlocking 30% Greater Efficiency for a Global Advertising Brand Through Operational Excellence",
+    "industry": "Advertising, Technology & Marketing",
+    "services": [
+      "Audit, QA & Verification",
+      "Automation Enablement",
+      "Document Management Support",
+      "Tech & Platform Support"
+    ],
+    "intro": "A global advertising organization managing high-volume digital campaigns and complex financial workflows across multiple platforms required a scalable partner to ensure operational precision, compliance, and system stability while supporting ongoing growth.",
+    "challenge": [
+      "As campaign volume and operational complexity increased, the client struggled to maintain accuracy, governance, and efficiency across financial processes, platform management, and campaign delivery.",
+      "Ensuring billing accuracy and audit readiness",
+      "Standardizing processes across teams",
+      "Improving pacing visibility and delivery accuracy",
+      "Maintaining platform stability",
+      "Strengthening brand safety and governance"
+    ],
+    "solution": [
+      "Alloyed implemented a structured operational excellence framework focused on accuracy, standardization, and system reliability:",
+      "Audit & QA: Validated financial data, billing accuracy, and campaign delivery through audits and verification processes",
+      "Process Standardization: Developed SOPs to streamline workflows, reduce errors, and improve onboarding",
+      "Performance & Pacing: Delivered real-time visibility into campaign delivery, pacing, and rate utilization",
+      "Platform Support: Maintained system hygiene, executed updates, and ensured stable operating environments",
+      "Governance & Brand Safety: Monitored compliance and mitigated risk across platforms",
+      "Delivery Optimization: Leveraged a dual-shore model and POD structure to improve scalability, cost efficiency, and workflow continuity"
+    ],
+    "results": [
+      "Between 2024 and 2025, Alloyed delivered measurable improvements in accuracy, efficiency, and cost performance, strengthening the client's operational foundation."
+    ],
+    "metrics": [
+      {
+        "value": "99.9%",
+        "label": "accuracy rate with only 4 errors recorded in 2025",
+        "category": "Accuracy & Quality"
+      },
+      {
+        "value": "40%",
+        "label": "reduction in cycle times",
+        "category": "Efficiency & Speed"
+      },
+      {
+        "value": "$2M",
+        "label": "in annual cost savings",
+        "category": "Cost & ROI Impact"
+      },
+      {
+        "value": "90.78%",
+        "label": "utilization rate of Alloyed Team",
+        "category": "Performance & Experience"
+      }
+    ],
+    "impact": [
+      "This engagement enabled the client to operate with greater financial accuracy, faster execution, and improved cost efficiency, creating a more resilient and scalable operational foundation. When we strengthened governance, standardized workflows, and optimized delivery models, we empowered the client to unlock better visibility with reduced risk, supporting growth without increasing operational complexity."
+    ],
+    "testimonial": {
+      "quote": "This focus on people, partnership, and process sets Alloyed apart as a trusted partner. Their ability to deliver stability, scalability, and consistent results enables us to overcome challenges and achieve strategic objectives, making it a standout choice in the industry.",
+      "attribution": "Director, Digital Ad Operations"
+    },
+    "pdf": "https://alloyed.io/wp-media/2026/03/Unlocking-30-Greater-Efficiency-for-a-Global-Advertising-Brand-Through-Operational-Excellence.pdf",
+    "metaDescription": "Learn how structured workflows, QA, and governance improved campaign delivery, accuracy, and efficiency for a global ad brand.",
+    "image": "https://alloyed.io/wp-media/2026/03/Hero-image.jpg"
+  },
+  {
+    "slug": "scaling-financial-operations-billing-accuracy-for-a-high-growth-mass-media-brand",
+    "title": "Scaling Financial Operations and Billing Accuracy for a High-Growth Mass Media Brand",
+    "industry": "Communications & Media",
+    "services": [
+      "Billing & Financial Operations"
+    ],
+    "intro": "A rapidly expanding media company partnered with Alloyed to enhance billing operations, improve financial accuracy, and support growing campaign and operational complexity without sacrificing quality.",
+    "challenge": [
+      "Increasing operational complexity across billing, invoicing, and campaign support",
+      "Rapid scaling of campaign and billing volumes across channels",
+      "Need to maintain high accuracy under peak workloads",
+      "Ensuring seamless financial operations across Travel and Expense (T&E), AP, and billing workflows",
+      "Limited tolerance for errors in high-volume financial processes"
+    ],
+    "solution": [
+      "Alloyed developed a scalable, multi-functional support model across AP, billing, and operational workflows:",
+      "End-to-end T&E management with trained specialists",
+      "Scaled billing operations across thousands of campaigns",
+      "Invoice processing optimization post-system implementation",
+      "Structured quality controls and monthly debriefs to eliminate recurring errors",
+      "Continuous capability building and cross-functional training"
+    ],
+    "results": [
+      "The engagement delivered several impactful outcomes:",
+      "99.99% annual accuracy achieved in financial operations",
+      "Successfully scaled support to 2,175 direct billing campaigns",
+      "Increased coverage to about 600 print billing campaigns",
+      "Tripled year-over-year support, strengthening operational capacity across channels",
+      "Successfully executed all T&E tasks with precision while ensuring timely, accurate, and policy-aligned submissions",
+      "Maintained consistently high accuracy in invoice processing post-DATA implementation"
+    ],
+    "metrics": [
+      {
+        "value": "99%",
+        "label": "annual accuracy achieved"
+      },
+      {
+        "value": "600",
+        "label": "print billing campaigns supported"
+      },
+      {
+        "value": "2175",
+        "label": "direct billing campaigns supported"
+      }
+    ],
+    "impact": [
+      "Seamless handling of peak operational volumes with no decline in quality",
+      "Improved trust through consistent, error-free financial reporting",
+      "Enhanced scalability with the ability to support growing campaign and billing demands",
+      "Strengthened operational resilience through cross-trained, high-performing teams"
+    ],
+    "testimonial": {
+      "quote": "Excellent work! We are truly impressed by how well the team adapted to the new template for the Concert Campaign, especially without a prior walkthrough. Your ability to showcase such a multiskilled level is remarkable. Awesome job!",
+      "attribution": "Billing Team, Client"
+    },
+    "pdf": "https://alloyed.io/wp-media/2026/03/Scaling-Financial-Operations-Billing-Accuracy-for-a-High-Growth-Mass-Media-Brand.pdf",
+    "metaDescription": "Deliver error-free financial reporting with scalable billing operations designed to support rapid media growth and complex workflows.",
+    "image": "https://alloyed.io/wp-media/2026/03/Hero-Image-3-scaled-1.jpg"
+  },
+  {
+    "slug": "how-a-global-financial-intelligence-firm-improved-data-accuracy-and-accelerated-risk-insights",
+    "title": "How a Global Financial Intelligence Firm Improved Data Accuracy and Accelerated Risk Insights",
+    "industry": "Banking, Financial Services & Insurance (BFSI)",
+    "services": [
+      "Data Engineering & AI Annotation",
+      "Data Modeling & Intelligence",
+      "Data Quality Management",
+      "Reporting & Analytics"
+    ],
+    "intro": "A leading global financial intelligence organization faced mounting pressure to ensure the accuracy, reliability, and audit readiness of operational datasets across a complex ecosystem of systems, regulatory frameworks, and multilingual customer interactions.",
+    "challenge": [
+      "Delays in regulatory reporting",
+      "Misaligned customer and transaction records",
+      "Low trust in analytics and forecasting",
+      "High manual reconciliation costs",
+      "At the same time, growing demands for risk modeling, fraud detection, and compliance required cleaner, faster, and more reliable data."
+    ],
+    "solution": [
+      "Alloyed implemented an integrated data operations model that combined:",
+      "Data quality management",
+      "Reporting and analytics support",
+      "Data engineering and modeling enablement",
+      "Multilingual data processing",
+      "The focus: clean data at the source, validate continuously, and enable faster downstream insights."
+    ],
+    "results": [
+      "Data Quality & Accuracy: Significantly improved the reliability of risk analysis, compliance reporting, and financial intelligence workflows",
+      "99.40% entity consolidation accuracy (vs. 98% target)",
+      "99.66% RiskID review quality (vs. 98% target)",
+      "Productivity & Speed: Enabled faster processing of high-volume risk data without compromising quality, with 47.68 RiskIDs reviewed per hour versus a target of 18, and 2.5 times faster than expected while maintaining strict quality standards",
+      "Multilingual Data Performance: Ensured accurate interpretation of global, multilingual datasets with 98.60% English content and 99.85% local language quality",
+      "Reporting & Intelligence Gains: Reduced time spent fixing data issues while improving access to trusted insights and establishing more reliable inputs for risk models, fraud detection, and forecasting"
+    ],
+    "metrics": [
+      {
+        "value": "99.40%",
+        "label": "entity consolidation accuracy (exceeding 98% target)"
+      },
+      {
+        "value": "98.60%",
+        "label": "interpretation accuracy quality of global, multilingual datasets with English content"
+      },
+      {
+        "value": "47.68",
+        "label": "RiskIDs reviewed per hour, exceeding the target of 18"
+      },
+      {
+        "value": "99.66%",
+        "label": "RiskID review quality (exceeding 98% target)"
+      },
+      {
+        "value": "20+",
+        "label": "years of partnership with this financial services institution"
+      }
+    ],
+    "impact": [
+      "With Alloyed, the client transformed data from a liability into a strategic asset:",
+      "Stronger data integrity across systems",
+      "Faster, more reliable reporting cycles",
+      "Improved predictive accuracy in risk and fraud models",
+      "Scalable operations supported by a flexible workforce model",
+      "Greater confidence in data-driven decision-making"
+    ],
+    "testimonial": {
+      "quote": "Over the past few months the Data Strategy team has worked to ingest the complete collection of data, adding 986,416 records to the database. A month ago it was shared that our client was very interested in this data and the Alloyed Team mobilized with a big push to get everything searchable. They completed this goal 2 weeks ahead of schedule. Huge thanks to the team!",
+      "attribution": "Global Financial Intelligence Firm"
+    },
+    "pdf": "https://alloyed.io/wp-media/2026/03/How-a-Global-Financial-Intelligence-Firm-Imrpoved-Data-Accuracy-Accelerated-Risk-Insights.pdf",
+    "metaDescription": "See how a financial intelligence firm achieved 99%+ data accuracy, faster risk insights, and improved reporting with optimized data operations.",
+    "image": "https://alloyed.io/wp-media/2026/03/Hero-Image-1-scaled-1.jpg"
+  },
+  {
+    "slug": "strengthening-engagement-and-financial-operations-for-a-leading-travel-brand",
+    "title": "Strengthening Customer Engagement & Financial Operations for a Leading Travel Brand",
+    "industry": "Travel & Hospitality",
+    "services": [
+      "Advertising Operations",
+      "Billing & Financial Operations",
+      "Partner & Ecosystem Support",
+      "Reporting & Analytics"
+    ],
+    "intro": "A rapidly scaling travel and experience brand partnered with Alloyed to improve campaign execution, enhance customer engagement, and bring clarity to complex financial operations tied to dynamic inventory and multi-channel campaigns.",
+    "challenge": [
+      "Improve campaign accuracy and speed",
+      "Maintain high-quality customer engagement",
+      "Reduce billing errors and increase financial visibility",
+      "Scale operations without sacrificing performance"
+    ],
+    "solution": [
+      "Alloyed delivered end-to-end operational support across:",
+      "Ad Operations: Campaign setup, optimization, and inventory management",
+      "Partner Support: Cross-team coordination and advertiser onboarding",
+      "Finance & Accounting: Billing accuracy, forecasting, and revenue visibility",
+      "Analytics & Reporting: Performance dashboards and actionable insights",
+      "This created a unified operational backbone supporting both marketing and finance."
+    ],
+    "results": [
+      "The engagement delivered measurable, high-impact outcomes:",
+      "53% faster turnaround time: Reduced task response time from 1h 50m to 52 minutes",
+      "Near-perfect quality performance: Maintained 98.78%–100% accuracy despite increased volume",
+      "12.9% increase in task volume handled: Scaled from 666 to 752 tasks without performance loss",
+      "100% billing accuracy achieved: Eliminated end-of-month billing errors entirely",
+      "25% reduction in billing errors: Surpassed initial improvement targets",
+      "86%–94.5% utilization rates: Demonstrated strong scalability during peak seasonal demand"
+    ],
+    "metrics": [
+      {
+        "value": "53%",
+        "label": "faster turnaround times"
+      },
+      {
+        "value": "25%",
+        "label": "reduction in billing errors"
+      },
+      {
+        "value": "100%",
+        "label": "billing accuracy achieved"
+      },
+      {
+        "value": "12.9%",
+        "label": "increase in task volume"
+      }
+    ],
+    "impact": [
+      "Faster, more accurate campaign launches",
+      "Improved partner satisfaction through transparency",
+      "Stronger financial forecasting and revenue predictability",
+      "Optimized inventory utilization and revenue protection",
+      "Scalable operations ready for high-demand event cycles",
+      "End-to-end ad operations and campaign optimization"
+    ],
+    "testimonial": {
+      "quote": "Everyone is doing a great job. We have no errors happening. Everyone loves working with Alloyed partners. Even when onboarding new folks from our team, they feel great ease in working with them. They really appreciate how thorough they are when performing tasks. They catch errors during QA, when our team is rushing, just because of the great questions they ask.",
+      "attribution": "Executive Director, Ad Operations"
+    },
+    "pdf": "https://alloyed.io/wp-media/2026/03/Strengthening-Customer-Engagement-Financial-Ops-for-a-Leading-Travel-Brand-1.pdf",
+    "metaDescription": "See how Alloyed helped a leading travel brand scale operations, boost campaign speed by 53%, and achieve 100% billing accuracy with integrated ad ops, analytics, and finance support.",
+    "image": "https://alloyed.io/wp-media/2026/03/shutterstock_2602516137-scaled-1.jpg"
+  },
+  {
+    "slug": "how-a-global-sports-brand-protected-sponsorship-revenue-and-scaled-operations-without-adding-headcount",
+    "title": "How a Global Sports Brand Protected Sponsorship Revenue and Scaled Operations Without Adding Headcount",
+    "industry": "Experience Economy",
+    "services": [
+      "Advertising Operations",
+      "Inventory & Yield Management",
+      "Media Planning & Buying",
+      "Reporting & Analytics"
+    ],
+    "intro": "Facing mounting risk of sponsorship revenue leakage, missed fulfillment obligations, and internal burnout during peak seasons, a major sports organization sought a strategic operating partner to scale its advertising, sponsorship, and media operations ecosystem.",
+    "challenge": [
+      "Brand safety and compliance requirements tied to league rules and partner contracts",
+      "High-stakes sponsorship obligations that must be fulfilled precisely",
+      "Live-event deadlines with zero tolerance for trafficking errors",
+      "Multi-platform ad delivery across broadcast, digital, social, and in-venue screens",
+      "Seasonal volume spikes around playoffs, drafts, and marquee events",
+      "To overcome these challenges and operate seamlessly, the client needed a partner capable of delivering speed and flawless execution."
+    ],
+    "solution": [
+      "Alloyed deployed a team of nine ad operations FTEs at an approximate annual cost of $250,000, compared to a fully loaded US team of the same size at approximately $850,000 to $900,000, all aligned with this client's sponsorship verticals and powered by the goal of creating operational control, accountability, and measurable performance visibility.",
+      "Ad Operations: Manage the full lifecycle of sports advertising, ensuring every sponsor and advertiser receives the value they were promised",
+      "Inventory & Yield Management: Prevent over-commitment during peak playoff windows and reduce the risk of underutilized premium placements, implementing approval checks, inventory watchlist monitoring, issue submission, status changes, and capacity checks",
+      "Media Planning: Build media plans by establishing a governance layer that aligns sponsorship commitments, audience strategy, and revenue priorities across every channel",
+      "Reporting & Analytics: Transform performance data into transparent insights, helping the client strengthen sponsor relationships and improve future planning"
+    ],
+    "results": [
+      "The partnership delivered impactful and measurable improvements across the organization:",
+      "99.99% accuracy score for 2025 in client QA processes, preventing contract violations, brand conflicts, revenue clawbacks, and legal issues",
+      "Nine-person Alloyed ad ops team provides the client with a cost advantage of roughly 70%, enabling significant budget reallocation toward strategic initiatives and growth",
+      "Process improvements drove 828 hours of operational time savings in 2025, equivalent to about $11,000 in productivity value"
+    ],
+    "metrics": [
+      {
+        "value": "99.99%",
+        "label": "accuracy rate in 2025 for quality assurance processes"
+      },
+      {
+        "value": "~70%",
+        "label": "estimated cost advantage for 9-person ad ops team"
+      },
+      {
+        "value": "828",
+        "label": "estimated hours of operational time savings"
+      }
+    ],
+    "impact": [
+      "By integrating ad ops, media planning, QA, programmatic, inventory management, and analytics into a single operational model, we helped this sports client achieve:",
+      "A scalable operational foundation that adapts to seasonal surges and major events",
+      "Better visibility into performance, enabling smarter sponsorship and media decisions",
+      "Faster, more accurate campaign launches across broadcast, digital, and social",
+      "Improved inventory utilization, protecting revenue, and maximizing value",
+      "Stronger sports sponsorship compliance, reducing risk, and improving partner satisfaction"
+    ],
+    "pdf": "https://alloyed.io/wp-media/2026/03/How-a-Global-Sports-Brand-Protected-Sponsorship-Revenue-with-a-70-Cost-Advantage.pdf",
+    "metaDescription": "Learn how a global sports brand protected sponsorship revenue, improved ad operations accuracy to 99.99%, and scaled multi-channel media operations without increasing headcount.",
+    "image": "https://alloyed.io/wp-media/2026/03/Case-Study-Hero-Image-Template.png"
+  },
+  {
+    "slug": "elevating-customer-engagement-through-integrated-social-planning-analytics-and-partner-operations",
+    "title": "Elevating Customer Engagement Through Integrated Social, Planning, Analytics, and Partner Operations",
+    "industry": "Communications & Media",
+    "services": [
+      "Lifecycle & Loyalty Support",
+      "Partner & Ecosystem Support",
+      "Social & Community Operations"
+    ],
+    "intro": "With campaigns running across multiple social platforms, complex media plans, and a growing need for accurate reporting and partner coordination, a global media client required a partner capable of delivering operational excellence at scale, especially during peak seasons.",
+    "challenge": [
+      "Complex media plans that increased headcount requirements and costs, contributing to burnout",
+      "Costly makegoods and revenue leakage",
+      "Reduced campaign profitability and strained advertiser relationships",
+      "Inaccurate reporting and partner incoordination",
+      "Inability to navigate operational risk, margin erosion, and reputational exposure"
+    ],
+    "solution": [
+      "From driving the front line of social engagement across Facebook, Instagram, X, and LinkedIn to building smart, predictive media plans that reduce surprises downstream, Alloyed brought structure to complexity and clarity to our client's performance.",
+      "Social & Community Operations: Reduced brand safety flags for this client while improving cross-platform data checks, social pacing, and performance reporting",
+      "Media Planning: Crafting media plans based on audience, budget, and channel strategy by ensuring campaigns are structured for performance from day one and proactively forecasting to predict spending, pacing, and performance outcomes; leading media planning calls with internal and external stakeholders",
+      "Data Quality Management: Cross-checking data accuracy across platforms, reports, and partner systems while identifying discrepancies before they impact reporting or optimization",
+      "Partner & Ecosystem Management: Third-party discrepancy reporting to resolve delivery or spend mismatches, protecting reputation and ensuring ads appear in safe, high-quality environments",
+      "Reporting & Analytics: Leverage our deep campaign insights to optimize in-flight and develop sharper strategies while providing comprehensive performance dashboards",
+      "Finance & Accounting: Deliver billing reports on time and manage PO and financial documentation, reducing reconciliation bottlenecks and freeing up internal teams"
+    ],
+    "results": [],
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "reduction in brand safety flags"
+      },
+      {
+        "value": "55",
+        "label": "hours reclaimed monthly"
+      },
+      {
+        "value": "100%",
+        "label": "on-time reporting delivery"
+      }
+    ],
+    "impact": [
+      "Consistent, Cross-Platform Brand Presence: Acting as the front line of customer engagement, Alloyed ensured campaigns ran flawlessly across multiple social channels without the disruptive execution errors that degrade the user experience",
+      "Deeper Customer Insights: Comprehensive analytics translated raw engagement data into clear narratives about customer behavior, empowering the client to build sharper, proactive campaign strategies",
+      "Enhanced Trust and Responsiveness: By preventing data discrepancies and resolving partner issues early, Alloyed created a more coordinated ecosystem, allowing the brand to respond to market shifts and audience needs faster than ever before"
+    ],
+    "pdf": "https://alloyed.io/wp-media/2026/03/Elevating-Customer-Engagement-Through-Integrated-Social-Planning-Analytics-Partner-Ops-1.pdf",
+    "metaDescription": "Discover how a global media publisher scaled 80 monthly social campaigns, achieved 100% brand safety compliance, and improved analytics accuracy with integrated operations support.",
+    "image": "https://alloyed.io/wp-media/2026/03/Customer-engagement-case-study.png"
+  },
+  {
+    "slug": "high-volume-platform-organization-streamlines-peak-season-operations-with-scalable-outsourcing-support",
+    "title": "High-Volume Platform Organization Streamlines Peak-Season Operations with Scalable Outsourcing Support",
+    "industry": "Advertising, Technology & Marketing, Communications & Media",
+    "services": [
+      "Content & Platform Integrity",
+      "Reporting & Analytics"
+    ],
+    "size": "80 Employees",
+    "intro": "",
+    "challenge": [
+      "A high-volume platform organization faced intense operational pressure associated with its annual post-New Year peak season. Surges in reporting, data entry, and CRM lead submissions routinely overwhelmed the internal team, diverting focus away from higher-value responsibilities. The organization needed a reliable partner who could quickly scale, absorb high-volume workloads, and ensure these routine but vital tasks were completed accurately and on time.",
+      "Luckily, they had a key industry connection with an Alloyed Team Member.",
+      "As conversations commenced, the client shared that their most pressing pain point was the immediate need to alleviate the burden of repetitive operational work so internal teams could focus on higher-level functions during their busiest season.",
+      "With outsourcing, the client aimed to create more manageable workflows during peak periods, reduce internal strain, and establish a more efficient operational model. While the COO had prior experience with freelance organizations like Upwork, he found himself seeking a more dependable and scalable partner to deliver consistent, high-quality support he couldn't rely on from freelancers.",
+      "Alloyed easily fit the mold. Offering structure, our only-train-once philosophy, and operational maturity, an Alloyed partnership meant no internal risks or obstacles preventing quick implementation."
+    ],
+    "solution": [
+      "Both Alloyed and the client aligned on an aggressive but achievable timeline for program launch. From the outset, the collaboration was structured and focused, built around the client's urgent need to scale in preparation for their peak season.",
+      "Throughout onboarding, Alloyed delivered bilingual support from our El Salvador delivery center, ensuring seamless time-zone alignment and linguistic fluency. With approximately 60% of the client's content in Spanish, the bilingual requirement was essential to maintaining quality and efficiency.",
+      "Over time, the relationship evolved as the client experienced steady increases in operational volume and recognized the long-term value of a structured outsourcing model. As trust strengthened and the benefits of expanded support became clear, the client deepened their reliance on Alloyed's team.",
+      "Our resources took on notable adverse auditing tasks to support this client's social media content moderation and other content review and filtering needs.",
+      "As this client launched multi-brand social campaigns for customers, including Ford, McDonald's, Dr Pepper, göt2b, etc., the Alloyed Team ensured all interactions across artists' social media platforms remained safe, positive, and aligned with brand standards. Moderation performance was strengthened through real-time comment filtering, active management of sensitive organic and dark post engagement, and fast, precise escalation of brand-risk content or platform concerns. This support proved especially valuable during collaborations with emerging artists, where engagement spikes demanded continuous monitoring. Our efforts preserved a consistent brand voice, reinforced community trust, and protected client reputation across every social touchpoint.",
+      "We enhanced the client's creative workflow by performing detailed quality checks on marketing content for campaigns. Our resources ensured that every asset aligned with each brand's tone, compliance standards, and visual guidelines provided by the client's team, whether it was a Ford campaign requiring precision or a McDonald's activation needing a family-friendly approach. By taking greater ownership of modifications and updates, we accelerated ticket closure times and reduced holding periods between the Alloyed Team and the client. This structured review process reduced publishing errors, minimized revision loops, and accelerated content delivery, helping the client execute campaigns for diverse customers with consistent quality and speed."
+    ],
+    "results": [
+      "The partnership has matured into a scalable, dependable operational extension of the client's internal team. With its expanded workforce and bilingual capabilities, Alloyed now supports the client with greater efficiency and flexibility, enabling them to manage peak seasons more effectively and maintain consistent output throughout the year.",
+      "100% Alloyed Team Utilization for Three Years: Internal performance metrics indicate that the Alloyed Team has maintained 100% utilization for the past three years, demonstrating the high value and full return on the client's investment. This level of engagement confirms that the client is fully benefiting from the resources allocated and that Alloyed is consistently providing meaningful, high-impact support.",
+      "Improved Productivity and SLA Compliance: One of the most significant performance gains has been the consistent achievement of 24–48 business-hour SLA compliance for ticket completion, depending on ticket type. This predictable turnaround time has allowed the client to maintain smooth operational flow, reduce backlogs, and ensure that routine but essential tasks are completed quickly and accurately.",
+      "Significant Cost Advantage: As the Alloyed Team is based in El Salvador and supported under a managed services model, the client benefits from highly skilled, bilingual resources at a rate substantially lower than what equivalent internal roles would cost in the United States. Although an exact cost-savings percentage cannot be calculated, the client's current rate structure with Alloyed is unquestionably more economical than hiring additional U.S.-based employees to perform the same reporting, data entry, and CRM-related functions.",
+      "Through disciplined process management, bilingual expertise, and a deeply collaborative approach, Alloyed has become an indispensable extension of the client's operations."
+    ],
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "Alloyed Team utilization for three years"
+      },
+      {
+        "value": "24–48",
+        "label": "business-hour SLA compliance for ticket completion"
+      },
+      {
+        "value": "100%",
+        "label": "accuracy rate across all deliverables over the last two quarters"
+      }
+    ],
+    "impact": [],
+    "proofPoints": [
+      "The client required dependable support to maintain error-free deliverables and ensure full compliance with continuously evolving processes. One of their primary concerns centered on the risk of inaccuracies caused by outdated training materials, which could negatively impact quality, consistency, and overall performance. To prevent workflow errors and ensure alignment with updated standards, the Alloyed Team established a continuous quality-monitoring framework. This included:",
+      "Ensuring the team was informed, trained, and aligned with the latest process changes",
+      "Proactively updating internal training documents and SOPs",
+      "Providing consistent feedback loops to validate accuracy",
+      "Reviewing each new workflow update shared by the client",
+      "This approach eliminated ambiguity and ensured the entire team operated with the most current information. Over the last two quarters, the client reported zero errors, achieving a 100% accuracy rate across all deliverables. This level of consistency strengthened the client's trust in Alloyed, demonstrating the team's ability to quickly adapt, maintain quality, and support them even during periods of operational or platform transition.",
+      "During a weekly meeting, the client flagged a possible deviation from their standard video provisioning workflow. Their media team believed the Alloyed Team may have made an error that could compromise deliverable consistency and overall results. The Alloyed Team immediately conducted a detailed, step-by-step audit that included:",
+      "Aligning each step with the client's documented workflow",
+      "Collaborating directly with the client to explore possible platform-related issues",
+      "Reviewing the complete request and task history",
+      "Re-verifying every action taken during the process",
+      "The team presented transparent documentation that demonstrated all procedures had been followed precisely according to the client's standards. After reviewing Alloyed's findings, the client confirmed the issue was caused by a platform-side miscommunication, not an Alloyed error. This validation reinforced the team's strong process adherence, accuracy, and attention to detail. The client closed the concern with full confidence, acknowledging that Alloyed executed the workflow correctly and consistently."
+    ],
+    "testimonial": {
+      "quote": "I think the team is doing a great job right now. I don't really have any complaints. I haven't been attending as many meetings lately because I've been pulled into other things, but the ones I do join are a lot more fun than they used to be. There's a good mix of productivity and camaraderie — everyone's joking around, I'm blundering my Spanish, and they're trying not to make fun of me too much! It's really enjoyable. More importantly, everyone is listening and participating, which wasn't always the case at the beginning.",
+      "attribution": "Director of Program Management"
+    },
+    "pdf": null,
+    "metaDescription": "Discover how Alloyed provided scalable outsourcing support to reduce operational strain, accelerate workflows, and ensure accurate reporting.",
+    "image": "https://alloyed.io/wp-media/2026/01/MAX.png"
+  },
+  {
+    "slug": "automating-quality-control-with-qa-outsourcing-auditor-tool",
+    "title": "Automating Quality Control with QA Outsourcing Auditor Tool",
+    "industry": "Banking, Financial Services & Insurance (BFSI)",
+    "services": [
+      "Audit, QA & Verification",
+      "Automation Enablement"
+    ],
+    "size": "$7+ Billion",
+    "intro": "",
+    "challenge": [
+      "This financial service organization's manual Quality Control (QC) process was heavily dependent on Excel spreadsheets. QC auditors relied on spreadsheets to randomly select inquiries, record audit results, generate reports, and update audited information. This approach was:",
+      "Difficult to scale as inquiry volumes grew into the millions",
+      "Error-prone, with high risk of inconsistencies",
+      "Fragmented, with data scattered across multiple files",
+      "Time-consuming and resource-intensive",
+      "The client's primary goals were clear: faster access to quality insights, improved data accuracy, process automation, and scalability."
+    ],
+    "solution": [
+      "Alloyed partnered with the client to design and develop a centralized web-based QA Auditor Tool that fully automated the QC workflow. Key design features included:",
+      "Automation of inquiry assignment: Randomized distribution of inquiries to QC auditors without manual intervention",
+      "Instant reporting: Automated generation of quality reports accessible in seconds by administrators",
+      "Streamlined workflows: Searching, reviewing, and updating audited inquiries consolidated into a single interface, eliminating fragmented spreadsheet tasks",
+      "Structured data management: Secure storage of millions of audit records in a centralized relational database",
+      "The QA Auditor Tool was built using a modern technology stack: AWS S3 for secure, scalable storage of audit artifacts; CSS, JavaScript, and jQuery for responsive, user-friendly interfaces; Laravel (PHP Framework) for rapid, scalable web application development; and MariaDB for structured, high-volume data storage.",
+      "Alloyed enhanced the solution further by automating daily inquiry uploads via API integration, expanding governance features to improve audit traceability and compliance, and implementing scheduled Cron jobs to run QC checks at designated intervals, ensuring consistent background monitoring of developer outputs without manual oversight."
+    ],
+    "results": [
+      "The QA Auditor Tool delivered substantial benefits:",
+      "Accuracy and Consistency: Elimination of spreadsheet-related errors and improved reliability of audit data",
+      "Continuous Evolution: Since its launch in 2020, the platform has been supported with ongoing maintenance and enhancements to align with the client's evolving operational needs",
+      "Efficiency Gains: Significant reduction in manual effort and time spent on QC tasks",
+      "Real-Time Insights: Near-instant visibility into quality performance for administrators and leadership",
+      "Scalability: Ability to handle millions of inquiries without performance degradation"
+    ],
+    "metrics": [],
+    "impact": [],
+    "pdf": null,
+    "metaDescription": "Discover how Alloyed delivered QA outsourcing for a $7B+ financial services client by automating quality control with a centralized Auditor Tool, boosting accuracy, scale, and insights.",
+    "image": "https://alloyed.io/wp-media/2026/01/QA.png"
+  },
+  {
+    "slug": "bpo-automation-of-global-sales-and-marketing-insights-strengthens-operational-efficiency",
+    "title": "BPO Automation of Global Sales and Marketing Insights Strengthens Operational Efficiency",
+    "industry": "Banking, Financial Services & Insurance (BFSI)",
+    "services": [
+      "Automation Enablement",
+      "Reporting & Analytics"
+    ],
+    "size": "$7+ Billion",
+    "intro": "",
+    "challenge": [
+      "This financial services organization's business team identified the need for a centralized, scalable, and automated reporting solution to support over 2,000 sales professionals operating across more than 40 countries. The sales teams required real-time, reliable insights into client status, engagement, positioning, and behavioral trends to enable more informed and contextual client conversations.",
+      "At the same time, leadership and marketing teams needed business intelligence capabilities to monitor product performance, subscription growth, and regional trends, all of which are critical inputs for strategic decision-making. Manual reporting processes were fragmented, error-prone, and unable to keep pace with the speed of business."
+    ],
+    "solution": [
+      "To address these challenges, Alloyed established a dedicated team to partner closely with this organization's stakeholders and:",
+      "Automate data ingestion and transformation pipelines to eliminate manual effort and ensure consistency across multiple data sources",
+      "Design and develop interactive reporting portals and dashboards tailored to sales, marketing, and leadership needs",
+      "Embed governance and security controls to ensure compliance, data accuracy, and role-based access",
+      "Enable workflow automation for report scheduling, alerts, and KPI monitoring, reducing dependency on ad-hoc requests",
+      "Implement Microsoft Power BI as the visualization layer, supported by enterprise data platforms (SQL and others) for scalable data processing"
+    ],
+    "results": [
+      "The initiative delivered measurable improvements across the organization:",
+      "Better governance, security, and role-based access ensured that sensitive data is protected",
+      "Marketing and leadership were able to analyze product growth, identify opportunities, and track performance trends across regions with confidence",
+      "Operational efficiency improved by reducing manual reporting effort, minimizing errors, and accelerating time to insight",
+      "Sales teams gained access to critical client and engagement data before customer interactions, improving the quality and effectiveness of renewal discussions",
+      "The client team experienced more centralized, real-time insights that led to stronger collaboration and alignment, powered by data-driven actions"
+    ],
+    "metrics": [
+      {
+        "value": "2,000+",
+        "label": "sales professionals supported"
+      },
+      {
+        "value": "40+",
+        "label": "countries covered"
+      }
+    ],
+    "impact": [],
+    "pdf": null,
+    "metaDescription": "Learn how Alloyed used BPO automation to deliver real-time sales and marketing insights for a global financial services leader, reducing manual reporting, strengthening governance, and accelerating time to decision.",
+    "image": "https://alloyed.io/wp-media/2026/01/Moodys-Power-BI.png"
+  },
+  {
+    "slug": "outsourcing-partner-automates-workflow-and-reporting-for-streamlined-client-delivery",
+    "title": "Outsourcing Partner Automates Workflow and Reporting for Streamlined Client Delivery",
+    "industry": "Banking, Financial Services & Insurance (BFSI)",
+    "services": [
+      "Audit, QA & Verification",
+      "Automation Enablement",
+      "Reporting & Analytics"
+    ],
+    "size": "$7+ Billion",
+    "intro": "",
+    "challenge": [
+      "As internal teams expanded and client engagements grew more complex, this financial services organization's dedicated Alloyed Team faced mounting inefficiencies:",
+      "Client pressure: Frequent status requests required manual reporting, consuming valuable time and increasing the risk of errors",
+      "Fragmented communication: Internal teams lacked a consistent channel for updates, leading to delays and misalignment",
+      "Limited visibility: Leadership struggled to access delivery performance, resource utilization, and historical project data necessary for planning and decision-making",
+      "Manual task management: Team leads spent significant time assigning work, coordinating hand-offs, and tracking progress across multiple tools",
+      "The need for a centralized, automated, and scalable workflow and reporting solution became clear."
+    ],
+    "solution": [
+      "Alloyed designed and developed a proprietary workflow and reporting platform to automate and streamline operations. Key features included:",
+      "Automated notifications: Real-time alerts for client updates, task changes, and status transitions, reducing delays caused by manual follow-ups",
+      "Centralized task management: Assign multiple resources to a single task, track work through its full lifecycle, and manage hand-offs, with clear ownership and accountability",
+      "Client-facing reporting: Automated dashboards providing immediate visibility into task progress and delivery status",
+      "Integrated communication layer: Built-in messaging and update streams to unify internal collaboration",
+      "The platform was engineered with automation and scalability at its core: a custom dashboard layer with advanced search and filtering across task type, hours, client, and other attributes; data warehouse integration to consolidate historical project data for leadership insights and forecasting; real-time reporting APIs to deliver instant client updates and eliminate manual report generation; role-based access controls to ensure secure visibility across teams and clients; and a workflow automation engine to orchestrate task assignments, hand-offs, and status transitions."
+    ],
+    "results": [
+      "The initiative delivered measurable improvements:",
+      "Client Trust: Clients gained immediate visibility into progress and delivery status through real-time updates",
+      "Efficiency Gains: Team leads saved an estimated 20 hours per week by eliminating manual coordination, reporting, and follow-ups",
+      "Leadership Insights: Custom dashboards provided comprehensive operational metrics, enabling better resource planning and strategic decision-making",
+      "Scalability: The platform established a durable foundation capable of supporting growing teams and increasingly complex engagements",
+      "Transparency: Internal communication and task hand-offs became structured, traceable, and automated"
+    ],
+    "metrics": [
+      {
+        "value": "20",
+        "label": "hours per week saved by team leads"
+      }
+    ],
+    "impact": [],
+    "pdf": null,
+    "metaDescription": "Discover how an outsourcing partner automated workflow and reporting for a $7B+ financial services firm, reducing manual work, enhancing visibility, and scaling delivery.",
+    "image": "https://alloyed.io/wp-media/2026/01/Moodys-Hourly.png"
+  },
+  {
+    "slug": "retail-media-network-improves-speed-to-market-by-outsourcing-creative-services-and-ad-operations",
+    "title": "Retail Media Network Improves Speed to Market by Outsourcing Creative Services and Ad Operations",
+    "industry": "Retail, E-Commerce & CPG",
+    "services": [
+      "Advertising Operations",
+      "Creative Production & Digital Design"
+    ],
+    "intro": "A newly launched, data-focused retail media network (RMN) supporting a major pharmaceutical organization struggled to establish a centralized hub for its creative needs. As it prepared to expand its reach, the RMN needed to do so in the most cost-effective way possible.",
+    "challenge": [
+      "Centralize operations and eliminate the need to manage multiple providers, including boutique agencies, contractors, and a major outsourcing provider",
+      "Find a nimble partner that they could grow with, who is capable of expanding scope as their needs evolve",
+      "Improve efficiency by streamlining operations for workflow optimization and faster turnaround times",
+      "Improve quality and achieve greater cost savings",
+      "The initial scope of services included creative support (proof of live and creative audit overflow) and development support (coding onsite, building landing pages, offsite HTML5 banners, and QA pages and banners)."
+    ],
+    "solution": [
+      "Alloyed optimized internal workflows and processes for this RMN by integrating our ad operations and creative teams into one unified communication channel. This was supplemented by:",
+      "Refinement of client-provided templates to enhance production efficiency and reduce design cycle time",
+      "Regular meetings to proactively address upcoming campaigns, rush requests, and quick edits",
+      "Other notable achievements include:",
+      "The Alloyed Team addressed an internal issue for the client related to App GAM templates that utilized third-party code. We identified and corrected the delivery weight issues for all In-App GAM templates within 24 hours. This significant win for the Alloyed Team enabled the client to resolve a significant complication that had previously prevented them from tracking all clicks within their apps.",
+      "Our creative team received a rush task: a 120-unit project that had to go live quickly. Alloyed resources worked late to ensure its completion. The project, initially estimated to take two to three days, was completed within one day, demonstrating strong team synergy. The bonus win with this project was the combination and alignment of our ad operations and creative teams to deliver these ad units in a unique format, allowing the ad ops team to perform their tasks while the ad units were being completed."
+    ],
+    "results": [
+      "As Alloyed continued streamlining and supporting this RMN, we helped the client realize several impactful outcomes:",
+      "Cost optimization and savings: When the client consolidated all of their creative work with Alloyed, they uncovered improved productivity and faster delivery timelines, which contributed to meaningful cost efficiencies while improving quality standards",
+      "Improved speed to market: Unified communication between creative and ad ops teams significantly reduced turnaround times and enabled faster campaign launches, even for high-volume rush requests",
+      "Enhanced campaign performance and accuracy: By resolving critical issues, the RMN gained better visibility into campaign performance and more reliable reporting to share with stakeholders"
+    ],
+    "metrics": [
+      {
+        "value": "24 Hour",
+        "label": "identification and correction of delivery weight issues for all In-App GAM templates"
+      },
+      {
+        "value": "3",
+        "label": "total errors in 2025, significantly outperforming the 40% reduction target"
+      }
+    ],
+    "impact": [
+      "This partnership helped the client centralize its creative and technical operations while improving speed, quality, and efficiency. By integrating ad operations and creative teams, we refined workflows and provided dedicated, high-utilization resources that empowered the RMN to support its rapid growth without adding operational complexity."
+    ],
+    "pdf": "https://alloyed.io/wp-media/2026/01/Retail-Media-Network-Improves-Speed-to-Market-by-Outosurcing-Creative-Services-and-Ad-Operations.pdf",
+    "metaDescription": "See how a healthcare retail media network improved speed to market and reduced costs by outsourcing creative services and ad operations to Alloyed",
+    "image": "https://alloyed.io/wp-media/2026/01/CVS.png"
+  },
+  {
+    "slug": "scaling-digital-ad-production-through-creative-outsourcing-yields-better-support",
+    "title": "Scaling Digital Ad Production Through Creative Outsourcing Yields Better Support",
+    "industry": "Advertising, Technology & Marketing, Communications & Media",
+    "services": [
+      "Creative Production & Digital Design"
+    ],
+    "size": "1200 Employees",
+    "intro": "",
+    "challenge": [
+      "An advertising and marketing organization struggled with high costs and digital ad production. They battled fragmented workflows that resulted in longer production timelines and a decrease in quality that put their customer relationships at risk."
+    ],
+    "solution": [
+      "We began the partnership with various ad hoc tasks. Once the client realized our resources' impactful capabilities, the partnership transitioned into a dedicated team of three FTEs, which has since expanded annually in both scope and resources. Currently, 13 FTEs operate during the evening and overnight shifts, delivering continuous support across a diverse range of creative and digital media functions, including:",
+      "Designing static, animated GIF, rich media, and video ad units",
+      "Designing and developing website UI/UX and interactive, dynamic, and HTML5 emails",
+      "Editing video content",
+      "Managing tasks, such as NewsBriefs keyword verification, portal administration design, development, and updates",
+      "Optimizing programmatic display",
+      "Redesigning creatives",
+      "The Alloyed Team also engineered and implemented two website platforms—Ad Fulfillment Platform and Audience View Live Example—for the client, built on HubSpot.",
+      "This initiative encompassed the entire workflow, including UI/UX design and development of a client-facing or internal advertising booking system that empowers clients to control the pricing and placement of their campaigns. The platform significantly reduces the burden on project managers, freeing them from research and booking ad units, while managing asset collection and approvals. This automation enables the team to dedicate their efforts to more high-value tasks. With this support, they can focus on enhancing revenue generation and elevating their customers' experiences."
+    ],
+    "results": [
+      "The client maintains a consistently high utilization rate of their Alloyed Team, often exceeding 95%. Our resources manage an extremely large volume of advertisements, successfully completing tasks ranging from display ads to one-sheets, emails, and UI/UX design and development.",
+      "As a trusted partner, our teams serve as the primary resource for the client's high-end design projects, overseen by Alloyed's Senior Director of Creative Services, who helps teams align on the appropriate design strategy while proposing new workflows and processes.",
+      "With Alloyed on their side, this client realized several impactful outcomes:",
+      "Faster production times and improved speed to market",
+      "Greater scalability without operational strain",
+      "Improved quality and consistency across digital assets",
+      "Increased capacity to support high-end and complex projects",
+      "Reduced digital ad production costs and improved ROI",
+      "This partnership has transformed the client's digital ad production model into a scalable, cost-effective operation. What began as ad hoc support evolved into a deeply integrated creative and technical partnership that delivers continuous production and the flexibility to support growing volumes with increasingly complex work."
+    ],
+    "metrics": [
+      {
+        "value": "95%+",
+        "label": "utilization rate of the Alloyed Team"
+      },
+      {
+        "value": "13",
+        "label": "FTEs delivering evening and overnight support"
+      },
+      {
+        "value": "2",
+        "label": "website platforms engineered and implemented on HubSpot"
+      }
+    ],
+    "impact": [],
+    "testimonial": {
+      "quote": "The Alloyed Team consistently delivers high-quality work with minimal errors, and your reliability is something we count on and appreciate every single day. Thank you all for your continued excellence and attention to detail. You make our lives so much easier!",
+      "attribution": "Senior Director of Creative Services"
+    },
+    "pdf": null,
+    "metaDescription": "Learn how creative outsourcing helped an AdTech marketing team scale digital ad production, reduce costs, improve quality, and support high-end projects.",
+    "image": "https://alloyed.io/wp-media/2026/01/Multiview.png"
+  },
+  {
+    "slug": "data-engineering-outsourcing-significantly-improves-client-workflow-efficiency-and-cost-savings",
+    "title": "Data Engineering Outsourcing Significantly Improves Client Workflow Efficiency and Cost Savings",
+    "industry": "Communications & Media",
+    "services": [
+      "Data Engineering & AI Annotation"
+    ],
+    "size": "1,000 Employees",
+    "intro": "This media company's engineering team struggled to keep up with their current project load, as they were unable to find qualified engineering candidates in the US. This was a critical gap that needed to be filled. Without strong data engineering capabilities, this organization lacked the scalable architecture required to ingest, store, and transform raw data.\n\nThey needed a highly qualified data engineer to step in, one who would allow the organization to structure high-performance data models that power their business' complex visualizations and interactive executive dashboards. Given their positive experience with Alloyed Teams and our consistent delivery of high-quality work, the client inquired about starting with a single resource to address their data engineering requirements.",
+    "challenge": [
+      "This media company's engineering team struggled to keep up with their current project load, as they were unable to find qualified engineering candidates in the US. This was a critical gap that needed to be filled. Without strong data engineering capabilities, this organization lacked the scalable architecture required to ingest, store, and transform raw data.",
+      "They needed a highly qualified data engineer to step in, one who would allow the organization to structure high-performance data models that power their business' complex visualizations and interactive executive dashboards. Given their positive experience with Alloyed Teams and our consistent delivery of high-quality work, the client inquired about starting with a single resource to address their data engineering requirements."
+    ],
+    "solution": [
+      "Our partnership with this client's engineering team began in March 2025 with the placement of a single data engineer. Initially, this Staff Augmentation solution served as a proof of concept, considering the client had reservations about outsourcing such a complex task.",
+      "However, the Alloyed resource quickly adapted to the client's system nuances, communication style, and engineering requirements. The resource immediately delivered tangible wins and, due to this success and more internal attrition on the client's side, another Alloyed resource was added.",
+      "These resources took on some notable data engineering projects:",
+      "GAM Ad Units: The client faced a persistent, high-priority GAM Ad Units issue, specifically a management request that had remained unsolved for four years due to its inherent complexity and integration problems. This stagnation was impacting their core data strategy. The Alloyed resources conducted a detailed observation of the problem, defining the independent and dependent factors based on the client's key parameters. This analysis was used to build a robust lineage model by establishing the client's hierarchy and transposing the relationships. This model provided the necessary structure to integrate the complex GAM Ad Units data successfully. The solution was highly appreciated by the client and eliminated a four-year bottleneck.",
+      "Branded content mismatch: When a pervasive issue known as 'branded content mismatch' generated significant ambiguity across the client's reporting platforms, it evolved into a performance trust issue for the designated team. This issue remained unsolved for a year before the Alloyed Team stepped in to identify the logical scope defined for each content category. They then engineered a solution to extend functionality by parameterizing its calling reference. This technical approach normalized the usability of branded content data and ensured synchronization across all reporting modalities. The client verified and accepted the solution, which restored performance trust and saved significant time and resources. The client recognized that the solution \"saves the day!\"",
+      "SQL-based backfill: The existing process for running a backfill after any data changes was highly inefficient. The execution time was costly and tedious, often taking a day or two, depending on the business impact and the volume of data stored in the warehouse. This was especially critical when delivery deadlines were short. The backfill process was significantly improved by developing a new mechanism based on SQL-based backfill. This method was designed to safely execute directly within the data warehouse environment, leveraging the warehouse's power for optimized performance. The client's team now fully utilizes this SQL-based methodology to minimize execution time while ensuring safe and reliable operation, allowing for faster and more agile data deployments."
+    ],
+    "results": [
+      "Since day one, the Alloyed Team has consistently achieved a steady average utilization rate of 100%, demonstrating that the client benefits from the ongoing use of our data engineers. Other wins have included:",
+      "Addition of a second data engineering resource due to success",
+      "Annual cost savings estimated between 46% and 53%",
+      "Building a new TikTok ads data model and updating the TrueView model to support the social team with pacing",
+      "Improvement of client workflows to increase speed and completion of backlog tasks",
+      "Increased identification and resolution of data issues previously unknown to the client",
+      "This partnership is a symbol of Alloyed's flexibility and unique skill sets, from our Staff Augmentation model to our data engineering capabilities. In fact, the client's Senior Director of Data Strategy and Solutions said it best: \"There were several system-halting issues we were dealt over the past couple of days and, without [our Alloyed resource's] support, I'm certain we would not have found a fix this week. He takes it upon himself to tackle the problems in front of him and rarely relies on me for direction. His updates are prompt, succinct, and smart, and his talents really showed up this week.\""
+    ],
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "average utilization rate of the Alloyed Team since day one"
+      },
+      {
+        "value": "46-53%",
+        "label": "estimated annual cost savings"
+      },
+      {
+        "value": "4-Year",
+        "label": "GAM Ad Units bottleneck eliminated"
+      }
+    ],
+    "impact": [],
+    "testimonial": {
+      "quote": "Looking ahead to the summer, [our Alloyed resource] will continue addressing GA fixes to improve our written content reporting, including building Eater Maps reporting and standardizing CPLPV tracking using Boost views. He's also taking on a new audience tool that will help AMs and Campaign Analytics report on top-performing audiences by campaign and line item in our ad server. He's truly been a massive unlock, and I am so impressed by how much he's helped in such a short period. It's hard enough making an FTE hire this good. Alloyed did a great job with this [resource] assignment.",
+      "attribution": "Senior Director of Data Strategy and Solutions"
+    },
+    "pdf": null,
+    "metaDescription": "Learn how data engineering outsourcing helped a digital media company eliminate bottlenecks, improve workflows, and achieve up to 53% annual cost savings.",
+    "image": "https://alloyed.io/wp-media/2026/05/Human_Coding.jpg"
+  },
+  {
+    "slug": "grocery-retail-company-estimates-50-in-cost-savings-with-retail-outsourcing-services",
+    "title": "Grocery Retail Company Estimates 50% in Cost Savings with Retail Outsourcing Services",
+    "industry": "Retail, E-Commerce & CPG",
+    "services": [
+      "Advertising Operations",
+      "Media Planning & Buying"
+    ],
+    "intro": "This grocery retail organization was overpaying for agency markups and intermediary fees from their media partner when Alloyed could provide the same high-quality, efficient campaign execution at a fraction of the cost.",
+    "challenge": [
+      "Long-term overhead of traditional staffing",
+      "Ineffective speed-to-market",
+      "Lack of transparency and operational control in campaign trafficking and media planning initiatives"
+    ],
+    "solution": [
+      "Alloyed employed our agnostic platform and process-optimization capabilities to quickly maintain operational continuity during the transition from the media agency's platform to their in-house retail media network.",
+      "Leveraged deep media and advertising knowledge to seamlessly assume direct operational responsibilities",
+      "Supported ad trafficking, campaign management, and media planning during critical transition periods and beyond",
+      "Maintained delivery speed and campaign accuracy while keeping costs low",
+      "Implemented timely responsiveness and adaptability, acting as a true extension of their teams"
+    ],
+    "results": [
+      "Since the beginning of the partnership, the Alloyed Team has continued to grow.",
+      "Reduced FTE costs by approximately 50% or more while maintaining high service quality",
+      "Added several additional Alloyed Professionals for marketing data entry and reconciliation support",
+      "Increased productivity and faster turnaround times, empowering the client to meet campaign deadlines more efficiently",
+      "Streamlined workflows and improved communication, enabling seamless collaboration between onshore and offshore teams",
+      "Operational continuity during the transition from the media company's platform to the client's internal retail media network, ensuring no disruption in delivery",
+      "Enhanced scalability, with Alloyed quickly ramping new team members as volume and complexity increased"
+    ],
+    "metrics": [
+      {
+        "value": "50%",
+        "label": "approximate reduction in FTE costs while maintaining high service quality"
+      },
+      {
+        "value": "99.89%",
+        "label": "accuracy rate for media operations services"
+      },
+      {
+        "value": "100%",
+        "label": "accuracy rate for media planning services"
+      }
+    ],
+    "impact": [],
+    "testimonial": {
+      "quote": "I'll just say the Alloyed Team is amazing. Their knowledge is deep and so incredibly helpful and useful. They've been amazing resources for us since we started with them.",
+      "attribution": "Senior Manager, Media Strategy & Planning"
+    },
+    "pdf": "https://alloyed.io/wp-media/2025/11/Grocery-Retail-Company-Builds-a-More-Cost-Effective-Media-Operation-with-Retail-Outsourcing.pdf",
+    "metaDescription": "Discover how a leading grocery retailer cut FTE costs by 50%, eliminated agency markups, and improved speed to market by partnering directly with Alloyed for ad operations and media planning. See how transparent, scalable retail outsourcing transformed their media execution.",
+    "image": "https://alloyed.io/wp-media/2025/11/Ad_Ops_CS.jpg"
+  },
+  {
+    "slug": "how-alloyed-scaled-media-organizations-advertising-operations-while-cutting-hiring-costs-by-70",
+    "title": "How Alloyed Scaled Media Organization's Advertising Operations While Cutting Hiring Costs by 70%",
+    "industry": "Communications & Media",
+    "services": [
+      "Advertising Operations",
+      "Media Planning & Buying",
+      "Search Operations"
+    ],
+    "size": "6,000 Employees",
+    "intro": "",
+    "challenge": [
+      "In 2018, a major global media organization considered building a captive location to meet their lofty growth plans. However, their roster of iconic brands and content that reaches over one billion consumers each month required a perfect fit. They needed a flexible partner that could keep costs low, hire and retain employees, and, most importantly, deliver high-quality outcomes.",
+      "Once they learned about Alloyed, they quickly realized the benefits of outsourcing. With our teams on their side, they can avoid the burdensome hiring process, achieving zero overhead and an overall cost that is roughly 70% less than hiring US employees to do the same work.",
+      "The choice was clear.",
+      "This client's former Global Head of Ad Operations recalls the benefits of selecting Alloyed. \"The specific ad operations expertise was really important. When the team was evaluating partners, this was first and foremost. With Alloyed, the team was coming on board with a wealth of experience using different platforms, so [we] sort of hit the ground running in teaching them not about what's happening in the industry but what's happening with [our] business.\""
+    ],
+    "solution": [
+      "We kicked off the partnership with a team of 16 professionals supporting critical ad operations functions. In 2022, the collaboration expanded to include reporting support, necessitating the addition of a team of four professionals. Our continued growth and regional alignment with this client's global operations were marked again by the addition of a Western Europe-focused team of 10 professionals, launched in 2023."
+    ],
+    "results": [
+      "Since the start of the partnership, our relationship with this client has matured significantly. Alloyed Teams are utilized across three key areas: ad operations, social/email, and media planning. The ad operations team provides 24-hour coverage and focuses on trafficking, newsletters, reporting, screenshots, sponsorship checks, and other related tasks. The client utilizes our social and email teams for social analytics, search analytics, and email analytics. Media planning was a more recently launched team and includes Alloyed talent spanning two shifts: trafficking in AdBook and providing CitizenNet screenshots.",
+      "During our most recent Annual Business Review with this client team in February 2025, they identified a new opportunity for us. As they reorganized their global operations, we partnered closely with teams across the U.S. and Europe to analyze workflows, processes, and work efforts. Through this collaboration, we helped identify regional differences, align best practices, and standardize operations across markets. This alignment created greater global consistency, efficiency, and visibility, ensuring seamless collaboration as this client continues to expand and integrate work across new regions.",
+      "As with all Alloyed clients, the relationship with this client is a true partnership. The Alloyed Team proactively identifies areas for improvement. For example, in the absence of a CRM platform, the team created a system using Google Forms to accurately track multiple requests from internal staff. The team also provided key testing and feedback, resulting in overall improvements to the QA process.",
+      "Since 2018, Alloyed's partnership with this client has strengthened operational efficiency, reduced costs, and ensured the highest standards of quality are maintained. Today, this client continues to deliver seamless, world-class service to its global audience with the support of their Alloyed Team."
+    ],
+    "metrics": [
+      {
+        "value": "70%",
+        "label": "lower cost than hiring US employees to do the same work"
+      },
+      {
+        "value": "30",
+        "label": "professionals across ad operations, reporting, and Western Europe teams"
+      },
+      {
+        "value": "24-Hour",
+        "label": "ad operations coverage"
+      }
+    ],
+    "impact": [],
+    "servicesSpotlight": [
+      {
+        "heading": "Data and Analytics Support",
+        "items": [
+          "Dashboard Creation and Reporting: We design and maintain customized dashboards, along with weekly and monthly performance reports that turn complex metrics into clear, actionable insights. By visualizing key trends and KPIs, we help clients quickly assess performance, identify opportunities, and make data-driven decisions with confidence.",
+          "Data Engineering and Architecture: We build strong data foundations by collecting, organizing, and ingesting information from multiple sources. Through scalable data architectures and efficient pipelines, we enable clients to centralize their information, enhance data quality, and unlock deeper analytical insights.",
+          "System and API Integration: Our team integrates systems and APIs to support seamless data flow, inventory forecasting, and verification. These connections ensure accurate, real-time information across platforms, reducing manual work and improving operational efficiency for more reliable business planning."
+        ]
+      },
+      {
+        "heading": "Research and Reporting Support",
+        "items": [
+          "Enhanced Reporting and Analytics: We create comprehensive customer experience and satisfaction reports that translate complex data into meaningful stories. By connecting performance metrics to real-world impact, our reporting helps clients see what's working, uncover growth opportunities, and drive stronger engagement across every touchpoint.",
+          "Industry and Competitive Research: We deliver clear, actionable insights through detailed industry and competitor analyses. Our teams evaluate market trends, pricing models, and performance benchmarks to help clients understand their current position and how to stay ahead. These findings enable more informed strategy decisions and sharper positioning in competitive landscapes."
+        ]
+      }
+    ],
+    "testimonial": {
+      "quote": "I wanted to share that I've been really impressed with our Alloyed Team Member lately. We've been adopting many new initiatives, which he's handled and adapted while navigating ad ops utilization constraints and team changes. He was also quick to execute and delegate the Middle East migration order entry project across teams, which was immensely helpful. I've really appreciated his commitment to our partnership.",
+      "attribution": "Executive Director, Ad Ops"
+    },
+    "pdf": null,
+    "metaDescription": "See how a leading digital media organization reduced hiring costs by 70% and scaled global ad operations with Alloyed's ad ops, media planning, reporting, and analytics support. Learn how our flexible, high-quality outsourcing model strengthened efficiency across the U.S. and Europe.",
+    "image": "https://alloyed.io/wp-media/2025/11/Case-Study-Hero-Image-Template-30.png"
+  },
+  {
+    "slug": "pharma-media-giant-cuts-2m-in-costs-by-outsourcing-advertising",
+    "title": "Pharma Media Giant Cuts $2M in Costs by Outsourcing Advertising",
+    "industry": "Advertising, Technology & Marketing, Communications & Media",
+    "services": [
+      "Media Planning & Buying",
+      "Programmatic Support",
+      "Reporting & Analytics",
+      "Search Operations"
+    ],
+    "size": "800 Employees",
+    "intro": "",
+    "challenge": [
+      "For a leader in pharmaceutical media advertising, scaling success came with a price: fragmented processes, mounting costs, and inconsistent performance across media channels.",
+      "The company's internal teams were burdened by manual workflows across a complex, multi-channel environment, including ad tech, finance, data analytics, media, search, social, and programmatic. High operational costs and long cycle times, averaging eight days, slowed productivity, while error rates hovering at 12% eroded client confidence. User satisfaction was also lagging, scoring just six out of 10.",
+      "Additionally, internal staff were restricted from working across multiple customer teams due to competitive conflicts. This made operational gaps nearly impossible to fill. Valuable employees were pulled away from higher-value strategic initiatives just to keep task work moving. The company recognized that it needed a partner who could standardize processes, stabilize performance, and drive efficiency at scale without increasing overhead."
+    ],
+    "solution": [
+      "The answer was to rethink execution.",
+      "Alloyed stepped in to improve process ownership and standardization, filling entry-level associate roles across ad tech, media, finance, data analytics, search, social, and programmatic. We aimed to provide the client with steady and scalable support across critical functions.",
+      "But this wasn't just about putting bodies in seats. Alloyed assembled a team of process owners, subject matter experts, IT specialists, and change management leads to create a blended structure designed not just for execution, but for full integration and alignment with organizational goals.",
+      "One of the biggest wins came from addressing the challenge of competitive conflict. Since Alloyed resources are not tied into client strategy, we were able to step across multiple teams at the task level, something internal staff could not do. That flexibility filled long-standing gaps and freed internal teams to focus on strategy and client relationships.",
+      "Regular touchpoints, structured workflows, and process standardization tightened operations across the board. What had once been a high-cost, error-prone system started functioning like a well-oiled engine with lots of room to grow."
+    ],
+    "results": [
+      "The transformation was immediate and measurable.",
+      "Cycle times shrank: from eight days to just two, accelerating delivery and responsiveness",
+      "Error rates dropped: from 12% due to Alloyed's industry-standard best practices",
+      "Expanded partnership scope: and reduced reliance on reactive hiring cycles",
+      "User satisfaction increased: from 6/10 to 9/10, reflecting improved accuracy, speed, and overall experience",
+      "$2M in annual cost savings: achieved through shifting task-level work offshore and streamlining execution",
+      "Beyond the numbers, Alloyed became more than a vendor. We became the client's \"insurance policy.\" For instance, when a critical error caused hundreds of campaigns to fail to go live for our client's biggest customer, Alloyed instantly added seven fully trained resources to work nights and weekends, fixing the issue and getting reporting back online fast. During the pandemic, when hiring froze, Alloyed stepped up again, providing trained bench resources that backfilled roles faster than the client's own internal recruitment cycle.",
+      "What started as outsourcing has grown into true integration. Today, Alloyed is integrated into the client's operating framework, not only stabilizing operations but also driving agility, scalability, and confidence. With Alloyed as a partner, this pharmaceutical media leader not only keeps pace with growth but also sets the standard for it."
+    ],
+    "metrics": [
+      {
+        "value": "$2M",
+        "label": "in annual savings"
+      },
+      {
+        "value": "66%",
+        "label": "user satisfaction increase"
+      },
+      {
+        "value": "75%",
+        "label": "cycle time reduction"
+      }
+    ],
+    "impact": [],
+    "proofPoints": [
+      "At the start of this client's work with a high-value customer, a critical error caused hundreds of campaigns to miss their launch. Reporting came back empty, and the pressure was on. Alloyed immediately deployed seven fully trained team members, working nights and weekends, to turn the situation around. That rapid response not only saved the relationship but cemented Alloyed as the client's insurance policy: the partner they can count on to step in fast when it matters most.",
+      "When the pandemic disrupted hiring and left key roles unfilled, this client turned to Alloyed to keep operations moving without overburdening internal teams. We quickly integrated into their workflows and cut the recruiting timeline in half, ensuring business continuity at a time when delays weren't an option. Every Alloyed resource came from our Bench, already trained and familiar with the client's systems, bridging gaps until U.S.-based hiring could catch up. Even as conditions shifted and more candidates became available, Alloyed continued to prove its value by complementing internal teams with faster onboarding and reliable execution. Over the course of two years, what started as stopgap support evolved into seamless integration: Alloyed is now embedded in the client's operating model, providing stability, scalability, and a measurable daily impact alongside their in-house talent."
+    ],
+    "testimonial": {
+      "quote": "This BPO has been instrumental in transforming our Shared Services operations by addressing critical challenges related to headcount stability, talent acquisition, and scalability. By providing a consistent and reliable workforce, the partnership allowed us to overcome recruitment difficulties and ensure stable support for our growing team. This stability has been a cornerstone for driving operational efficiency and improving overall performance across key functions.",
+      "attribution": "Director of Digital Ad Operations"
+    },
+    "pdf": null,
+    "metaDescription": "This company needed a BPO partner for outsourcing advertising. Alloyed saved them $2M in annual costs and decreased process cycle times by 40%.",
+    "image": "https://alloyed.io/wp-media/2025/09/Case-Study-Hero-Image-Template-27.png"
+  },
+  {
+    "slug": "digital-marketing-outsourcing-empowers-flexible-scalability-and-business-growth",
+    "title": "Digital Marketing Outsourcing Empowers Flexible Scalability and Business Growth",
+    "industry": "Advertising, Technology & Marketing",
+    "services": [
+      "Advertising Operations",
+      "Media Planning & Buying",
+      "Record to Report"
+    ],
+    "size": "200 Employees",
+    "intro": "",
+    "challenge": [
+      "This mid-sized, New York City–based media agency is recognized for delivering smart, data-driven media buying, powered by human passion and common sense. They plan, buy, and manage campaigns for beloved consumer brands, helping clients maximize every media dollar.",
+      "But while the agency was busy driving efficiency for their clients, they realized their own operations could use a tune-up. Hiring surges, onboarding slowdowns, and unpredictable market swings made it difficult to scale fast without burning out teams or budgets.",
+      "Although the agency had worked with contractors before, it had never tried a true outsourcing partnership. That changed when a newly hired VP of Application Development, a long-time believer in strategic outsourcing, joined the team and saw a clear opportunity.",
+      "The VP recognized a familiar pattern: big wins often sparked big questions, \"Can we really scale this quickly? Can we deliver the same level of quality for every new client?\"",
+      "The challenge wasn't capability, though. It was capacity. The agency wanted to seize opportunities without second-guessing whether their resources could keep up. They needed a way to expand and contract with the market, maintaining premium-quality delivery without premium-level costs.",
+      "Scalability became the mission. The agency sought a flexible and trusted partner who could help them move faster and smarter while keeping their creative energy focused where it matters most: on their clients."
+    ],
+    "solution": [
+      "In May 2024, the agency launched its first engagement with Alloyed, focused on advertising operations. What started as a three-person team quickly grew to seven full-time professionals, with five based in Bangladesh handling ad ops and two in El Salvador managing paid search and social strategy.",
+      "From day one, Alloyed delivered structure and speed:",
+      "Color-coded task maps gave visibility into workload and forecasting",
+      "Daily online collaboration connected global teams seamlessly",
+      "Shared accountability replaced silos with a unified, agile workflow",
+      "Weekly team meetings and monthly strategy reviews kept everyone aligned",
+      "The agency's teams quickly saw the difference. We weren't a \"big box\" outsourcer. We are a partner with deep media and advertising expertise, able to integrate quickly and deliver immediate value.",
+      "Confidence spread quickly across the organization. New departments began to lean in, expanding Alloyed's role to include finance, accounting, and business analytics support. What began as an experiment soon became a catalyst for change."
+    ],
+    "results": [
+      "The impact was undeniable. Within months, outsourcing evolved from a tactical fix to a strategic advantage.",
+      "Agency leaders who once hesitated to outsource began championing it. Alloyed's teams readily adopted new workflows, freeing internal teams to focus on their core strengths: strategy, client relationships, and creative innovation.",
+      "Other key outcomes included:",
+      "A cultural shift where outsourcing is not the exception but the new normal",
+      "Faster, more efficient workflows with standardized documentation and centralized processes",
+      "Happier, more focused employees, now spending their time on high-value, strategic work",
+      "True scalability to take on new clients without hesitation",
+      "As the VP put it: \"Getting people better focused on the stuff they want to be doing anyway, by getting other things off their plate, not only makes for happier, more productive employees but it also denies people the default excuse for why they lack the time to focus on higher-value efforts.\"",
+      "Today, outsourcing is a cornerstone of the agency's operations. With Alloyed, the agency has built a business model that flexes with the market, adapts to opportunities, and keeps its people focused on growth, not just grinding. The VP explains, \"No longer can it be said that we're just not big enough to handle where we want to go or what we aspire to do for our clients.\" By trusting Alloyed to handle the work that once slowed them down, the agency has positioned itself to scale smarter and stay future-ready, no matter what the market brings next."
+    ],
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "client NPS score"
+      },
+      {
+        "value": "133%",
+        "label": "Alloyed headcount growth"
+      },
+      {
+        "value": "100%",
+        "label": "peer-to-peer QA"
+      }
+    ],
+    "impact": [],
+    "testimonial": {
+      "quote": "Getting people better focused on the stuff they want to be doing anyway, by getting other things off their plate, not only makes for happier, more productive employees, it also denies people the default excuse for why they lack the time to focus on higher-value efforts. No longer can it be said that we're just not big enough to handle where we want to go or what we aspire to do or become for the clients we serve.",
+      "attribution": "VP of Application Development"
+    },
+    "pdf": null,
+    "metaDescription": "A media-buying agency hoped to capture growth and better prepare for market uncertainty. Alloyed stepped in to offer digital marketing outsourcing.",
+    "image": "https://alloyed.io/wp-media/2025/09/Untitled-design-12.png"
+  },
+  {
+    "slug": "task-automation-increases-productivity-by-500",
+    "title": "Productivity Increases by 500% with Task Automation",
+    "industry": "Advertising, Technology & Marketing, Communications & Media",
+    "services": [
+      "Audit, QA & Verification",
+      "Automation Enablement"
+    ],
+    "size": "<100 Employees",
+    "intro": "",
+    "challenge": [
+      "Growth is exciting, but it can also be messy and challenging to keep up with, especially when it's unexpected.",
+      "For this digital media and advertising company, scaling meant rapidly integrating five agency acquisitions, each with its own unique systems and workflows. The result? A complex tangle of processes that slowed teams down, created bottlenecks, and left little room for focusing on strategy and revenue-generating initiatives.",
+      "For example, the accounting department was drowning in manual tasks while the ad ops, creative, and QA teams juggled competing priorities without standardized reporting or reliable data flow. Maintaining compliance and data accuracy across large volumes of campaign data proved challenging, with a lack of standardized QC checks leading to avoidable rework and reporting delays. Errors continued to creep in, efficiency dropped, and the pressure to integrate these acquisitions quickly and without disrupting client delivery kept rising.",
+      "The company needed more than a quick fix. They needed a partner who could help them scale smarter. With Alloyed on their side, they eliminated the grind of repetitive tasks, freeing up people to do the higher-value work that drives revenue growth. Alloyed was selected to help this client bring discipline and scalability to its marketing operations."
+    ],
+    "solution": [
+      "Alloyed's structure allowed this client's internal analytics and client teams to focus on strategic insights and client engagement while ensuring flawless execution in the background. We stepped in with a two-pronged approach: automate what slows you down, and outsource what doesn't need to live in-house. Here's how:",
+      "Automation at Scale: We built Python scripts to take the pain out of logins, data entry, and search functions. What once took hours became a matter of minutes.",
+      "Back-Office Optimization: From accounts payable and invoicing to mail tracking, milestone reporting, and production invoicing, Alloyed absorbed entire workflows to standardize processes and lift the burden off internal teams.",
+      "Creative and QA Firepower: When the client acquired its biggest agency, we deployed a dedicated creative and QA team to ensure a seamless onboarding, with technical checks and website design QA baked in from the start.",
+      "Smarter Tools: By integrating NextMark and CSV-based systems, we streamlined purchase order management and reduced error-prone manual work.",
+      "The guiding principle was simple: give the client's teams their time back so they could stop putting out fires and start focusing on strategy, creativity, and client relationships."
+    ],
+    "results": [
+      "The results were immediate and drastic.",
+      "Campaign turnaround times improved by more than 40%, allowing the client to launch more campaigns in less time and respond faster to client needs",
+      "Error rates were reduced by over 60% through Alloyed's multi-level QC and data hygiene framework",
+      "For a four-person team, these time savings translated into $124,800 in annual value, not to mention the lift in employee morale",
+      "Alloyed's ability to rapidly scale and deliver under pressure led the client to expand the partnership from campaign execution to full campaign data operations",
+      "Six hours were saved on administrative tasks per employee, per day. That's 1,560 hours a year (or a 500% increase in throughput) that each person can now devote to higher-impact work",
+      "The Alloyed Team also helped solve the client's late postage payments, which used to be a costly headache and threatened to derail campaigns or force the client to front vendor funds. Alloyed eliminated that risk by creating a Weekly Postage Alert Report that gives Production Managers crystal-clear visibility into receivables, mail schedules, and vendor invoices.",
+      "With proactive alerts driving accountability, campaigns stay on track, vendors get paid on time, and unnecessary cash flow strain has been eliminated. What was once a recurring pain point is now a streamlined system that keeps operations smooth, saves resources, and strengthens client-vendor relationships.",
+      "Most importantly, the company's people were able to shift from grinding through repetitive, error-prone tasks to focusing on what they do best: strategy, creativity, and client growth.",
+      "With Alloyed as a partner, this fast-scaling media company turned complexity into clarity—and positioned itself to grow without tripping over its own success."
+    ],
+    "metrics": [
+      {
+        "value": "1560",
+        "label": "hours returned to internal team"
+      },
+      {
+        "value": "500%",
+        "label": "throughput increase"
+      },
+      {
+        "value": "40%",
+        "label": "improvement in turnaround time"
+      }
+    ],
+    "impact": [],
+    "testimonial": {
+      "quote": "This is a game changer! Automation sped up our productivity. We went from one person accessing the system at a time to our team working in it simultaneously. This is a huge time saver, and it'll keep our invoicing current.",
+      "attribution": "Director of Finance"
+    },
+    "pdf": null,
+    "metaDescription": "By automating tasks, we helped our client achieve cost savings, scalability, and enhanced process reliability.",
+    "image": "https://alloyed.io/wp-media/2024/07/Blog-3-2.png"
+  },
+  {
+    "slug": "retail-media-scaling-to-new-regions",
+    "title": "Retail Media Scaling to New Regions",
+    "industry": "Retail, E-Commerce & CPG",
+    "services": [
+      "Media Planning & Buying"
+    ],
+    "intro": "",
+    "challenge": [
+      "A Retail Media AdTech provider who was successful in APAC needed a managed services solution in the States as they continued to win new business and grow their market share. They needed a partner to help them scale services to different regional markets quickly."
+    ],
+    "solution": [
+      "The team started with ad operations support and grew to encompass creative services task types as well. With a critical stateside presence, Alloyed was able to assist this partner in scaling their operations in a new market. Our ability to ramp up quickly and keep costs low enabled this client to respond to increasing demand while reducing risk. Alloyed can also easily put all hands on deck to achieve rushed onboarding timelines."
+    ],
+    "results": [],
+    "metrics": [],
+    "impact": [],
+    "testimonial": {
+      "quote": "Everyone was shocked to hear the number of campaigns, hours, and stats that the team helped with. [During a leadership summit] I chatted through our partnership and how we work as a team from setup to completion of the campaign lifecycle. There were gasps at how large the Alloyed Team is now and how much they do to make our day-to-day easier and the business function.",
+      "attribution": "VP, Ad Operations"
+    },
+    "pdf": null,
+    "metaDescription": "A Retail Media AdTech provider was seeking traction with brands in the US. After choosing Alloyed, they started with a small team of Ad Operations Professionals in Bangladesh, quickly grew their team and the business, and began to leverage the talent in our El Salvador delivery center, too.",
+    "image": "https://alloyed.io/wp-media/2025/09/Case-Study-Hero-Image-Template-1.png"
+  },
+  {
+    "slug": "global-broadcaster-scales-ad-ops-with-major-cost-savings",
+    "title": "Global Broadcaster Scales Ad Ops With Major Cost Savings",
+    "industry": "Communications & Media",
+    "services": [
+      "Advertising Operations",
+      "Audit, QA & Verification",
+      "Creative Production & Digital Design"
+    ],
+    "size": "46,000 Employees",
+    "intro": "",
+    "challenge": [
+      "Even the biggest names in broadcasting aren't immune to cost pressure. With 46,000 employees worldwide, this media leader had to find a way to do more with less. Budgets were shrinking. Headcount was under the microscope. The SVP of Sales Operations knew they couldn't afford to keep running with fragmented processes and manually intensive ad operations workflows.",
+      "The mission was clear: cut costs, streamline operations, and scale smarter, all while ensuring campaigns continued to run flawlessly across digital and linear platforms. The question was how to make it happen without sacrificing accuracy, speed, or client trust.",
+      "Bespoke outsourcing, done the right way, became the answer."
+    ],
+    "solution": [
+      "We came in as the strategic partner who could help the client evolve roles rather than eliminate them. Internal entry-level employees were promoted into higher-value, more strategic work, while Alloyed Professionals seamlessly backfilled tasks related to trafficking, QA, and reporting.",
+      "The partnership started small, with just a three-person digital team, but it didn't stay that way for long. As Alloyed quickly proved its value, the team grew incrementally. By December 2019, the client launched a dedicated Alloyed Linear Team. By 2021, the relationship expanded again, with Alloyed Professionals embedded across five additional business units.",
+      "What made the difference wasn't just cost savings, though. It was performance. The Alloyed Team mastered new and complex tasks with impressive speed and accuracy, assuming more responsibility without missing a beat. Our contributions were so effective that word spread internally, and soon, we weren't just filling gaps. We were helping raise the bar.",
+      "Because Alloyed operates as a true extension of the client's team, they can do things internal staff can't, such as rapidly scaling up during global events like the Olympics or NBA season, when ad volumes spike and flawless execution is non-negotiable."
+    ],
+    "results": [
+      "The results speak for the trust this broadcasting powerhouse has in us.",
+      "Flexibility: Alloyed gives the client the agility to scale resources up or down for major events, adding capacity exactly when and where it's needed.",
+      "Productivity: The client describes the Alloyed Team's productivity as \"on par with onshore executives.\" With near-perfect accuracy, the team went from working with eight national advertisers to 32, quadrupling output without adding internal headcount.",
+      "Trainability: Alloyed not only picks up new tasks quickly, but we've also trained the client's own internal staff on unfamiliar processes, turning what started as tactical support into lasting organizational value.",
+      "Over the course of five to six years, we have evolved from a small support team to a critical partner deeply integrated into the client's operating model, to the extent that each Vice President has a directive to shift a percentage of their team's work to Alloyed. It's become a major KPI and directly contributes to their promotion strategy. Using the Alloyed Team to offset workload burdens is more than a nice-to-have. It's a critical support system.",
+      "What began as a cost-cutting exercise has evolved into a true strategic partnership, one that delivers consistency, scale, and measurable daily impact for one of the world's largest broadcasting companies."
+    ],
+    "metrics": [
+      {
+        "value": "4x",
+        "label": "output, growing from 8 to 32 national advertisers without adding internal headcount"
+      },
+      {
+        "value": "5+",
+        "label": "additional business units supported since 2021"
+      },
+      {
+        "value": "46,000",
+        "label": "employees worldwide at this global broadcaster"
+      }
+    ],
+    "impact": [],
+    "testimonial": {
+      "quote": "I'm piecemealing giving you things here and there, and you are still doing more work than four full-time people working eight hours a day. That's fantastic.",
+      "attribution": "Director"
+    },
+    "pdf": null,
+    "metaDescription": "One of the biggest names in broadcasting needed to find ways to reduce costs and streamline operations. They sought to outsource some of their Ad Operations-specific work through Alloyed",
+    "image": "https://alloyed.io/wp-media/2025/09/When-Youre-A-Communications-Giant-Case-Study-1.png"
+  }
+]
