@@ -57,7 +57,7 @@ const normalizeLinks = (md: string) =>
 
 // Articles start at h1 on the page, so body headings are shifted to begin at h2.
 const normalizeHeadings = (md: string) => {
-  const levels = [...md.matchAll(/^(#{1,6})\s/gm)].map((m) => m[1].length);
+  const levels = [...md.matchAll(/^(#{1,6})\s/gm)].map((m) => (m[1] ?? "").length);
   if (!levels.length) return md;
   const shift = 2 - Math.min(...levels);
   if (shift === 0) return md;
