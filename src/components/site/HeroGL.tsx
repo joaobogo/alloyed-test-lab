@@ -10,7 +10,9 @@ export function HeroGL(props: any) {
 // pauses when off-screen or hidden, and falls back to the static SVG when
 // WebGL is unavailable or the visitor prefers reduced motion.
 type _P = { class?: string }
-const { class: cls = '' } = props;
+const { class: cls, className: clsName, ...rest } = props;
+const merged = clsName || cls || '';
+
   useEffect(() => {
 
   const start = () => {
@@ -72,7 +74,7 @@ const { class: cls = '' } = props;
   return (
     <>
 
-<div className={`hero-gl ${cls}`} aria-hidden="true">
+<div className={`hero-gl ${merged}`} aria-hidden="true">
   <HeroArt className="hero-gl-fallback absolute inset-0 h-full w-full" />
   <canvas className="hero-gl-canvas absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000"></canvas>
 </div>

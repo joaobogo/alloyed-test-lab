@@ -12,10 +12,13 @@ import { CaseCard as CaseCard } from "@/components/site/CaseCard";
 import { Comparison as Comparison } from "@/components/site/Comparison";
 import { CostCalculator as CostCalculator } from "@/components/site/CostCalculator";
 import { ProcessFlow as ProcessFlow } from "@/components/site/ProcessFlow";
-import { FitFinder as FitFinder } from "@/components/site/FitFinder";
 import { LogoWall as LogoWall } from "@/components/site/LogoWall";
 import { Awards as Awards } from "@/components/site/Awards";
 import { CTA as CTA } from "@/components/site/CTA";
+import { FitFinder as FitFinder } from "@/components/site/FitFinder";
+import { Testimonials as Testimonials } from "@/components/site/Testimonials";
+import { Timeline as Timeline } from "@/components/site/Timeline";
+
 import { services, industries, caseStudies, proof, partners, site } from '@/data/site';
 import { asset, slots } from '@/data/visuals';
 
@@ -69,7 +72,7 @@ function Page() {
     <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-900 via-ink-900/70 to-transparent lg:via-ink-900/40" aria-hidden="true"></div>
     <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-ink-900 to-transparent" aria-hidden="true"></div>
 
-    <div className="container-x relative grid items-center gap-14 py-20 sm:py-24 lg:grid-cols-12 lg:py-20 xl:py-28">
+    <div className="container-x relative grid items-center gap-10 py-14 sm:py-16 lg:grid-cols-12 lg:py-12 xl:py-16">
       <div className="lg:col-span-7">
         <p className="eyebrow-light hero-in" style={{"--d": "0ms"}}>Formerly SEBPO · Since 2006</p>
         <h1 className="h-display hero-in mt-5 max-w-[22ch] text-[40px] text-white sm:text-[54px] lg:text-[60px]" style={{"--d": "80ms"}}>
@@ -84,7 +87,7 @@ function Page() {
           </a>
           <a href="#estimate" className="btn-ghost-light !px-6 !py-3.5 text-[16px]">Estimate your savings</a>
         </div>
-        <ul className="hero-in mt-12 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-6 text-[13px]" style={{"--d": "320ms"}} aria-label="Recognition">
+        <ul className="hero-in mt-8 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-5 text-[13px]" style={{"--d": "320ms"}} aria-label="Recognition">
           {proof.map((p) => (
             <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-ember-500" aria-hidden="true"></span><span className="font-medium text-white/85">{p.label}</span></li>
           ))}
@@ -135,10 +138,12 @@ function Page() {
     </div>
   </section>
 
+
   {/* FIT FINDER */}
   <section className="pb-20 sm:pb-28"><div className="container-x reveal"><FitFinder /></div></section>
 
   {/* COMPARISON */}
+
   <section className="bg-ink-50 py-20 sm:py-28">
     <div className="container-x">
       <div className="max-w-2xl">
@@ -203,8 +208,10 @@ function Page() {
         {featured.map((cs, i) => <div className="reveal" style={cssVars(`transition-delay:${i * 70}ms`)}><CaseCard cs={cs} /></div>)}
       </div>
       <div className="mt-12 reveal"><Testimonials /></div>
+
     </div>
   </section>
+
 
   {/* TIMELINE */}
   <section className="bg-ink-50 py-20 sm:py-28">
@@ -218,6 +225,7 @@ function Page() {
   </section>
 
   {/* INDUSTRIES */}
+
   <section className="py-20 sm:py-28">
     <div className="container-x">
       <div className="max-w-2xl">
