@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function MobileCTA(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Slim bottom bar on phones only. Appears after the first screen, hides when a
 // form is in view or the menu is open, respects the home-indicator safe area.
   useEffect(() => {

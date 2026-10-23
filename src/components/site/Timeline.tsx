@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function Timeline(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // What the first 90 days look like. Buyers ask this before they ask price.
 const steps = [
   { when: 'Week 0', title: 'Working session', text: 'A 30-minute call to map one workflow and size the opportunity. You leave with a written first read, whether or not we proceed.' },

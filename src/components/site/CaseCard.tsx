@@ -6,7 +6,6 @@ import type { CaseStudy } from '@/data/site';
 import { asset, slots } from '@/data/visuals';
 
 export function CaseCard(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 interface Props { cs: CaseStudy; compact?: boolean; level?: 'h2' | 'h3' }
 const { cs, compact = false, level = 'h3' } = props;
 const lead = cs.metrics[0];

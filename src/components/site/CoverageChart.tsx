@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function CoverageChart(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Follow-the-sun coverage: which delivery center is on shift at each hour of
 // the client's day (US Eastern). Replaces a decorative map with the thing
 // buyers actually ask: "who is working when my team is asleep?"

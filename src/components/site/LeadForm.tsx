@@ -1,11 +1,12 @@
 // @ts-nocheck
 // Ported from the original Astro site.
 import { useEffect } from "react";
+import { useRouterState } from "@tanstack/react-router";
 import { cn, cssVars } from "@/lib/utils";
 
 
 export function LeadForm(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
 // One short form everywhere. Netlify Forms handles submission; hidden fields carry
 // the lead source captured in Base.astro. The honeypot replaces reCAPTCHA.
 type _P = { heading?: string; sub?: string; compact?: boolean; cta?: string; interest?: string; level?: 'h2' | 'h3' }

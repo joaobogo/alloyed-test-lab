@@ -16,7 +16,6 @@ export const faqFor = (ind: Industry) => {
 };
 
 export function IndustryFAQ(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 interface Props { ind: Industry }
 const { ind } = props;
 const faq = faqFor(ind);

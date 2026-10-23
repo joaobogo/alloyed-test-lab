@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 import { services, caseBySlug } from '@/data/site';
 
 export function FitFinder(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Three questions, one recommendation. Scores services from site data so the
 // result is always a real page with a real case study. Works without JS as a
 // plain list of services.

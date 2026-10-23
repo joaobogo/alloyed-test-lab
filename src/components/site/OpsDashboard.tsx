@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function OpsDashboard(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // A static "operations control center" card for the hero. Pure HTML/CSS, no
 // data fetching; the numbers are published client outcomes.
 type _P = { class?: string }

@@ -26,7 +26,6 @@ export function articleHead(a: Article, kind: 'Perspective' | 'News', basePath: 
 }
 
 export function ArticleLayout(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Shared template for perspectives and news releases.
 
 type _P = { article: Article; kind: 'Perspective' | 'News'; basePath: string; related: Article[] }

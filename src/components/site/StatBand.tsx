@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 import { stats } from '@/data/site';
 
 export function StatBand(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 interface Props { dark?: boolean; notes?: boolean }
 const { dark = false, notes = true } = props;
 

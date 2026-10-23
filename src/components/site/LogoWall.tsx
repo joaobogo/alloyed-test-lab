@@ -8,7 +8,6 @@ import beam from '../../../public/logos/beam-ai.svg?raw';
 import thread from '../../../public/logos/thread-ai.svg?raw';
 
 export function LogoWall(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Partner logo strip. Beam AI is the partner's own SVG wordmark; the other three
 // are faithful monochrome recreations (reference crops in docs/logo-refs/) to be
 // swapped for the partners' supplied files before launch. Rendered in one tone

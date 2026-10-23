@@ -6,7 +6,6 @@ import { LeadForm as LeadForm } from "@/components/site/LeadForm";
 import { proof } from '@/data/site';
 
 export function CTA(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 interface Props { heading?: string; sub?: string; cta?: string; interest?: string }
 const { heading, sub, cta, interest } = props;
 

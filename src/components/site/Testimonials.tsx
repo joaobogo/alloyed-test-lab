@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 import { testimonials } from '@/data/site';
 
 export function Testimonials(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 interface Props { limit?: number }
 const { limit = 3 } = props;
 const items = testimonials.slice(0, limit);

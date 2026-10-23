@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 import { HeroArt as HeroArt } from "@/components/site/HeroArt";
 
 export function HeroGL(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Real-time "molten alloy" field in raw WebGL (~4 KB of JS, no library).
 // Loads after first paint, renders at reduced resolution on small screens,
 // pauses when off-screen or hidden, and falls back to the static SVG when

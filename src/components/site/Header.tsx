@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 import { nav } from '@/data/site';
 
 export function Header(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 interface Props { dark?: boolean }
 const { dark = true } = props;
 const path = pathname;

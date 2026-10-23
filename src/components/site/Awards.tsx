@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function Awards(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Recognition row. Badge shapes are our own; wordings are the award names.
 // Replace with official badge artwork once the client supplies it.
 type _P = { dark?: boolean }

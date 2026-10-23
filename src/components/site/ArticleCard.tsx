@@ -6,7 +6,6 @@ import { formatDate } from '@/data/content';
 import { asset, slots } from '@/data/visuals';
 
 export function ArticleCard(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 interface Props { href: string; kicker: string; title: string; excerpt: string; date?: string; tags?: string[]; level?: 'h2' | 'h3' }
 const { href, kicker, title, excerpt, date, tags = [], level = 'h3' } = props;
 const Heading = level;

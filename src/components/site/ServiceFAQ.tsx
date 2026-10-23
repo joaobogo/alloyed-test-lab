@@ -13,7 +13,6 @@ export const faqFor = (s: Service) => [
 ];
 
 export function ServiceFAQ(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 interface Props { s: Service }
 const { s } = props;
 const faq = faqFor(s);

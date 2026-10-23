@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function HeroArt(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Lightweight "alloy" line field: a few hundred bytes of SVG instead of 20 MB of video.
 type _P = { class?: string }
 const { class: cls = '' } = props;

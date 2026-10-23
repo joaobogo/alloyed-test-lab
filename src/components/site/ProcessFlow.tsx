@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 import { process } from '@/data/site';
 
 export function ProcessFlow(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Animated "how work flows through Alloyed" diagram. Pure SVG + CSS: dashed
 // paths animate their offset so work appears to move from your systems,
 // through ingest / analyze / optimize, to measured outcomes.

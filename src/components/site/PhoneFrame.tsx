@@ -1,11 +1,12 @@
 // @ts-nocheck
 // Ported from the original Astro site.
 import { useEffect } from "react";
+import { useRouterState } from "@tanstack/react-router";
 import { cn, cssVars } from "@/lib/utils";
 
 
 export function PhoneFrame(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
 // Device-frame viewer for the demo: the real site in an iframe at phone size,
 // with a page picker and a desktop toggle. Same-origin, so transitions and
 // scripts behave exactly as on a device.

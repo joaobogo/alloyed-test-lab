@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function Comparison(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Buyer's comparison: the three options a VP of Operations actually weighs.
 const rows = [
   ['Fully loaded cost, 9-person ad ops team', '$850K–$900K / yr', 'Varies; hidden rework', '~$250K / yr'],

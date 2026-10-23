@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function ResultsTicker(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Horizontal ticker of published outcomes. Duplicated once for a seamless loop;
 // pauses on hover and respects prefers-reduced-motion.
 const items = [

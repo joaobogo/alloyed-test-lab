@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function Consent(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Compact consent banner. Tags stay blocked until "Accept"; "Reject" is honored
 // (Consent Mode v2 stays denied and GTM is never loaded).
 // Set PUBLIC_GTM_ID at build time (Netlify env var). Left empty, no tags load,

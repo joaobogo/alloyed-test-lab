@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 
 
 export function CostCalculator(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 // Interactive estimate. Defaults use the published sports-brand engagement:
 // 9 FTE in-house at ~$95K fully loaded vs ~$28K with Alloyed. Works without JS
 // (shows the default scenario).

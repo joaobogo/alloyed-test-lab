@@ -5,7 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 import { nav, site, proof } from '@/data/site';
 
 export function Footer(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
 const year = new Date().getFullYear();
 
   return (
