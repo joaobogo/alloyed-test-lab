@@ -27,6 +27,14 @@ import { ProofRibbon } from "@/components/motion/ProofRibbon";
 import { FlowPipeline } from "@/components/motion/FlowPipeline";
 import { TestimonialCarousel } from "@/components/motion/TestimonialCarousel";
 import { TiltCard } from "@/components/motion/TiltCard";
+import { LogoMarquee } from "@/components/motion/LogoMarquee";
+
+const partnerLogos = [
+  { src: "/logos/simplismart.svg", alt: "SimpliSmart", href: "https://www.simplismart.ai/" },
+  { src: "/logos/supervity.svg", alt: "Supervity", href: "https://www.supervity.ai/" },
+  { src: "/logos/beam-ai.svg", alt: "Beam AI", href: "https://beam.ai/" },
+  { src: "/logos/thread-ai.svg", alt: "Thread AI", href: "https://www.threadai.com/" },
+];
 import { testimonials, stats } from '@/data/site';
 
 const heroStill = asset(slots.hero.homeBackground);
@@ -250,7 +258,7 @@ function Page() {
   </section>
 
   {/* PARTNERS */}
-  <section className="border-y border-ink-100 bg-white py-10"><div className="container-x"><LogoWall /></div></section>
+  <section className="border-y border-ink-100 bg-white py-10"><div className="container-x"><p className="mb-6 text-center text-[14px] text-ink-500">AI and automation partners, vetted on real client workloads</p><LogoMarquee logos={partnerLogos} /></div></section>
 
   {/* FAQ */}
   <section className="py-20 sm:py-28">
