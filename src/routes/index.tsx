@@ -15,6 +15,10 @@ import { ProcessFlow as ProcessFlow } from "@/components/site/ProcessFlow";
 import { LogoWall as LogoWall } from "@/components/site/LogoWall";
 import { Awards as Awards } from "@/components/site/Awards";
 import { CTA as CTA } from "@/components/site/CTA";
+import { FitFinder as FitFinder } from "@/components/site/FitFinder";
+import { Testimonials as Testimonials } from "@/components/site/Testimonials";
+import { Timeline as Timeline } from "@/components/site/Timeline";
+
 import { services, industries, caseStudies, proof, partners, site } from '@/data/site';
 import { asset, slots } from '@/data/visuals';
 
@@ -135,7 +139,11 @@ function Page() {
   </section>
 
 
+  {/* FIT FINDER */}
+  <section className="pb-20 sm:pb-28"><div className="container-x reveal"><FitFinder /></div></section>
+
   {/* COMPARISON */}
+
   <section className="bg-ink-50 py-20 sm:py-28">
     <div className="container-x">
       <div className="max-w-2xl">
@@ -199,11 +207,25 @@ function Page() {
       <div className="mt-10 grid gap-5 md:grid-cols-3">
         {featured.map((cs, i) => <div className="reveal" style={cssVars(`transition-delay:${i * 70}ms`)}><CaseCard cs={cs} /></div>)}
       </div>
+      <div className="mt-12 reveal"><Testimonials /></div>
+
     </div>
   </section>
 
 
+  {/* TIMELINE */}
+  <section className="bg-ink-50 py-20 sm:py-28">
+    <div className="container-x">
+      <div className="max-w-2xl">
+        <p className="eyebrow">What the first 90 days look like</p>
+        <h2 className="h-display mt-2 text-[34px] sm:text-[46px]">From a 30-minute call to a team running live volume.</h2>
+      </div>
+      <div className="mt-12"><Timeline /></div>
+    </div>
+  </section>
+
   {/* INDUSTRIES */}
+
   <section className="py-20 sm:py-28">
     <div className="container-x">
       <div className="max-w-2xl">
