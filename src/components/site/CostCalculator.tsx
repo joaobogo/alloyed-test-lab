@@ -61,7 +61,7 @@ export function CostCalculator(props: any) {
         <div className="mt-2 flex flex-wrap gap-2">
           {[['ad-ops', 'Ad operations', '0.29'], ['finance', 'Finance & billing', '0.33'], ['compliance', 'Compliance / KYC', '0.35'], ['data', 'Data & analytics', '0.50'], ['cx', 'Customer engagement', '0.31']].map(([id, l, r], i) => (
             <label className="cursor-pointer rounded-full border border-ink-200 px-3 py-1.5 text-[13px] font-medium text-ink-700 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50 has-[:checked]:text-brand-700">
-              <input type="radio" name="c-fn" defaultValue={r} checked={i === 0} className="sr-only" />{l}
+              <input type="radio" name="c-fn" defaultValue={r} defaultChecked={i === 0} className="sr-only" />{l}
             </label>
           ))}
         </div>

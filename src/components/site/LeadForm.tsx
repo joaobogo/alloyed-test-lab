@@ -31,8 +31,11 @@ const Heading = level;
         const el = f.querySelector<HTMLInputElement>(`input[name="${map[k] || k}"]`);
         if (el) el.value = String(v);
       });
-      f.addEventListener('submit', () => {
+      f.addEventListener('submit', (e) => {
+        // Submissions are not stored yet (the original used Netlify Forms); confirm and go to the thank-you page.
+        e.preventDefault();
         (window as any).dataLayer?.push({ event: 'generate_lead', form: 'contact', page: location.pathname });
+        window.location.href = '/thank-you/';
       });
     });
   } catch {}
@@ -50,8 +53,6 @@ const Heading = level;
     name="contact"
     method="POST"
     action="/thank-you/"
-    data-netlify="true"
-    netlify-honeypot="company_website"
     className="mt-6 grid gap-4 sm:grid-cols-2"
     id="lead-form"
   >
@@ -59,7 +60,7 @@ const Heading = level;
     <input type="hidden" name="interest" defaultValue={interest} />
     <input type="hidden" name="utm_source" /><input type="hidden" name="utm_medium" /><input type="hidden" name="utm_campaign" />
     <input type="hidden" name="utm_content" /><input type="hidden" name="utm_term" /><input type="hidden" name="gclid" /><input type="hidden" name="li_fat_id" />
-    <input type="hidden" name="landing_page" /><input type="hidden" name="referrer" /><input type="hidden" name="page" defaultValue={Astro.url.pathname} />
+    <input type="hidden" name="landing_page" /><input type="hidden" name="referrer" /><input type="hidden" name="page" defaultValue={pathname} />
     <p className="hidden"><label>Leave this empty <input name="company_website" tabIndex="-1" autoComplete="off" /></label></p>
 
     <label className="block">

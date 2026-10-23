@@ -56,7 +56,7 @@ const why = {
             <div className="mt-3 flex flex-wrap gap-2">
               {q.items.map(([v, l], i) => (
                 <label className="cursor-pointer rounded-full border border-white/15 px-3.5 py-2 text-[13.5px] font-medium text-white/85 transition has-[:checked]:border-ember-500 has-[:checked]:bg-ember-500 has-[:checked]:text-ink-950 hover:border-white/40">
-                  <input type="radio" name={k} defaultValue={v} className="sr-only" checked={i === 0} />{l}
+                  <input type="radio" name={k} defaultValue={v} className="sr-only" defaultChecked={i === 0} />{l}
                 </label>
               ))}
             </div>
