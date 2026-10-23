@@ -5,10 +5,6 @@ import { cn, cssVars } from "@/lib/utils";
 import type { Industry } from '@/data/site';
 import { serviceBySlug } from '@/data/site';
 
-export function IndustryFAQ(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
-interface Props { ind: Industry }
-const { ind } = props;
 export const faqFor = (ind: Industry) => {
   const svcs = ind.services.map(serviceBySlug);
   return [
@@ -18,6 +14,11 @@ export const faqFor = (ind: Industry) => {
     { q: 'How quickly can you start?', a: 'A 30-minute working session, then two to four weeks of discovery and documentation led by a named implementation lead, a pilot under double QA and ramp to plan.' },
   ];
 };
+
+export function IndustryFAQ(props: any) {
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
+interface Props { ind: Industry }
+const { ind } = props;
 const faq = faqFor(ind);
 
   return (

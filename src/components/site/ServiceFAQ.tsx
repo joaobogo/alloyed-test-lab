@@ -4,10 +4,6 @@ import { useEffect } from "react";
 import { cn, cssVars } from "@/lib/utils";
 import type { Service } from '@/data/site';
 
-export function ServiceFAQ(props: any) {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
-interface Props { s: Service }
-const { s } = props;
 export const faqFor = (s: Service) => [
   { q: `What does Alloyed’s ${s.name.toLowerCase()} service include?`, a: `${s.capabilities.map((c) => c.title).join(', ')}. Each capability is delivered by a dedicated team with documented SOPs, QA checkpoints and weekly KPI reporting, working inside your own platforms.` },
   { q: `Who is ${s.name.toLowerCase()} outsourcing a fit for?`, a: `${s.serves.slice(0, 4).map((w) => w.title).join(', ')} and similar teams running high volumes where accuracy, speed and governance matter.` },
@@ -15,6 +11,11 @@ export const faqFor = (s: Service) => [
   { q: 'How does an engagement start?', a: 'A 30-minute working session to map one workflow, then two to four weeks of discovery and documentation led by a named implementation lead, a pilot under double QA, and ramp to plan. Business hours, extended coverage or 24/7 depending on the workflow.' },
   { q: 'Which tools and platforms do your teams work in?', a: `${s.tools.join(', ')}, and 300+ platforms over two decades. Access follows least-privilege principles with documented controls.` },
 ];
+
+export function ServiceFAQ(props: any) {
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
+interface Props { s: Service }
+const { s } = props;
 const faq = faqFor(s);
 
   return (

@@ -6,7 +6,7 @@ import { createFileRoute, notFound } from "@tanstack/react-router";
 import { pageHead } from "@/lib/seo";
 import { CTA as CTA } from "@/components/site/CTA";
 import { CaseCard as CaseCard } from "@/components/site/CaseCard";
-import IndustryFAQ, { faqFor } from '../../components/IndustryFAQ.astro';
+import { IndustryFAQ, faqFor } from "@/components/site/IndustryFAQ";
 import { industries, serviceBySlug, caseBySlug, site } from '@/data/site';
 import { asset, slots } from '@/data/visuals';
 
