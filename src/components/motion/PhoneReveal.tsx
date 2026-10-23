@@ -36,7 +36,7 @@ export function PhoneReveal({ src, alt, reducedMotion }: Props) {
       <div ref={phone} className="group relative w-full will-change-transform" style={{ aspectRatio: "434 / 888", transform: reduced ? "none" : "perspective(1200px) translateY(80px) scale(0.92) rotateY(6deg)" }}>
         <div className="absolute inset-0 rounded-[48px] bg-ink-900 shadow-[0_40px_90px_-30px_rgba(7,10,22,.8)] ring-1 ring-white/10" />
         <div className="absolute inset-[5%] overflow-hidden rounded-[38px] bg-ink-950 shadow-[inset_0_0_24px_rgba(0,0,0,.6)]">
-          <img src={src} alt={alt} loading="lazy" className={`w-full ${reduced ? "" : "transition-transform duration-[6000ms] ease-linear group-hover:-translate-y-[calc(100%-100cqh)]"}`} />
+          <img src={src} alt={alt} loading="lazy" className={`w-full ${reduced ? "" : "transition-transform duration-[6000ms] ease-linear group-hover:-translate-y-1/2"}`} />
         </div>
         <div className="absolute left-1/2 top-[3.2%] h-[3.2%] w-[28%] -translate-x-1/2 rounded-full bg-ink-950" aria-hidden="true" />
       </div>
