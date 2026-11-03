@@ -1,0 +1,8 @@
+# Netlify build settings. The build auto-detects Netlify and emits
+# static files to dist/ plus a server function in .netlify/functions-internal.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
