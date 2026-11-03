@@ -18,3 +18,4 @@
 - Ported page/component files carry // @ts-nocheck and run the original vanilla DOM scripts inside useEffect; tighten types file by file when editing them.
 - Site imagery lives in `public/img/<folder>/` under the exact names in `src/data/visuals.ts`; `src/data/visual-files.ts` lists what exists (regenerate it when files change) so missing slots fall back to typography.
 - Animated components live in `src/components/motion/`, take an optional `reducedMotion` prop (defaults to the system setting), use only transform/opacity and pause off-screen; `/studio` (noindex) previews them and the image gallery.
+- Netlify hosting: `netlify.toml` builds with `vite build`; nitro auto-detects Netlify (static `dist/` + server function), while Lovable builds still target Cloudflare, so keep the build preset-free.

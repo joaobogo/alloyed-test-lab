@@ -13,3 +13,5 @@
 - Google Tag Manager: consent banner works, but no container ID was carried over. Needs the GTM- ID.
 - Old alloyed.io / sebpo.com redirects and Netlify security headers are not active on this host. Needs the redirect list before cutover.
 - Git sync not connected yet. Connecting creates a new repository; joaobogo/Test-alloyed cannot be linked directly.
+
+- [x] Netlify hosting config (netlify.toml); user must point Netlify at the Lovable-synced repo
